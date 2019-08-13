@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+</head>
+
+<body>
+
+    <nav id="menu">
+        <h2>Menu</h2>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </nav>
+    </nav>
+
+    <div id="panel">
+
+        <button class="toggle-button">☰</button>
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        //= template/card.html
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        //= template/card.html
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+</body>
+
+</html>
