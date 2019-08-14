@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Создание акции поставщика</title>
+    <!-- https://developer.snapappointments.com/bootstrap-select/ -->
+    <link rel="stylesheet" href="libs/bootstrap-select/css/bootstrap-select.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<style>
+    .btn-light {
+        background-color: #fff;
+        border-color: #ced4da;
+    }
+    .btn-light:hover {
+        background-color: #fff;
+    }
+</style>
+<body>
+
+    <main id="main" class="my-2">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-6 mx-auto">
+
+                    <h3 class="mb-4">Создание акции поставщика</h3>
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="select1">Производитель</label>
+                            <select id="select1" class="form-control selectpicker" data-live-search="true" title="Выберите производителя...">
+                                <option value="id1">Производитель 1</option>
+                                <option value="id2">Производитель 2</option>
+                                <option value="id3">Производитель 3</option>
+                                <option value="id4">Производитель 4</option>
+                                <option value="id5">Производитель 5</option>
+                            </select>
+                            <!-- <small id="help" class="form-text text-muted">Здесь может быть поясняющий текст</small> -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input1">Название акции</label>
+                            <input type="text" class="form-control" id="input1" placeholder="Название">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="input2_1">Выбор даты начала акции</label>
+                                <input type="date" class="form-control" id="input2_1" placeholder="Дата">
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="input2_2">Выбор даты окончания акции</label>
+                                <input type="date" class="form-control" id="input2_2" placeholder="Дата">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="select2">Типы клиентов</label>
+                            <select id="select2" class="form-control selectpicker" title="Выберите тип клиента...">
+                                <option>Только юридические лица</option>
+                                <option>Все типы покупателей</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input2">Тип акции по каналу продаж</label>
+                            <input type="text" class="form-control" id="input2" placeholder="Тип акции">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="select3">Тип акции по механике</label>
+                            <select id="select3" class="form-control selectpicker" title="Выберите тип акции...">
+                                <option>Скидка</option>
+                                <option>Подарок</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input3">Условия акции</label>
+                            <input type="text" class="form-control" id="input3" placeholder="Условия акции">
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="checkbox1">
+                            <label class="form-check-label" for="checkbox1">Количество товаров ограничено</label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#product-selection-modal">Выбрать товары</button>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="select5">Поставщики</label>
+                            <select id="select5" class="form-control selectpicker" data-live-search="true" title="Выберите поставщиков..." multiple>
+                                <option>Поставщик 1</option>
+                                <option>Поставщик 2</option>
+                                <option>Поставщик 3</option>
+                                <option>Поставщик 4</option>
+                                <option>Поставщик 5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file1">Картинка акции</label>
+                            <input type="file" class="form-control-file" id="file1">
+                        </div>
+
+                        <div class="text-center my-5">
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                            <button type="button" class="btn btn-secondary">Выгрузить</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <div class="modal fade" id="product-selection-modal" tabindex="-1" role="dialog" aria-labelledby="product-selection-modal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Выбор товаров</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-selection-block">
+                        
+                        <div class="input-group mb-3 w-50">
+                            <input type="text" class="form-control" placeholder="Поиск товаров">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="form-check">
+                                            <input class="form-check-input position-static" type="checkbox" value="" id="check1">
+                                        </div>                                            
+                                    </th>
+                                    <th colspan="4">Название категории 1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="form-check sm">
+                                            <input class="form-check-input position-static" type="checkbox" value="" id="check1">
+                                        </div>
+                                    </th>
+                                    <td class="w-50">Название товара 1</td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Обычная цена"></td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Новая цена"></td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Скидка"></td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-check sm">
+                                            <input class="form-check-input position-static" type="checkbox" value="" id="check1">
+                                        </div>
+                                    </th>
+                                    <td class="w-50">Название товара 1</td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Обычная цена"></td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Новая цена"></td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Скидка"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="form-check">
+                                            <input class="form-check-input position-static" type="checkbox" value="" id="check1">
+                                        </div>                                            
+                                    </th>
+                                    <th colspan="4">Название категории 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="form-check sm">
+                                            <input class="form-check-input position-static" type="checkbox" value="" id="check1">
+                                        </div>
+                                    </th>
+                                    <td class="w-50">Название товара 1</td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Обычная цена"></td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Новая цена"></td>
+                                    <td><input class="form-control form-control-sm" type="text" placeholder="Скидка"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить выбор</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <!-- https://developer.snapappointments.com/bootstrap-select/ -->
+    <script src="libs/bootstrap-select/js/bootstrap-select.min.js"></script>    
+
+</body>
+
+</html>

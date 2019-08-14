@@ -1,5 +1,17 @@
-// Variables Bootstrap 4
+// Variables
 
-// $red:     #cc2eaa;
-// $green:   #2ecc71;
+// colors
+$ok-green: #90de23;
+$ok-light-green: #f1fae8;
+$ok-blue: #0074ff;
+$ok-light-blue: #f3f9ff;
+
+$ok-gray: #666666;
+$ok-light-gray: #cfcfcf;
+
+// fonts 
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
+$font-family-base: 'Roboto', sans-serif;
+$body-color: $ok-gray;
 

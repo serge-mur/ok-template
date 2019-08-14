@@ -6,9 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -29,47 +26,50 @@
         <button class="toggle-button"><i class="fas fa-bars"></i></button>
 
         <header id="header">
-            <div class="container">
-            
-                <div class="top-banner border rounded my-2 overflow-hidden">
-                    <img src="https://via.placeholder.com/1200x200?text=top banner" class="img-fluid" alt="alt">
-                </div>
-            
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+            <div class="top-menu-line">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-lg-1">
+                            <div class="region-change">
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a data-toggle="modal" data-target="#modal-region" href="#">Москва</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-9 col-lg-9 d-none d-lg-block">
+                            <ul class="nav justify-content-center" id="top-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Как сделать заказ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Поставщикам и производителям</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <a class="nav-link" href="#">Вход | Регистрация</a> -->
+                                    <span class="nav-link">
+                                        <a href="#" data-toggle="modal" data-target="#modal-registration">Вход</a> |
+                                        <a href="#" data-toggle="modal" data-target="#modal-registration">Регистрация</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-5 col-lg-2 text-right">
+                            <a class="phone-top" href="tel:84952151036">8 (495) 215-10-36</a>
+                        </div>
+                        <div class="col-3 d-lg-none text-right">
+                            <a href="#offCanvas" id="triggerButton" class="btn btn-primary my-2">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
                     </div>
-                </nav>    
+                </div>
             </div>
         </header>
 
@@ -78,22 +78,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-3">
-                        <div class="card overflow-hidden">
-                            <img src="https://via.placeholder.com/320x200?text=card image" class="card-img-top rounded-0" alt="alt">
+                        <div class="card product-card">
+                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
+                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
+                            <div class="action-label">акция</div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                <div class="card-text">
+                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
+                                </div>
+                                <a href="#" class="btn btn-buy">В корзину</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-3">
-                        <div class="card overflow-hidden">
-                            <img src="https://via.placeholder.com/320x200?text=card image" class="card-img-top rounded-0" alt="alt">
+                        <div class="card product-card">
+                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
+                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
+                            <div class="action-label">акция</div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                <div class="card-text">
+                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
+                                </div>
+                                <a href="#" class="btn btn-buy">В корзину</a>
                             </div>
                         </div>
                     </div>
@@ -103,11 +123,791 @@
         </main>
 
         <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">footer 1</div>
-                    <div class="col-4">footer 2</div>
-                    <div class="col-4">footer 3</div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-12 py-4">
+                            <a href="/" class="d-block">
+                                <img class="img-fluid" src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <ul class="nav flex-column bottom-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Поставщики</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Производители</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <ul class="nav flex-column bottom-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Как сделать заказ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Поставщикам и производителям</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-12 col-sm-6 col-md-4">
+            
+                            <ul class="nav flex-column bottom-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="tel:84952151036">8 (495) 215-10-36</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">С 9:00 до 18:00 по будням</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">Email:
+                                        <a href="mailto:ilove@otkorobki.ru">ilove@otkorobki.ru</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">
+                                        <a data-toggle="modal" data-target="#exampleModal" href="#">Обратная связь</a>
+                                    </span>
+                                </li>
+                            </ul>
+            
+                        </div>
+                    </div>
+                    <div class="row justify-content-between py-4" id="bottom-footer">
+                        <div class="col-auto">
+                            <ul class="nav" id="bottom-footer-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Договор-Оферта</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Пользовательское соглашение</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Политика конфиденциальности</a>
+                                </li>
+                            </ul>
+            
+                        </div>
+            
+                        <div class="col-auto">
+                            <div class="social-block">
+                                <a href="https://web.facebook.com/otkorobki.ru/" target="_blank" class="nav-link fab fa-facebook"></a>
+                                <a href="https://vk.com/club55825384" target="_blank" class="nav-link fab fa-vk"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- Modal region -->
+            <div class="modal fade" id="modal-region" tabindex="-1" role="dialog" aria-labelledby="modal-region" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Укажите ваш город</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="column">
+                                <li>
+                                    <a href="#">Москва</a>
+                                </li>
+                                <li>
+                                    <a href="#">Екатеринбург</a>
+                                </li>
+                                <li>
+                                    <a href="#">Казань</a>
+                                </li>
+                                <li>
+                                    <a href="#">Владимир</a>
+                                </li>
+                                <li>
+                                    <a href="#">Липецк</a>
+                                </li>
+                                <li>
+                                    <a href="#">Тюмень</a>
+                                </li>
+                                <li>
+                                    <a href="#">Архангельск</a>
+                                </li>
+                                <li>
+                                    <a href="#">Тула</a>
+                                </li>
+                                <li>
+                                    <a href="#">Нижний Новгород</a>
+                                </li>
+                                <li>
+                                    <a href="#">Рязань</a>
+                                </li>
+                                <li>
+                                    <a href="#">Иваново</a>
+                                </li>
+                                <li>
+                                    <a href="#">Уфа</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ульяновск</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пермь</a>
+                                </li>
+                            </ul>
+            
+                            <a class="d-block text-right" data-toggle="collapse" href="#collapseRegion" aria-expanded="false" aria-controls="collapseRegion">
+                                Показать еще
+                            </a>
+            
+                            <div class="collapse" id="collapseRegion">
+            
+                                <form action="">
+                                    <div class="input-group my-4">
+                                        <input type="text" class="form-control" id="search" placeholder="Начните вбивать название города" aria-label="Search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-search" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <ul class="column">
+                                    <li>
+                                        <a href="#">Анжеро-Судженск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Астрахань</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Барнаул</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Белгород</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Благовещенск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Брянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Волгоград</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Волгореченск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Вологда</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Воронеж</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Горно-Алтайск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Десногорск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Зеленогорск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ижевск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Иркутск-45</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Йошкар-Ола</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Калуга</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Котовск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Краснодар</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Курск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Новосибирск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Омск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Оренбург</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пенза</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Псков</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ростов-на-Дону</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Тверь</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Томск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Улан-Удэ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ханты-Мансийск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Челябинск</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ярославль</a>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal registration -->
+            <div class="modal fade" id="modal-registration" tabindex="-1" role="dialog" aria-labelledby="modal-registration" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+            
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <div class="modal-header d-sm-none">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body p-5">
+                                    <h1>Регистрация на сайте</h1>
+                                    <p>Контактные данные помогут нам успешно обрабатывать ваши заказы и информировать о ходе исполнения
+                                        заказа</p>
+                                    <form>
+                                        <input type="text" class="form-control" id="company-name" placeholder="Название компании">
+                                        <input type="text" class="form-control" id="city" placeholder="Город">
+                                        <input type="text" class="form-control" id="contact-person" placeholder="Контактное лицо">
+                                        <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        <div class="text-center mb-3">
+                                            <img src="img/captcha.jpg" alt="">
+                                        </div>
+                                        <input type="text" class="form-control" id="captcha" placeholder="Цифры с картинки">
+                                        <div class="form-group d-flex justify-content-between">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Производитель</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Оптовый поставщик</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Нажимая кнопку «Отправить заявку», я принимаю условия
+                                                <a href="#">Пользовательского соглашения</a> и даю своё согласие Откоробки.ру на обработку моей персональной
+                                                информации на условиях, определенных
+                                                <a href="#">Политикой конфиденциальности</a>.</label>
+                                        </div>
+            
+                                        <button type="submit" class="btn btn-form">Приступить к покупкам</button>
+            
+                                        <a class="d-block my-4" href="#">Вы производитель или оптовый поставщик?</a>
+                                    </form>
+            
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="right-modal h-100">
+                                    <div class="modal-header d-none d-sm-block">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-3">
+                                        <p>Вы можете войти в личный кабинет, используя свой логин в сети:</p>
+                                        <a class="d-block my-4" href="#">
+                                            <img src="img/yand.png" alt="">
+                                        </a>
+                                        <a class="d-block mb-4" href="#">
+                                            <img src="img/mail.png" alt="">
+                                        </a>
+                                        <a class="d-block" href="#">
+                                            <img src="img/goog.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal cart -->
+            <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="modal-cart" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+            
+                        <div class="modal-header">
+                            <h1 class="d-inline-block modal-title" id="exampleModalLabel">Корзина <span>2 заказа, 3 товара</span></h1>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+            
+                        <div class="modal-body">
+                            <div class="row align-items-center order-block">
+                                <div class="col-12 col-lg-6 my-4">
+                                    <h1 class="d-inline-block cart-title">Заказ №1</h1>
+                                    <span class="delivery-block mb-2">
+                                        <span>
+                                            <i class="fas fa-truck"></i> Доставка</span>
+                                        <span>
+                                            <i class="fas fa-map-marker-alt"></i> Самовывоз</span>
+                                    </span>
+                                    <div class="cart-provis">Поставщик "Мясоперерабатывающий холдинг Арго"</div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-sm-8 mb-4">
+                                            <span class="font-weight-bold">Итого: 2 товара на сумму:
+                                                <span class="cart-total-price">2800 <i class="fas fa-ruble-sign"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <button class="btn btn-buy">Оформить</button>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-12">
+                                    <!-- repeat block -->
+                                    <div class="row align-items-center py-4 order-item">
+                                        <div class="col-4 col-lg-2 mb-2">
+                                            <a href="#">
+                                                <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 col-lg-3 mb-2">
+                                            <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                            <div class="item-name">Производитель: Красный Октябрь</div>
+                                            <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mb-2">
+                                            <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                                <div class="quantity-minus">
+                                                    <img src="img/minus.png" alt="">
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="quantity-plus">
+                                                    <img src="img/plus.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-lg-1 mb-2">
+                                            <button class="btn">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+            
+                                    </div>
+                                    <!-- end repeat block -->
+                                    <!-- repeat block -->
+                                    <div class="row align-items-center py-4 order-item">
+                                        <div class="col-4 col-lg-2 mb-2">
+                                            <a href="#">
+                                                <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 col-lg-3 mb-2">
+                                            <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                            <div class="item-name">Производитель: Красный Октябрь</div>
+                                            <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mb-2">
+                                            <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                                <div class="quantity-minus">
+                                                    <img src="img/minus.png" alt="">
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="quantity-plus">
+                                                    <img src="img/plus.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-lg-1 mb-2">
+                                            <button class="btn">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+            
+                                    </div>
+                                    <!-- end repeat block -->
+            
+            
+                                </div>
+            
+                            </div>
+            
+                            <div class="row align-items-center order-block">
+                                <div class="col-12 col-lg-6 my-4">
+                                    <h1 class="d-inline-block cart-title">Заказ №2</h1>
+                                    <span class="delivery-block mb-2">
+                                        <span>
+                                            <i class="fas fa-truck"></i> Доставка</span>
+                                        <span>
+                                            <i class="fas fa-map-marker-alt"></i> Самовывоз</span>
+                                    </span>
+                                    <div class="cart-provis">Поставщик "Мясоперерабатывающий холдинг Арго"</div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-sm-8 mb-4">
+                                            <span class="font-weight-bold">Итого: 2 товара на сумму:
+                                                <span class="cart-total-price">2800
+                                                    <i class="fas fa-ruble-sign"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <button class="btn btn-buy">Оформить</button>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-12">
+                                    <!-- repeat block -->
+                                    <div class="row align-items-center py-4 order-item">
+                                        <div class="col-4 col-lg-2 mb-2">
+                                            <a href="#">
+                                                <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 col-lg-3 mb-2">
+                                            <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                            <div class="item-name">Производитель: Красный Октябрь</div>
+                                            <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mb-2">
+                                            <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                                <div class="quantity-minus">
+                                                    <img src="img/minus.png" alt="">
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="quantity-plus">
+                                                    <img src="img/plus.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-lg-1 mb-2">
+                                            <button class="btn">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+            
+                                    </div>
+                                    <!-- end repeat block -->
+                                    <!-- repeat block -->
+                                    <div class="row align-items-center py-4 order-item">
+                                        <div class="col-4 col-lg-2 mb-2">
+                                            <a href="#">
+                                                <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 col-lg-3 mb-2">
+                                            <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                            <div class="item-name">Производитель: Красный Октябрь</div>
+                                            <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mb-2">
+                                            <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                                <div class="quantity-minus">
+                                                    <img src="img/minus.png" alt="">
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="quantity-plus">
+                                                    <img src="img/plus.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 col-lg-2 mb-2">
+                                            <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-lg-1 mb-2">
+                                            <button class="btn">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+            
+                                    </div>
+                                    <!-- end repeat block -->
+            
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal all variant -->
+            <div class="modal fade" id="modal-all" tabindex="-1" role="dialog" aria-labelledby="modal-all" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <a href="#" class="d-block">Все производители</a>                              
+                            <p><b>Производители категории: Кондитерские изделия</b> <span>(72 производителя)</span></p>
+                            <form action="">
+                                <div class="input-group my-4">
+                                    <input type="text" class="form-control" id="search" placeholder="Начните вводить название производителя" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-search" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+            
+                            <ul class="nav" id="pills-tab" role="tablist">
+                                <li>
+                                    <a class="active" id="pills-cat-tab" data-toggle="pill" href="#pills-cat" role="tab" aria-controls="pills-cat" aria-selected="true">по категориям</a>
+                                </li>
+                                <span>&nbsp;|&nbsp;</span>
+                                <li>
+                                    <a class="" id="pills-alf-tab" data-toggle="pill" href="#pills-alf" role="tab" aria-controls="pills-alf" aria-selected="false">по алфавиту</a>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-cat" role="tabpanel" aria-labelledby="pills-cat-tab">
+                                    <ul class="column cat my-4">
+                                        <li>
+                                            <a href="#">Кондитерские изделия</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Бакалея</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Чай, кофе, какао</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вода, напитки, соки</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Товары для животных</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Молочные продукты, сыры, яйцо</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Мясо, птица, рыба, гастрономия</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Замороженные продукты</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Детское питание и товары для детей</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Овощи, фрукты, зелень</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="pills-alf" role="tabpanel" aria-labelledby="pills-alf-tab">
+                                    <div class="liters-en my-4">
+                                        <a href="#">A</a>
+                                        <span>B</span>
+                                        <a href="#">C</a>
+                                        <a href="#">D</a>
+                                        <span>E</span>
+                                        <a href="#">F</a>
+                                        <span>G</span>
+                                        <span>H</span>
+                                        <span>I</span>
+                                        <span>J</span>
+                                        <span>K</span>
+                                        <span>L</span>
+                                        <span>M</span>
+                                        <span>N</span>
+                                        <span>O</span>
+                                        <span>P</span>
+                                        <span>Q</span>
+                                        <span>R</span>
+                                        <span>S</span>
+                                        <span>T</span>
+                                        <span>U</span>
+                                        <span>V</span>
+                                        <span>W</span>
+                                        <span>X</span>
+                                        <span>Y</span>
+                                        <span>Z</span>
+                                    </div>
+                                    <div class="liters-ru mb-4">
+                                        <a href="#">А</a>
+                                        <span>Б</span>
+                                        <a href="#">В</a>
+                                        <a href="#">Г</a>
+                                        <span>Д</span>
+                                        <a href="#">Е</a>
+                                        <span>Ж</span>
+                                        <span>З</span>
+                                        <span>И</span>
+                                        <span>Й</span>
+                                        <span>К</span>
+                                        <span>Л</span>
+                                        <span>М</span>
+                                        <span>Н</span>
+                                        <span>О</span>
+                                        <span>П</span>
+                                        <span>Р</span>
+                                        <span>С</span>
+                                        <span>Т</span>
+                                        <span>У</span>
+                                        <span>Ф</span>
+                                        <span>Х</span>
+                                        <span>Ц</span>
+                                        <span>Ч</span>
+                                        <span>Ш</span>
+                                        <span>Щ</span>
+                                        <span>Ы</span>
+                                        <span>Э</span>
+                                        <span>Ю</span>
+                                        <span>Я</span>                      
+                                    </div>
+                                </div>
+                            </div>              
+            
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <ul class="column">
+                                <li>
+                                    <a href="#">ООО "Белёвские Сладости"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Компания "Конти"</a>
+                                </li>
+                                <li>
+                                    <a href="#">ООО "Дело вкуса"</a>
+                                </li>
+                                <li>
+                                    <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кондитерская фабрика "Акконд"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кондитерская фабрика "Славянка"</a>
+                                </li>
+                                <li>
+                                    <a href="#">Азовская кондитерская фабрика</a>
+                                </li>
+                                <li>
+                                    <a href="#">ООО Лакомства для здоровья</a>
+                                </li>
+                                <li>
+                                    <a href="#">Объединенные кондитеры - РотФронт</a>
+                                </li>
+                                <li>
+                                    <a href="#">Раменский кондитерский комбинат</a>
+                                </li>
+                            </ul> 
+            
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>                
+            
+                        </div>
+                    </div>
                 </div>
             </div>
             <script src="js/main.min.js"></script>
