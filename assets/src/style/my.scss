@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+h1 {
+    @include font-size(4rem); //rfs
+}
+
 /* https://github.com/Mango/slideout */  
 .slideout-menu {
     position: fixed;
@@ -12,6 +16,7 @@ body {
     min-height: 100vh;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    // background-color: $ok-light-gray;
     z-index: 0;
     display: none;
 }
@@ -44,3 +49,24 @@ body {
 .slideout-open .slideout-menu {
     display: block;
 }
+.slideout-panel {
+    &:before {
+        content: '';
+        display: block;
+        background-color: rgba(0,0,0,0);
+        transition: background-color 0.5s ease-in-out;
+    }
+}
+.panel-open {
+    &:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,.7);
+        z-index: 99;
+    }
+}
+
+
+

@@ -23,21 +23,19 @@
 
     <div id="panel">
 
-        <button class="toggle-button"><i class="fas fa-bars"></i></button>
-
         <header id="header">
             <div class="top-menu-line">
                 <div class="container">
                     <div class="row align-items-center">
+                        <div class="col-2 d-lg-none">
+                            <button class="toggle-button"><i class="fas fa-bars"></i></button>
+                        </div>            
                         <div class="col-4 col-lg-1">
                             <div class="region-change">
-                                <span>
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <a data-toggle="modal" data-target="#modal-region" href="#">Москва</a>
-                                </span>
+                                <a class="text-nowrap" data-toggle="modal" data-target="#modal-region" href="#"><i class="fas fa-map-marker-alt"></i> Москва</a>
                             </div>
                         </div>
-                        <div class="col-9 col-lg-9 d-none d-lg-block">
+                        <div class="col-lg-9 d-none d-lg-block">
                             <ul class="nav justify-content-center" id="top-menu">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">О компании</a>
@@ -60,14 +58,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-5 col-lg-2 text-right">
+                        <div class="col-6 col-lg-2 text-right">
                             <a class="phone-top" href="tel:84952151036">8 (495) 215-10-36</a>
                         </div>
-                        <div class="col-3 d-lg-none text-right">
-                            <a href="#offCanvas" id="triggerButton" class="btn btn-primary my-2">
-                                <i class="fas fa-bars"></i>
-                            </a>
-                        </div>
+            
                     </div>
                 </div>
             </div>
@@ -77,47 +71,52 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-3">
-                        <div class="card product-card">
-                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
-                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
-                            <div class="action-label">акция</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
-                                <div class="card-text">
-                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
-                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">
-                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
-                                </div>
-                                <a href="#" class="btn btn-buy">В корзину</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="card product-card">
-                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
-                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
-                            <div class="action-label">акция</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
-                                <div class="card-text">
-                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
-                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">
-                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
-                                </div>
-                                <a href="#" class="btn btn-buy">В корзину</a>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <h1>test</h1>
                     </div>
                 </div>
+                <!-- <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="card product-card">
+                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
+                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
+                            <div class="action-label">акция</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                <div class="card-text">
+                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
+                                </div>
+                                <a href="#" class="btn btn-buy">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card product-card">
+                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
+                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
+                            <div class="action-label">акция</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                <div class="card-text">
+                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
+                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
+                                </div>
+                                <a href="#" class="btn btn-buy">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
 
         </main>
