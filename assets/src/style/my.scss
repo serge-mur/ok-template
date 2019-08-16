@@ -33,7 +33,7 @@ h1 {
 .slideout-panel {
     position: relative;
     z-index: 1;
-    will-change: transform;
+    // will-change: transform;
     background-color: #FFF; /* A background-color is required */
     min-height: 100vh;
 }
@@ -64,9 +64,28 @@ h1 {
         bottom: 0;
         width: 100%;
         background-color: rgba(0,0,0,.7);
-        z-index: 99;
+        z-index: 1050;
+    }
+}
+/*sticky header position*/
+.sticky {
+    &.is-sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        background-color: #fff;
     }
 }
 
+.main-menu-line {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    -webkit-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+}
 
 
