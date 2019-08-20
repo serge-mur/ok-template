@@ -8,11 +8,17 @@ $ok-light-blue: #f3f9ff;
 
 $ok-gray: #666666;
 $ok-light-gray: #cfcfcf;
+$ok-light-gray2: #e8e8e8;
+$ok-light-gray3: #adadad;
+$ok-light-gray4: #f6f6f6;
+
+$primary: $ok-green;
+$secondary: $ok-blue;
 
 // fonts 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: 'PT Sans', sans-serif;
 $body-color: $ok-gray;
 // options
 $enable-responsive-font-sizes: true;

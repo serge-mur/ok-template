@@ -34,7 +34,7 @@ h1 {
     position: relative;
     z-index: 1;
     // will-change: transform;
-    background-color: #FFF; /* A background-color is required */
+    background-color: #fff; /* A background-color is required */
     min-height: 100vh;
 }
   
@@ -80,12 +80,74 @@ h1 {
     }
 }
 
+// header
 .main-menu-line {
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     -webkit-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+}
+
+// buttons
+.btn-ok-blue {
+    color: $ok-blue;
+    background-color: $ok-light-blue;
+    text-transform: uppercase;
+    @include button-size($btn-padding-y, $btn-padding-x, 1.125rem, $btn-line-height, 1.25rem);
+    @include hover {
+        color: #fff;
+        background-color: $ok-blue;
+        text-decoration: none;
+    } 
+    &:focus,
+    &.focus {
+        color: #fff;
+        background-color: $ok-blue;
+        text-decoration: none;
+        box-shadow: none;
+    }
+    span {
+        text-transform: lowercase;
+        font-size: 0.875rem;
+    }
+}
+
+.btn-ok-green {
+    color: $ok-gray;
+    background-color: $ok-light-gray2;
+    text-transform: uppercase;
+    @include button-size($btn-padding-y, $btn-padding-x, 1.125rem, $btn-line-height, 1.25rem);
+    @include hover {
+        color: #fff;
+        background-color: $ok-green;
+        text-decoration: none;
+    } 
+    &:focus,
+    &.focus {
+        color: #fff;
+        background-color: $ok-green;
+        text-decoration: none;
+        box-shadow: none;
+    }
+}
+
+.btn-ok-gray {
+    color: $ok-light-gray3;
+    background-color: $ok-light-gray4;
+    @include button-size(0, $btn-padding-x, 0.875rem, $btn-line-height, 1.25rem);
+    @include hover {
+        color: #fff;
+        background-color: $ok-green;
+        text-decoration: none;
+    } 
+    &:focus,
+    &.focus {
+        color: #fff;
+        background-color: $ok-green;
+        text-decoration: none;
+        box-shadow: none;
+    }
 }
 
 
