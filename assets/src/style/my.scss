@@ -166,6 +166,15 @@ h1 {
     }
 }
 
+// action-premium
+#catalog-nav .nav-link[data-toggle].collapsed:after {
+    content: "▾";
+}
+#catalog-nav .nav-link[data-toggle]:not(.collapsed):after {
+    content: "▴";
+}
+
+
 .subscribe-block {
     background-color: $ok-light-blue;
 }

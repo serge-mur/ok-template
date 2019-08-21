@@ -170,80 +170,235 @@
                     <div class="col-12">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Акции</li>
                             </ol>
                         </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
 
-                        <h1 class="title">Заголовок страницы</h1>
-                        <h1 class="sub-title">Секция страницы</h1>
+                        <ul class="nav flex-column flex-nowrap" id="catalog-nav">
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Кондитерские изделия</a>
+                                <div class="collapse" id="submenu1" aria-expanded="false">
+                                    <ul class="flex-column pl-2 nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
+                                            <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                                <ul class="flex-column nav pl-4">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 3</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0" href="#">Хлебные чипсы</a>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>                            
+                            <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
+                        </ul>
 
-                        <button class="btn btn-ok-blue">Кнопка <span>(12 шт.)</span></button>
-                        <button class="btn btn-ok-blue btn-sm">Кнопка <span>(12 шт.)</span></button>
-                        <button class="btn btn-ok-green btn-lg">Кнопка</button>
-                        <button class="btn btn-ok-gray btn-sm">Кнопка</button>
-                        
-                        <div class="subscribe-block">
-                            <form class="row p-4">
-                                <div class="col-12 col-lg-6 mb-2 mb-lg-0">
-                                    <span class="text-block">Получите скидку на первый заказ! Мы пришлем ее вам на почту</span>
+                    </div>
+                    <div class="col-9">
+
+                        <nav class="nav nav-links">
+                            <a class="nav-link active" href="#">Акции</a>
+                            <a class="nav-link" href="#">Товары</a>
+                        </nav>
+
+                        <div class="text-center info-prem-block">
+                            <h3>Мы собрали самые выгодные акции</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div>20-70%<br><span>скидка</span></div>
+                                <div>30<br><span>поставщиков</span></div>
+                                <button class="btn btn-ok-blue btn-lg">Купить premium</button>
+                                <div>86<br><span>акций</span></div>
+                                <div>353<br><span>товара по акции</span></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between sorting-block">
+                            <div class="left-block">
+                                Производители
+                                Бренды
+                                Поставщики
+                            </div>
+                            <div class="right-block">
+                                По сроку окончания
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="card product-card">
+                                    <div class="card-header">
+                                        <span>До окончания акции: 7 дней</span>
+                                    </div>
+                                
+                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                
+                                    <div class="card-label">-25% от оптовой цены</div>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="d-flex justify-content-between old-price">
+                                                32,60 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            </div>
+                                            <div class="new-price">
+                                                32,30 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-ok-blue">Подробнее</button>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-lg-3 mb-2 mb-lg-0">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card product-card">
+                                    <div class="card-header">
+                                        <span>До окончания акции: 7 дней</span>
+                                    </div>
+                                
+                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                
+                                    <div class="card-label">-25% от оптовой цены</div>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="d-flex justify-content-between old-price">
+                                                32,60 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            </div>
+                                            <div class="new-price">
+                                                32,30 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-ok-blue">Подробнее</button>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-lg-3">
-                                    <button class="btn btn-ok-blue btn-lg w-100">Получить</button>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card product-card">
+                                    <div class="card-header">
+                                        <span>До окончания акции: 7 дней</span>
+                                    </div>
+                                
+                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                
+                                    <div class="card-label">-25% от оптовой цены</div>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="d-flex justify-content-between old-price">
+                                                32,60 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            </div>
+                                            <div class="new-price">
+                                                32,30 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-ok-blue">Подробнее</button>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="card product-card">
+                                    <div class="card-label"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Чай, кофе, какао</h5>
+                                        <div class="card-text">5 акций, 18 товаров</div>
+                                    </div>
+                                    <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    <div class="card-footer">
+                                        <span>-25% от оптовой цены</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card product-card">
+                                    <div class="card-label"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Чай, кофе, какао</h5>
+                                        <div class="card-text">5 акций, 18 товаров</div>
+                                    </div>
+                                    <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    <div class="card-footer">
+                                        <span>-25% от оптовой цены</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="card product-card">
+                                    <div class="card-label"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Чай, кофе, какао</h5>
+                                        <div class="card-text">5 акций, 18 товаров</div>
+                                    </div>
+                                    <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    <div class="card-footer">
+                                        <span>-25% от оптовой цены</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="text-center info-prem-block">
+                            <h3>Оформите доступ к акциям и экономьте</h3>
+                            <button class="btn btn-ok-blue btn-lg">Купить premium</button>
                         </div>
 
                     </div>
                 </div>
-                
 
-                <!-- <div class="row">
-                    <div class="col-12 col-lg-3">
-                        <div class="card product-card">
-                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
-                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
-                            <div class="action-label">акция</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
-                                <div class="card-text">
-                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
-                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">
-                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
-                                </div>
-                                <button class="btn btn-ok-blue">Подробнее</button>
-                            </div>
+                <div class="subscribe-block">
+                    <form class="row p-4">
+                        <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                            <span class="text-block">Получите скидку на первый заказ! Мы пришлем ее вам на почту</span>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="card product-card">
-                            <a href="#"><img src="img/13376_middle.jpg" class="card-img-top" alt="Икра 'ЕКО' из кабачков, 12 шт по 0,48 кг"></a>
-                            <div class="label">8,14 <i class="fas fa-ruble-sign"></i> / 1 шт.</div>
-                            <div class="action-label">акция</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
-                                <div class="card-text">
-                                    <div>Производитель: <a href="#">Группа компаний "Лакония"</a></div>
-                                    <div>Упаковка: 12 шт. x0,48 кг ( 5,76 кг )</div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">
-                                    480,00 <i class="fas fa-ruble-sign"></i><span> / 12 шт.</span>
-                                </div>
-                                <button class="btn btn-ok-blue">Подробнее</button>
-                            </div>
+                        <div class="col-12 col-lg-3 mb-2 mb-lg-0">
+                            <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
                         </div>
-                    </div>
-                </div> -->
+                        <div class="col-12 col-lg-3">
+                            <button class="btn btn-ok-blue btn-lg w-100">Получить</button>
+                        </div>
+                    </form>
+                </div>                
+                
             </div>
 
         </main>

@@ -3667,7 +3667,7 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #505050;
+    color: #adadad;
     content: "•"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -3677,7 +3677,7 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .breadcrumb-item.active {
-  color: #505050; }
+  color: #adadad; }
 
 .pagination {
   display: -ms-flexbox;
@@ -7711,6 +7711,12 @@ body {
     background-color: #90de23;
     text-decoration: none;
     box-shadow: none; }
+
+#catalog-nav .nav-link[data-toggle].collapsed:after {
+  content: "▾"; }
+
+#catalog-nav .nav-link[data-toggle]:not(.collapsed):after {
+  content: "▴"; }
 
 .subscribe-block {
   background-color: #f3f9ff; }

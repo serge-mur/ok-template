@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Стартовая страница</title>
+    //= template/head.html
+</head>
+
+<body>
+
+    <nav id="menu">
+        <h2>Menu</h2>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </nav>
+    </nav>
+
+    <div id="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Акции</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+
+                        <ul class="nav flex-column flex-nowrap" id="catalog-nav">
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Кондитерские изделия</a>
+                                <div class="collapse" id="submenu1" aria-expanded="false">
+                                    <ul class="flex-column pl-2 nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
+                                            <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                                <ul class="flex-column nav pl-4">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 3</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link p-1" href="#">Подсухарики 4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-0" href="#">Хлебные чипсы</a>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>                            
+                            <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-9">
+
+                        <nav class="nav nav-links">
+                            <a class="nav-link active" href="#">Акции</a>
+                            <a class="nav-link" href="#">Товары</a>
+                        </nav>
+
+                        <div class="text-center info-prem-block">
+                            <h3>Мы собрали самые выгодные акции</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div>20-70%<br><span>скидка</span></div>
+                                <div>30<br><span>поставщиков</span></div>
+                                <button class="btn btn-ok-blue btn-lg">Купить premium</button>
+                                <div>86<br><span>акций</span></div>
+                                <div>353<br><span>товара по акции</span></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between sorting-block">
+                            <div class="left-block">
+                                Производители
+                                Бренды
+                                Поставщики
+                            </div>
+                            <div class="right-block">
+                                По сроку окончания
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                //= template/action-card.html
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                //= template/action-card.html
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                //= template/action-card.html
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                //= template/category-card.html
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                //= template/category-card.html
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                //= template/category-card.html
+                            </div>
+                        </div>
+
+
+                        <div class="text-center info-prem-block">
+                            <h3>Оформите доступ к акциям и экономьте</h3>
+                            <button class="btn btn-ok-blue btn-lg">Купить premium</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="subscribe-block">
+                    <form class="row p-4">
+                        <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                            <span class="text-block">Получите скидку на первый заказ! Мы пришлем ее вам на почту</span>
+                        </div>
+                        <div class="col-12 col-lg-3 mb-2 mb-lg-0">
+                            <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <button class="btn btn-ok-blue btn-lg w-100">Получить</button>
+                        </div>
+                    </form>
+                </div>                
+                
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+</body>
+
+</html>
