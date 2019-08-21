@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    @include font-size(4rem); //rfs
+    // @include font-size(4rem); //rfs
 }
 
 /* https://github.com/Mango/slideout */  
@@ -89,12 +89,28 @@ h1 {
     box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
 }
 
+.breadcrumb {
+    .breadcrumb-item {
+        font-size: 0.6875rem;
+    }
+}
+
+// content
+.title {
+    @include font-size(1.5rem);
+    color: $ok-dark-gray;
+}
+.sub-title {
+    @include font-size(1.25rem);
+    color: $ok-dark-gray;
+}
+
 // buttons
 .btn-ok-blue {
     color: $ok-blue;
     background-color: $ok-light-blue;
     text-transform: uppercase;
-    @include button-size($btn-padding-y, $btn-padding-x, 1.125rem, $btn-line-height, 1.25rem);
+    border-radius: 1.25rem;
     @include hover {
         color: #fff;
         background-color: $ok-blue;
@@ -114,10 +130,10 @@ h1 {
 }
 
 .btn-ok-green {
-    color: $ok-gray;
-    background-color: $ok-light-gray2;
+    color: $ok-dark-gray;
+    background-color: $ok-light-gray;
     text-transform: uppercase;
-    @include button-size($btn-padding-y, $btn-padding-x, 1.125rem, $btn-line-height, 1.25rem);
+    border-radius: 1.25rem;
     @include hover {
         color: #fff;
         background-color: $ok-green;
@@ -133,9 +149,9 @@ h1 {
 }
 
 .btn-ok-gray {
-    color: $ok-light-gray3;
-    background-color: $ok-light-gray4;
-    @include button-size(0, $btn-padding-x, 0.875rem, $btn-line-height, 1.25rem);
+    color: $ok-gray;
+    background-color: $ok-light-gray;
+    border-radius: 1.25rem;
     @include hover {
         color: #fff;
         background-color: $ok-green;
@@ -150,4 +166,6 @@ h1 {
     }
 }
 
-
+.subscribe-block {
+    background-color: $ok-light-blue;
+}

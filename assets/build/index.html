@@ -168,15 +168,40 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1>test</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                            </ol>
+                        </nav>
+
+                        <h1 class="title">Заголовок страницы</h1>
+                        <h1 class="sub-title">Секция страницы</h1>
 
                         <button class="btn btn-ok-blue">Кнопка <span>(12 шт.)</span></button>
-                        <button class="btn btn-ok-green">Кнопка</button>
-                        <button class="btn btn-ok-gray">Кнопка</button>
-
+                        <button class="btn btn-ok-blue btn-sm">Кнопка <span>(12 шт.)</span></button>
+                        <button class="btn btn-ok-green btn-lg">Кнопка</button>
+                        <button class="btn btn-ok-gray btn-sm">Кнопка</button>
+                        
+                        <div class="subscribe-block">
+                            <form class="row p-4">
+                                <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                                    <span class="text-block">Получите скидку на первый заказ! Мы пришлем ее вам на почту</span>
+                                </div>
+                                <div class="col-12 col-lg-3 mb-2 mb-lg-0">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <button class="btn btn-ok-blue btn-lg w-100">Получить</button>
+                                </div>
+                            </form>
+                        </div>
 
                     </div>
                 </div>
+                
+
                 <!-- <div class="row">
                     <div class="col-12 col-lg-3">
                         <div class="card product-card">

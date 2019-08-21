@@ -6,11 +6,9 @@ $ok-light-green: #f1fae8;
 $ok-blue: #0074ff;
 $ok-light-blue: #f3f9ff;
 
-$ok-gray: #666666;
-$ok-light-gray: #cfcfcf;
-$ok-light-gray2: #e8e8e8;
-$ok-light-gray3: #adadad;
-$ok-light-gray4: #f6f6f6;
+$ok-light-gray: #f6f6f6; // background blocks
+$ok-gray: #adadad; // light color text
+$ok-dark-gray: #505050; // text
 
 $primary: $ok-green;
 $secondary: $ok-blue;
@@ -19,9 +17,24 @@ $secondary: $ok-blue;
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
 $font-family-base: 'PT Sans', sans-serif;
-$body-color: $ok-gray;
+$body-color: $ok-dark-gray;
+
 // options
 $enable-responsive-font-sizes: true;
 
 // links
-$link-color: $ok-blue;
+$link-color: $ok-blue;      
+
+// Breadcrumbs
+$breadcrumb-padding-x: 0;
+$breadcrumb-bg: #fff;
+$breadcrumb-divider-color: $ok-dark-gray;
+$breadcrumb-active-color: $ok-dark-gray;
+$breadcrumb-divider: "\2022";
+
+// border
+$border-color: $ok-light-gray;
+$border-radius-lg: 1.25rem;
+
+// form
+// $input-border-color: $ok-light-gray;
