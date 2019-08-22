@@ -8,15 +8,7 @@
 
 <body>
 
-    <nav id="menu">
-        <h2>Menu</h2>
-        <nav class="nav flex-column">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </nav>
-    </nav>
+    //= template/offcanvas-menu.html
 
     <div id="panel">
 
@@ -29,48 +21,62 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Data</li>
-                            </ol>
-                        </nav>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Название</th>
+                                    <th scope="col">Ссылка</th>
+                                    <th scope="col">Статус</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Шапка</td>
+                                    <td>-</td>
+                                    <td>будут правки</td>
+                                </tr>
+                                <tr>
+                                    <td>Подвал</td>
+                                    <td>-</td>
+                                    <td>будут правки</td>
+                                </tr>                                
+                                <tr>
+                                    <td>Страница акций</td>
+                                    <td><a href="action-premium.html">action-premium.html</a></td>
+                                    <td>в процессе</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h1>Гайдлайн</h1>
+                        <hr>
 
                         <h1 class="title">Заголовок страницы</h1>
                         <h1 class="sub-title">Секция страницы</h1>
 
-                        <button class="btn btn-ok-blue">Кнопка <span>(12 шт.)</span></button>
-                        <button class="btn btn-ok-blue btn-sm">Кнопка <span>(12 шт.)</span></button>
+                        <button class="btn btn-ok-blue">Кнопка
+                            <span>(12 шт.)</span>
+                        </button>
+                        <button class="btn btn-ok-blue btn-sm">Кнопка
+                            <span>(12 шт.)</span>
+                        </button>
                         <button class="btn btn-ok-green btn-lg">Кнопка</button>
                         <button class="btn btn-ok-gray btn-sm">Кнопка</button>
-                        
-                        <div class="subscribe-block">
-                            <form class="row p-4">
-                                <div class="col-12 col-lg-6 mb-2 mb-lg-0">
-                                    <span class="text-block">Получите скидку на первый заказ! Мы пришлем ее вам на почту</span>
-                                </div>
-                                <div class="col-12 col-lg-3 mb-2 mb-lg-0">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
-                                </div>
-                                <div class="col-12 col-lg-3">
-                                    <button class="btn btn-ok-blue btn-lg w-100">Получить</button>
-                                </div>
-                            </form>
-                        </div>
 
                     </div>
                 </div>
-                
 
-                <!-- <div class="row">
-                    <div class="col-12 col-lg-3">
-                        //= template/card.html
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        //= template/card.html
-                    </div>
-                </div> -->
             </div>
 
         </main>
@@ -82,6 +88,11 @@
     </div>
     <!-- end #panel -->
 
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
+    //= template/include-scripts.html
 </body>
 
 </html>
