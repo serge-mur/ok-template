@@ -7651,6 +7651,93 @@ body {
   border-bottom: 1px solid #ebebeb;
   box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75); }
 
+#top-menu .nav-link {
+  padding: .5rem .5rem;
+  font-size: 0.875rem;
+  color: #adadad; }
+
+.phone-top {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.875rem;
+  padding: .5rem 0;
+  white-space: nowrap;
+  text-align: right; }
+  .phone-top:hover {
+    color: #000;
+    text-decoration: none; }
+
+#search, #search-mobile {
+  border-right: 1px solid transparent; }
+
+.btn-search {
+  border-radius: 10px;
+  border: 1px solid #90de23;
+  background-color: #90de23;
+  border-left: 1px solid transparent;
+  color: #fff; }
+  .btn-search:hover {
+    color: #fff; }
+
+.btn-cart {
+  border-radius: 30px;
+  background-color: #f1fae8;
+  color: #90de23;
+  font-size: 1rem; }
+  .btn-cart:hover {
+    background-color: #90de23;
+    color: #fff; }
+
+.btn-user {
+  background-color: #f3f9ff;
+  color: #0074ff;
+  border-radius: 50%; }
+  .btn-user:hover {
+    background-color: #0074ff;
+    color: #fff; }
+
+.btn-catalog {
+  background-color: #f3f9ff;
+  font-weight: bold;
+  color: #0074ff;
+  border-radius: 40px; }
+  .btn-catalog:hover, .btn-catalog:focus {
+    background-color: #0074ff;
+    color: #fff; }
+
+.dropdown-menu .dropdown-item {
+  color: #505050; }
+
+#main-menu .nav-link {
+  font-size: 1rem;
+  color: #505050; }
+  #main-menu .nav-link:hover {
+    color: #000; }
+  #main-menu .nav-link .percent {
+    background-color: #ffe500;
+    border-radius: 50%;
+    padding: .25em .4em; }
+
+#footer {
+  background-color: #f6f6f6; }
+  #footer .nav {
+    font-size: 1rem; }
+    #footer .nav .nav-link {
+      font-size: 1rem;
+      color: #505050; }
+    #footer .nav.bottom-nav .nav-link {
+      font-size: 0.875rem;
+      color: #adadad; }
+  #footer .border-top {
+    border-top: 1px solid #adadad !important; }
+  #footer .social-block a {
+    color: #adadad;
+    font-size: 2rem; }
+    #footer .social-block a:hover {
+      text-decoration: none;
+      color: #505050; }
+
 .breadcrumb .breadcrumb-item {
   font-size: 0.6875rem; }
 

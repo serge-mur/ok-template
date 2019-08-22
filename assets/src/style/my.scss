@@ -88,6 +88,118 @@ h1 {
     -moz-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
 }
+#top-menu {
+    .nav-link {
+        padding: .5rem .5rem;
+        font-size: 0.875rem;
+        color: $ok-gray;
+    }
+}
+.phone-top {
+    display: block;    
+    color: #000;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding: .5rem 0;
+    white-space: nowrap;    
+    text-align: right;  
+    &:hover {
+        color: #000;
+        text-decoration: none;        
+    }
+}
+//top search
+#search, #search-mobile {
+    border-right: 1px solid transparent;       
+}
+.btn-search {
+    border-radius: 10px;
+    border: 1px solid $ok-green;
+    background-color: $ok-green;
+    border-left: 1px solid transparent;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}
+// header icons
+.btn-cart {
+    border-radius: 30px;
+    background-color: $ok-light-green;
+    color: $ok-green;
+    font-size: 1rem;
+    &:hover {
+        background-color: $ok-green;
+        color: #fff;
+    }
+}
+.btn-user {
+    background-color: $ok-light-blue;
+    color: $ok-blue; 
+    border-radius: 50%;
+    &:hover {
+        background-color: $ok-blue;
+        color: #fff;        
+    }
+}
+// catalog menu
+.btn-catalog {
+    background-color: $ok-light-blue;
+    font-weight: bold;
+    color: $ok-blue;
+    border-radius: 40px;
+    &:hover, &:focus {
+        background-color: $ok-blue;
+        color: #fff; 
+    }
+}
+.dropdown-menu {
+    .dropdown-item {
+        color: $ok-dark-gray;
+    }
+}
+#main-menu {
+    .nav-link {
+        font-size: 1rem;
+        color: $ok-dark-gray;
+        &:hover {
+            color: #000;
+        }
+        .percent {
+            background-color: $ok-yellow;
+            border-radius: 50%;
+            padding: .25em .4em;
+        }
+    }    
+}
+// footer
+#footer {
+    background-color: $ok-light-gray;
+    .nav {
+        font-size: 1rem;
+        .nav-link {
+            font-size: 1rem;
+            color: $ok-dark-gray;
+        }
+        &.bottom-nav {
+            .nav-link {
+                font-size: 0.875rem;
+                color: $ok-gray;
+            }
+        }      
+    }
+    .border-top {
+        border-top: 1px solid $ok-gray!important;  
+    }  
+    .social-block a {
+        color: $ok-gray;
+        font-size: 2rem;
+        &:hover {
+            text-decoration: none;
+            color: $ok-dark-gray;
+        }
+    }
+}
 
 .breadcrumb {
     .breadcrumb-item {
