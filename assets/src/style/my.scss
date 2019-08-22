@@ -4,7 +4,10 @@ body {
 }
 
 h1 {
-    // @include font-size(4rem); //rfs
+    @include font-size(4rem); //rfs
+}
+.clr-gray {
+    color: $ok-gray;
 }
 
 /* https://github.com/Mango/slideout */  
@@ -16,7 +19,6 @@ h1 {
     min-height: 100vh;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    // background-color: $ok-light-gray;
     z-index: 0;
     display: none;
 }
@@ -81,12 +83,8 @@ h1 {
 }
 
 // header
-.main-menu-line {
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-    -webkit-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+.top-menu-line {
+    background-color: $ok-light-gray;
 }
 #top-menu {
     .nav-link {
@@ -141,6 +139,13 @@ h1 {
         background-color: $ok-blue;
         color: #fff;        
     }
+}
+.main-menu-line {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    -webkit-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
 }
 // catalog menu
 .btn-catalog {
@@ -218,65 +223,64 @@ h1 {
 }
 
 // buttons
-.btn-ok-blue {
-    color: $ok-blue;
-    background-color: $ok-light-blue;
-    text-transform: uppercase;
-    border-radius: 1.25rem;
+.btn-primary {
+    color: #fff!important;
+    text-transform: uppercase;    
+    @include button-variant($ok-blue, $ok-blue, $ok-light-blue, $ok-blue, $ok-light-blue, $ok-light-blue);
     @include hover {
-        color: #fff;
-        background-color: $ok-blue;
-        text-decoration: none;
-    } 
-    &:focus,
-    &.focus {
-        color: #fff;
-        background-color: $ok-blue;
-        text-decoration: none;
-        box-shadow: none;
+        color: $ok-blue!important;
     }
     span {
         text-transform: lowercase;
         font-size: 0.875rem;
     }
 }
-
-.btn-ok-green {
-    color: $ok-dark-gray;
-    background-color: $ok-light-gray;
+.btn-primary-inverse {
+    color: $ok-blue!important;
+    text-transform: uppercase;    
+    @include button-variant($ok-light-blue, $ok-light-blue, $ok-blue, $ok-light-blue, $ok-blue, $ok-blue);
+    @include hover {
+        color: #fff!important;
+    }
+    span {
+        text-transform: lowercase;
+        font-size: 0.875rem;
+    }
+}
+.btn-secondary {
+    color: #fff!important;
     text-transform: uppercase;
-    border-radius: 1.25rem;
+    @include button-variant($ok-green, $ok-green, $ok-light-green, $ok-green, $ok-light-green, $ok-light-green);
     @include hover {
-        color: #fff;
-        background-color: $ok-green;
-        text-decoration: none;
-    } 
-    &:focus,
-    &.focus {
-        color: #fff;
-        background-color: $ok-green;
-        text-decoration: none;
-        box-shadow: none;
+        color: $ok-green!important;
+    }
+}
+.btn-secondary-inverse {
+    color: $ok-green!important;
+    text-transform: uppercase;
+    @include button-variant($ok-light-green, $ok-light-green, $ok-green, $ok-light-green, $ok-green, $ok-green);
+    @include hover {
+        color: #fff!important;
     }
 }
 
-.btn-ok-gray {
-    color: $ok-gray;
-    background-color: $ok-light-gray;
-    border-radius: 1.25rem;
-    @include hover {
-        color: #fff;
-        background-color: $ok-green;
-        text-decoration: none;
-    } 
-    &:focus,
-    &.focus {
-        color: #fff;
-        background-color: $ok-green;
-        text-decoration: none;
-        box-shadow: none;
-    }
-}
+// .btn-ok-gray {
+//     color: $ok-gray;
+//     background-color: $ok-light-gray;
+//     border-radius: 1.25rem;
+//     @include hover {
+//         color: #fff;
+//         background-color: $ok-green;
+//         text-decoration: none;
+//     } 
+//     &:focus,
+//     &.focus {
+//         color: #fff;
+//         background-color: $ok-green;
+//         text-decoration: none;
+//         box-shadow: none;
+//     }
+// }
 
 // action-premium
 #catalog-nav .nav-link[data-toggle].collapsed:after {

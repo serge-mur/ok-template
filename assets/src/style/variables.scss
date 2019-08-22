@@ -11,8 +11,9 @@ $ok-light-gray: #f6f6f6; // background blocks
 $ok-gray: #adadad; // light color text
 $ok-dark-gray: #505050; // text
 
-$primary: $ok-green;
-$secondary: $ok-blue;
+$primary: $ok-blue;
+$secondary: $ok-green;
+
 
 // fonts 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
@@ -25,6 +26,11 @@ $enable-responsive-font-sizes: true;
 
 // links
 $link-color: $ok-blue;      
+
+// buttons
+$btn-border-radius: 1.25rem;
+$border-radius-lg: 1.25rem;
+$border-radius-sm: 1.25rem;
 
 // Breadcrumbs
 $breadcrumb-padding-x: 0;
