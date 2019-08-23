@@ -181,28 +181,28 @@
                             <li class="nav-item">
                                 <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Кондитерские изделия</a>
                                 <div class="collapse" id="submenu1" aria-expanded="false">
-                                    <ul class="flex-column pl-2 nav">
+                                    <ul class="flex-column pl-4 nav">
                                         <li class="nav-item">
-                                            <a class="nav-link collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
+                                            <a class="nav-link collapsed" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
                                             <div class="collapse" id="submenu1sub1" aria-expanded="false">
                                                 <ul class="flex-column nav pl-4">
                                                     <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">Подсухарики 1</a>
+                                                        <a class="nav-link" href="#">Подсухарики 1</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">Подсухарики 2</a>
+                                                        <a class="nav-link" href="#">Подсухарики 2</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">Подсухарики 3</a>
+                                                        <a class="nav-link" href="#">Подсухарики 3</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">Подсухарики 4</a>
+                                                        <a class="nav-link" href="#">Подсухарики 4</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link py-0" href="#">Хлебные чипсы</a>
+                                            <a class="nav-link" href="#">Хлебные чипсы</a>
                                         </li>                                        
                                     </ul>
                                 </div>
@@ -210,48 +210,100 @@
                             <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>                            
                             <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
+
+                            <li class="nav-item mt-3">
+                                <a class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">Производители</a>
+                                <div class="collapse show" id="submenu2" aria-expanded="false">
+                                    <div class="filter manufacturer-filter">
+                                        <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1">Производитель 1</label>
+                                            </div>                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check2">
+                                                <label class="form-check-label" for="Check2">Производитель 2</label>
+                                            </div>                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check3">
+                                                <label class="form-check-label" for="Check3">Производитель 3</label>
+                                            </div>                                            
+                                        </div>
+                                        <button class="btn btn-sm btn-more">показать все</button>
+                                    </div>
+                                </div>
+                            </li>                            
+
+                            <li class="nav-item mt-3">
+                                <a class="nav-link collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3">Поставщики</a>
+                                <div class="collapse show" id="submenu3" aria-expanded="false">
+                                    <div class="filter provider-filter">
+                                        <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check11">
+                                                <label class="form-check-label" for="Check11">Поставщик 1</label>
+                                            </div>                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check22">
+                                                <label class="form-check-label" for="Check22">Поставщик 2</label>
+                                            </div>                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check33">
+                                                <label class="form-check-label" for="Check33">Поставщик 3</label>
+                                            </div>                                            
+                                        </div>
+                                        <button class="btn btn-sm btn-more">показать все</button>
+                                    </div>
+                                </div>
+                            </li>                            
+
                         </ul>
 
                     </div>
                     <div class="col-9">
 
                         <nav class="nav nav-links">
-                            <a class="nav-link active" href="#">Акции</a>
+                            <a class="nav-link active" href="#">Акции <span>(54)</span></a>
                             <a class="nav-link" href="#">Товары</a>
                         </nav>
 
-                        <div class="text-center info-prem-block">
+                        <div class="text-center info-prem-block bg-light-blue py-3 my-5">
                             <h3>Мы собрали самые выгодные акции</h3>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <div>20-70%<br><span>скидка</span></div>
-                                <div>30<br><span>поставщиков</span></div>
+                            <div class="d-flex align-items-center justify-content-center in">
+                                <div><span>20-70%</span><span>скидка</span></div>
+                                <div><span>30</span><span>поставщиков</span></div>
                                 <button class="btn btn-primary">Купить premium</button>
-                                <div>86<br><span>акций</span></div>
-                                <div>353<br><span>товара по акции</span></div>
+                                <div><span>86</span><span>акций</span></div>
+                                <div><span>353</span><span>товара по акции</span></div>
                             </div>
                         </div>
 
-                        <div class="d-flex justify-content-between sorting-block">
+                        <div class="d-flex justify-content-between sorting-block mb-5">
                             <div class="left-block">
-                                Производители
-                                Бренды
-                                Поставщики
+                                <a href="#"><i class="fas fa-industry"></i> Производители</a>
+                                <a href="#"><i class="fas fa-tag"></i> Бренды</a>
+                                <a href="#"><i class="fas fa-store-alt"></i> Поставщики</a>
                             </div>
                             <div class="right-block">
-                                По сроку окончания
+                                <a href="#">По сроку окончания</a>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
                                 <div class="card product-card">
                                     <div class="card-header">
-                                        <span>До окончания акции: 7 дней</span>
+                                        До окончания акции: <span>7</span> дней
                                     </div>
                                 
-                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                    <div class="card-involved"><i class="fas fa-check"></i> Участвуют: <span>56</span></div>
                                 
-                                    <div class="card-label">-25% от оптовой цены</div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label"><span>-25%</span><span>от оптовой<br>цены</span></div>    
+                                    </a>
                                 
                                     <div class="card-body">
                                         <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
@@ -261,26 +313,32 @@
                                     </div>
                                     <div class="card-footer">
                                         <div class="card-price">
-                                            <div class="d-flex justify-content-between old-price">
-                                                32,60 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            <div class="old-price">
+                                                <span>32,60 <i class="fas fa-ruble-sign"></i></span><span>/1 шт.</span>
                                             </div>
                                             <div class="new-price">
-                                                32,30 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                                <span>32,30 <i class="fas fa-ruble-sign"></i></span><span>/1 шт.</span>
                                             </div>
+                                        </div>        
+                                        <button class="btn btn-primary w-100 my-2">Подробнее</button>
+                                        <div class="note">
+                                            * количество товаров ограничено
                                         </div>
-                                        <button class="btn btn-ok-blue">Подробнее</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
                                 <div class="card product-card">
                                     <div class="card-header">
-                                        <span>До окончания акции: 7 дней</span>
+                                        До окончания акции: <span>7</span> дней
                                     </div>
                                 
-                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                    <div class="card-involved"><i class="fas fa-check"></i> Участвуют: <span>56</span></div>
                                 
-                                    <div class="card-label">-25% от оптовой цены</div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label"><span>-25%</span><span>от оптовой<br>цены</span></div>    
+                                    </a>
                                 
                                     <div class="card-body">
                                         <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
@@ -290,26 +348,32 @@
                                     </div>
                                     <div class="card-footer">
                                         <div class="card-price">
-                                            <div class="d-flex justify-content-between old-price">
-                                                32,60 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            <div class="old-price">
+                                                <span>32,60 <i class="fas fa-ruble-sign"></i></span><span>/1 шт.</span>
                                             </div>
                                             <div class="new-price">
-                                                32,30 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                                <span>32,30 <i class="fas fa-ruble-sign"></i></span><span>/1 шт.</span>
                                             </div>
+                                        </div>        
+                                        <button class="btn btn-primary w-100 my-2">Подробнее</button>
+                                        <div class="note">
+                                            * количество товаров ограничено
                                         </div>
-                                        <button class="btn btn-ok-blue">Подробнее</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
                                 <div class="card product-card">
                                     <div class="card-header">
-                                        <span>До окончания акции: 7 дней</span>
+                                        До окончания акции: <span>7</span> дней
                                     </div>
                                 
-                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                    <div class="card-involved"><i class="fas fa-check"></i> Участвуют: <span>56</span></div>
                                 
-                                    <div class="card-label">-25% от оптовой цены</div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label"><span>-25%</span><span>от оптовой<br>цены</span></div>    
+                                    </a>
                                 
                                     <div class="card-body">
                                         <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
@@ -319,74 +383,78 @@
                                     </div>
                                     <div class="card-footer">
                                         <div class="card-price">
-                                            <div class="d-flex justify-content-between old-price">
-                                                32,60 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                            <div class="old-price">
+                                                <span>32,60 <i class="fas fa-ruble-sign"></i></span><span>/1 шт.</span>
                                             </div>
                                             <div class="new-price">
-                                                32,30 <i class="fas fa-ruble-sign"></i><span> / 1 шт.</span>                
+                                                <span>32,30 <i class="fas fa-ruble-sign"></i></span><span>/1 шт.</span>
                                             </div>
+                                        </div>        
+                                        <button class="btn btn-primary w-100 my-2">Подробнее</button>
+                                        <div class="note">
+                                            * количество товаров ограничено
                                         </div>
-                                        <button class="btn btn-ok-blue">Подробнее</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="card product-card">
-                                    <div class="card-label"></div>
+                            <div class="col-12 col-lg-4 mb-4">
+                                <a href="#" class="card category-card">
                                     <div class="card-body">
                                         <h5 class="card-title">Чай, кофе, какао</h5>
                                         <div class="card-text">5 акций, 18 товаров</div>
+                                        <img src="img/coffee-cup.png" class="img-fluid" alt="">        
                                     </div>
-                                    <img src="img/coffee-cup.png" class="img-fluid" alt="">
                                     <div class="card-footer">
                                         <span>-25% от оптовой цены</span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="card product-card">
-                                    <div class="card-label"></div>
+                            <div class="col-12 col-lg-4 mb-4">
+                                <a href="#" class="card category-card">
                                     <div class="card-body">
                                         <h5 class="card-title">Чай, кофе, какао</h5>
                                         <div class="card-text">5 акций, 18 товаров</div>
+                                        <img src="img/coffee-cup.png" class="img-fluid" alt="">        
                                     </div>
-                                    <img src="img/coffee-cup.png" class="img-fluid" alt="">
                                     <div class="card-footer">
                                         <span>-25% от оптовой цены</span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="card product-card">
-                                    <div class="card-label"></div>
+                            <div class="col-12 col-lg-4 mb-4">
+                                <a href="#" class="card category-card">
                                     <div class="card-body">
                                         <h5 class="card-title">Чай, кофе, какао</h5>
                                         <div class="card-text">5 акций, 18 товаров</div>
+                                        <img src="img/coffee-cup.png" class="img-fluid" alt="">        
                                     </div>
-                                    <img src="img/coffee-cup.png" class="img-fluid" alt="">
                                     <div class="card-footer">
                                         <span>-25% от оптовой цены</span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
 
-
-                        <div class="text-center info-prem-block">
+                        <div class="text-center info-prem-block my-5">
                             <h3>Оформите доступ к акциям и экономьте</h3>
-                            <button class="btn btn-primary">Купить premium</button>
+                            <button class="btn btn-primary btn-lg mt-2">Купить premium</button>
+                        </div>
+
+                        <div class="text-block clr-gray">
+                            <p>Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что новая модель организационной деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <p>Равным образом начало повседневной работы по формированию позиции требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Товарищи! укрепление и развитие структуры требуют определения и уточнения форм развития. С другой стороны дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="subscribe-block">
-                    <form class="row p-4">
+                <div class="subscribe-block my-5">
+                    <form class="row align-items-center p-4">
                         <div class="col-12 col-lg-6 mb-2 mb-lg-0">
-                            <span class="text-block">Получите скидку на первый заказ! Мы пришлем ее вам на почту</span>
+                            <h3>Получите скидку на первый заказ! Мы пришлем ее вам на почту</h3>
                         </div>
                         <div class="col-12 col-lg-3 mb-2 mb-lg-0">
                             <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
