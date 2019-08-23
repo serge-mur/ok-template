@@ -54,4 +54,19 @@ $('[data-toggle="sticky-onscroll"]').each(function () {
     stickyToggle(sticky, stickyWrapper, $(window));
 });
 
+function toggleSidebar() {
+    var w = $(window).width();
+    if (w <= 991) {
+        $('#sidebar>.collapse').removeClass('show');
+    } else {
+        $('#sidebar>.collapse').addClass('show');
+    }
+}
+
+$(window).resize(function () {
+    toggleSidebar();
+});
+
+toggleSidebar();
+
 });//document ready end

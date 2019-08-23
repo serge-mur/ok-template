@@ -175,94 +175,95 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
+                        <a class="btn btn-secondary-inverse btn-sm d-lg-none mb-2" data-toggle="collapse" href="#catalog-nav" aria-expanded="false" aria-controls="catalog-nav">Фильтры</a>
+                        <aside id="sidebar">
+                            <ul class="nav flex-column flex-nowrap collapse show" id="catalog-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Кондитерские изделия</a>
+                                    <div class="collapse" id="submenu1" aria-expanded="false">
+                                        <ul class="flex-column pl-4 nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link collapsed" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
+                                                <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                                    <ul class="flex-column nav pl-4">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Подсухарики 1</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Подсухарики 2</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Подсухарики 3</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Подсухарики 4</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Хлебные чипсы</a>
+                                            </li>                                        
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>                            
+                                <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
 
-                        <ul class="nav flex-column flex-nowrap" id="catalog-nav">
-                            <li class="nav-item">
-                                <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Кондитерские изделия</a>
-                                <div class="collapse" id="submenu1" aria-expanded="false">
-                                    <ul class="flex-column pl-4 nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link collapsed" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
-                                            <div class="collapse" id="submenu1sub1" aria-expanded="false">
-                                                <ul class="flex-column nav pl-4">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Подсухарики 1</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Подсухарики 2</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Подсухарики 3</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#">Подсухарики 4</a>
-                                                    </li>
-                                                </ul>
+                                <li class="nav-item mt-3">
+                                    <a class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">Производители</a>
+                                    <div class="collapse show" id="submenu2" aria-expanded="false">
+                                        <div class="filter manufacturer-filter">
+                                            <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                    <label class="form-check-label" for="Check1">Производитель 1</label>
+                                                </div>                                            
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Check2">
+                                                    <label class="form-check-label" for="Check2">Производитель 2</label>
+                                                </div>                                            
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Check3">
+                                                    <label class="form-check-label" for="Check3">Производитель 3</label>
+                                                </div>                                            
                                             </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Хлебные чипсы</a>
-                                        </li>                                        
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Бакалея</a></li>                            
-                            <li class="nav-item"><a class="nav-link" href="#">Вода, напитки, соки</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Детское питание и товары для детей</a></li>
-
-                            <li class="nav-item mt-3">
-                                <a class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">Производители</a>
-                                <div class="collapse show" id="submenu2" aria-expanded="false">
-                                    <div class="filter manufacturer-filter">
-                                        <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
-                                                <label class="form-check-label" for="Check1">Производитель 1</label>
-                                            </div>                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Check2">
-                                                <label class="form-check-label" for="Check2">Производитель 2</label>
-                                            </div>                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Check3">
-                                                <label class="form-check-label" for="Check3">Производитель 3</label>
-                                            </div>                                            
+                                            <button class="btn btn-sm btn-more">показать все</button>
                                         </div>
-                                        <button class="btn btn-sm btn-more">показать все</button>
                                     </div>
-                                </div>
-                            </li>                            
+                                </li>                            
 
-                            <li class="nav-item mt-3">
-                                <a class="nav-link collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3">Поставщики</a>
-                                <div class="collapse show" id="submenu3" aria-expanded="false">
-                                    <div class="filter provider-filter">
-                                        <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Check11">
-                                                <label class="form-check-label" for="Check11">Поставщик 1</label>
-                                            </div>                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Check22">
-                                                <label class="form-check-label" for="Check22">Поставщик 2</label>
-                                            </div>                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Check33">
-                                                <label class="form-check-label" for="Check33">Поставщик 3</label>
-                                            </div>                                            
+                                <li class="nav-item mt-3">
+                                    <a class="nav-link collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3">Поставщики</a>
+                                    <div class="collapse show" id="submenu3" aria-expanded="false">
+                                        <div class="filter provider-filter">
+                                            <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Check11">
+                                                    <label class="form-check-label" for="Check11">Поставщик 1</label>
+                                                </div>                                            
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Check22">
+                                                    <label class="form-check-label" for="Check22">Поставщик 2</label>
+                                                </div>                                            
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Check33">
+                                                    <label class="form-check-label" for="Check33">Поставщик 3</label>
+                                                </div>                                            
+                                            </div>
+                                            <button class="btn btn-sm btn-more">показать все</button>
                                         </div>
-                                        <button class="btn btn-sm btn-more">показать все</button>
                                     </div>
-                                </div>
-                            </li>                            
+                                </li>                            
 
-                        </ul>
-
+                            </ul>
+                        </aside>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-lg-9">
 
                         <nav class="nav nav-links">
                             <a class="nav-link active" href="#">Акции <span>(54)</span></a>
@@ -274,20 +275,28 @@
                             <div class="d-flex align-items-center justify-content-center in">
                                 <div><span>20-70%</span><span>скидка</span></div>
                                 <div><span>30</span><span>поставщиков</span></div>
-                                <button class="btn btn-primary">Купить premium</button>
+                                <button class="btn btn-primary d-none d-sm-block">Купить premium</button>
                                 <div><span>86</span><span>акций</span></div>
                                 <div><span>353</span><span>товара по акции</span></div>
                             </div>
+                            <button class="btn btn-primary d-sm-none mt-3">Купить premium</button>
                         </div>
 
-                        <div class="d-flex justify-content-between sorting-block mb-5">
-                            <div class="left-block">
-                                <a href="#"><i class="fas fa-industry"></i> Производители</a>
-                                <a href="#"><i class="fas fa-tag"></i> Бренды</a>
-                                <a href="#"><i class="fas fa-store-alt"></i> Поставщики</a>
+                        <div class="row sorting-block mb-5">
+                            <div class="col-6 col-sm-8">
+                                <div class="left-block d-none d-lg-block">
+                                    <a href="#"><i class="fas fa-industry"></i> Производители</a>
+                                    <a href="#"><i class="fas fa-tag"></i> Бренды</a>
+                                    <a href="#"><i class="fas fa-store-alt"></i> Поставщики</a>
+                                </div>
+                                <div class="left-block d-lg-none">
+                                    <button class="btn btn-more btn-sm">фильтры</button>
+                                </div>
                             </div>
-                            <div class="right-block">
-                                <a href="#">По сроку окончания</a>
+                            <div class="col-6 col-sm-4">
+                                <div class="right-block text-lg-right">
+                                    <a href="#">По сроку окончания</a>
+                                </div>
                             </div>
                         </div>
 

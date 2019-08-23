@@ -355,6 +355,16 @@ h1 {
         }
     }
 }
+@include media-breakpoint-down(sm) {
+    .info-prem-block {
+        .in {
+            div {
+                margin: 0 .5rem;
+            }
+        }    
+    }
+}
+
 .sorting-block {
     a {
         padding: 1rem 0;

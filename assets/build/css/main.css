@@ -7960,6 +7960,10 @@ h1 {
     display: block;
     font-size: 1rem; }
 
+@media (max-width: 767.98px) {
+  .info-prem-block .in div {
+    margin: 0 .5rem; } }
+
 .sorting-block a {
   padding: 1rem 0; }
   .sorting-block a:after {
