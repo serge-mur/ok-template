@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Карточка</title>
+    //= template/head.html
+</head>
+
+<body>
+
+    //= template/offcanvas-menu.html
+
+    <div id="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item"><a href="#">Каталог продукции</a></li>
+                                <li class="breadcrumb-item"><a href="#">Кондитерские изделия</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Баранки, сушки</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="slider-for" data-slideout-ignore>
+                            <img class="img-fluid" src="img/20393_big.jpg" alt="">
+                            <img class="img-fluid" src="img/20393_big.jpg" alt="">
+                            <img class="img-fluid" src="img/20393_big.jpg" alt="">
+                        </div>
+                        <div class="slider-nav d-none d-lg-block" data-slideout-ignore>
+                            <img class="img-fluid" src="img/20393_big.jpg" alt="">
+                            <img class="img-fluid" src="img/20393_big.jpg" alt="">
+                            <img class="img-fluid" src="img/20393_big.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <h1 class="title">Сушки "Семейка ОЗБИ" Кроха ванильные, 0.2кг х 33шт </h1>
+                        <button class="btn btn-primary">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sub-title">Описание</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sub-title">Отзывы</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
+    //= template/include-scripts.html
+</body>
+
+</html>
