@@ -39,8 +39,22 @@ $breadcrumb-divider-color: $ok-gray;
 $breadcrumb-active-color: $ok-gray;
 $breadcrumb-divider: "\2022";
 
+// Pagination
+
+$pagination-color: $ok-dark-gray;
+$pagination-bg: transparent;
+$pagination-border-color: transparent;
+
+$pagination-hover-color: $ok-blue;
+$pagination-hover-bg: transparent;
+$pagination-hover-border-color: transparent;
+
+$pagination-active-color: $ok-blue;
+$pagination-active-bg: transparent;
+$pagination-active-border-color: transparent;
+
 // border
-$border-color: $ok-light-gray;
+$border-color: #e8e8e8;
 $border-radius-lg: 1.25rem;
 
 // form

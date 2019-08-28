@@ -9,6 +9,9 @@ h1 {
 .clr-gray {
     color: $ok-gray;
 }
+.clr-yellow {
+    color: $ok-yellow;
+}
 .bg-light-gray {
     background-color: $ok-light-gray;
 }
@@ -216,6 +219,9 @@ h1 {
 .breadcrumb {
     .breadcrumb-item {
         font-size: 0.6875rem;
+        a {
+            color: $ok-gray;
+        }
     }
 }
 
@@ -547,7 +553,137 @@ h1 {
             background-color: $ok-green;            
         }
     }
+}
+// premium detail card
+.block-primary {
+    display: inline-block;
+    font-size: 1.125rem;
+    background-color: $ok-light-green;
+    color: $ok-green;
+    padding: .5rem;
+}
+.block-secondary {
+    display: block;    
+    font-size: 1rem;
+    background-color: $ok-light-gray;
+    color: $ok-gray;
+    padding: .5rem;
+    b {
+        color: $ok-dark-gray;
+        font-weight: normal;
+    }
+}
+.block-ternary {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #fff;
+    color: $ok-dark-gray;
+    border: 1px solid $border-color;
+    padding: 1rem;
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        color: $ok-gray;
+    }
+}
+.status-block {
+    span, a {
+        font-size: 0.75rem;        
+        color: $ok-gray;
+        white-space: nowrap;
+        margin-right: 1rem;
+    }
+}
+.star-rating {
+    i {
+        color: $ok-yellow;        
+    }
+}
+.price-block {
+    .price-box {
+        font-size: 0.875rem;    
+        .new-price {
+            color: $ok-dark-gray;
+        }
+        .old-price {
+            color: $ok-gray;
+            text-decoration: line-through;
+        }
+    }
+    .price-item {
+        .new-price {
+            font-size: 1.5rem;            
+            color: $ok-green;
+        }
+        .old-price {
+            font-size: 1.125rem;
+            color: $ok-dark-gray;
+            background-color: $ok-light-gray;
+            text-decoration: line-through;
+            padding: .5rem;
+        }
+    }    
+}
 
+.specification-block {
+    font-size: 0.875rem;
+    line-height: 1;
+    tr {
+        td {
+            color: $ok-dark-gray;
+            vertical-align: top;
+            padding-bottom: 1rem;
+        }
+        td+td {
+            color: $ok-gray;
+        }
+    }
+}
+.mini-product-card {
+    border-color: transparent;
+    .card-body {
+        padding-top: .5rem;
+        padding-bottom: 0;
+        .card-title {
+            font-size: 0.875rem;
+            line-height: 1;
+            color: $ok-dark-gray;
+        }   
+    }
+    .card-footer {
+        background-color: transparent;
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 0;        
+        .card-price {
+            display: inline-block;
+            .price-item {
+                white-space: nowrap;
+                color: $ok-dark-gray;                 
+                span {
+                    font-size: 1.125rem;        
+                }
+                span+span {
+                    font-size: 0.875rem;
+                }
+            }
+            .price-box {
+                white-space: nowrap;
+                color: $ok-gray;                
+                span {
+                    font-size: 0.875rem;             
+                }
+                span+span {
+                    font-size: 0.75rem;      
+                }
+            }            
+        }         
+    }
+
+}
+.w285 {
+    width: 285px;
 }
 
 // FIX IT!!!
