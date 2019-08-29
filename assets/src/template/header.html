@@ -1,15 +1,12 @@
 <div class="top-menu-line">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-2 d-lg-none">
-                <button class="toggle-button"><i class="fas fa-bars"></i></button>
-            </div>            
-            <div class="col-4 col-lg-1">
+            <div class="col-6 col-lg-1">
                 <div class="region-change">
                     <a class="text-nowrap" data-toggle="modal" data-target="#modal-region" href="#"><i class="fas fa-map-marker-alt"></i> Москва</a>
                 </div>
             </div>
-            <div class="col-lg-9 d-none d-lg-block">
+            <div class="d-none d-lg-block col-lg-9">
                 <ul class="nav d-flex justify-content-center align-items-center" id="top-menu">
                     <li class="nav-item">
                         <a class="nav-link" href="#">О компании</a>
@@ -72,7 +69,9 @@
                 <div class="row justify-content-between justify-content-md-start align-items-center">
                     <div class="col-auto">
 
-                        <a class="btn btn-catalog nav-link dropdown-toggle" href="#" role="button"
+                        <button class="btn btn-catalog nav-link toggle-button d-lg-none"><i class="fas fa-bars"></i> Меню</button>
+
+                        <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" role="button"
                             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="catalog-menu">
