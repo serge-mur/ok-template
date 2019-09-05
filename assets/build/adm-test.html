@@ -5,8 +5,9 @@
     <title>Создание акции</title>
     <!-- Latest compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/css/bootstrap-select.min.css">
 </head>
@@ -15,6 +16,7 @@
         display: none;
     }
 </style>
+
 <body>
 
     <main id="main">
@@ -115,7 +117,7 @@
                                         <th>
                                             <div class="form-check">
                                                 <input class="form-check-input position-static" type="checkbox" value="" id="check1">
-                                            </div>                                            
+                                            </div>
                                         </th>
                                         <th colspan="4">Название категории 1</th>
                                     </tr>
@@ -128,9 +130,15 @@
                                             </div>
                                         </th>
                                         <td class="w-50">Название товара 1</td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Обычная цена"></td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Новая цена"></td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Скидка"></td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Обычная цена">
+                                        </td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Новая цена">
+                                        </td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Скидка">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>
@@ -139,9 +147,15 @@
                                             </div>
                                         </th>
                                         <td class="w-50">Название товара 1</td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Обычная цена"></td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Новая цена"></td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Скидка"></td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Обычная цена">
+                                        </td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Новая цена">
+                                        </td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Скидка">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -151,7 +165,7 @@
                                         <th>
                                             <div class="form-check">
                                                 <input class="form-check-input position-static" type="checkbox" value="" id="check1">
-                                            </div>                                            
+                                            </div>
                                         </th>
                                         <th colspan="4">Название категории 2</th>
                                     </tr>
@@ -164,17 +178,26 @@
                                             </div>
                                         </th>
                                         <td class="w-50">Название товара 1</td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Обычная цена"></td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Новая цена"></td>
-                                        <td><input class="form-control form-control-sm" type="text" placeholder="Скидка"></td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Обычная цена">
+                                        </td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Новая цена">
+                                        </td>
+                                        <td>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Скидка">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <div class="text-center my-5">
+                        <div class="text-center">
                             <button type="button" class="btn btn-primary">Сохранить</button>
                             <button type="button" class="btn btn-default">Выгрузить</button>
+                        </div>
+                        <div class="">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add-product-modal">Добавить товар</button>
                         </div>
 
                     </form>
@@ -185,19 +208,83 @@
 
     </main>
 
-
+    <div class="modal fade" id="add-product-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Добавить товар</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="select111">Поставщик</label>
+                            <select id="select111" class="form-control selectpicker" data-live-search="true" title="Выберите поставщика...">
+                                <option value="id111">Поставщик 1</option>
+                                <option value="id222">Поставщик 2</option>
+                                <option value="id333">Поставщик 3</option>
+                                <option value="id444">Поставщик 4</option>
+                                <option value="id555">Поставщик 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="input3">Регион</label>
+                            <input type="text" class="form-control" id="input333" placeholder="Выберите регион">
+                        </div>
+                        <div class="form-group">
+                            <label for="select1111">Товар</label>
+                            <select id="select1111" class="form-control selectpicker" data-live-search="true" title="Выберите товар...">
+                                <option value="id1111">Товар 1</option>
+                                <option value="id2222">Товар 2</option>
+                                <option value="id3333">Товар 3</option>
+                                <option value="id4444">Товар 4</option>
+                                <option value="id5555">Товар 5</option>
+                            </select>
+                        </div>    
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <label for="input321">Старая цена</label>
+                                    <input type="text" class="form-control" id="input333" placeholder="Старая цена">                                    
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <label for="input3212">Новая цена</label>
+                                    <input type="text" class="form-control" id="input333" placeholder="Новая цена">                                    
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <label for="input3213">Скидка</label>
+                                    <input type="text" class="form-control" id="input333" placeholder="Скидка">                                    
+                                </div>
+                            </div>
+                        </div>                                              
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/js/bootstrap-select.min.js"></script>
 
     <script>
-        $('#show-products').click(function() {
+        $('#show-products').click(function () {
             $('#product-selection-block').toggle();
         });
     </script>
