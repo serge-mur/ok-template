@@ -8020,6 +8020,9 @@ h1 {
   @media (max-width: 1200px) {
     .title {
       font-size: calc(1.275rem + 0.3vw) ; } }
+  .title span {
+    font-size: 1rem;
+    color: #adadad; }
 
 .sub-title {
   font-size: 1.25rem;
@@ -8180,6 +8183,104 @@ h1 {
 .nav-links .show > .nav-link {
   color: #505050;
   border-bottom: 2px solid #adadad; }
+
+.top-banner {
+  background-color: #f6f6f6;
+  height: 150px; }
+
+.category-sorting-block .left-block span {
+  color: #adadad; }
+
+.category-sorting-block .right-block a {
+  font-size: 1rem;
+  color: #adadad; }
+  .category-sorting-block .right-block a:after {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    margin-left: .5rem;
+    content: "\f107"; }
+  .category-sorting-block .right-block a:hover {
+    text-decoration: none; }
+
+.product-card-new .card-header {
+  background-color: #f6f6f6;
+  color: #adadad;
+  font-size: 0.875rem;
+  text-align: right;
+  padding: .2rem;
+  border-bottom: none; }
+
+.product-card-new .card-image-link {
+  display: block;
+  position: relative; }
+  .product-card-new .card-image-link .card-label-top {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    background-color: red;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #fff;
+    padding: .2rem 1.5rem .2rem 1.5rem;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem; }
+    .product-card-new .card-image-link .card-label-top span {
+      font-size: 1.125rem;
+      font-weight: bold; }
+  .product-card-new .card-image-link .card-label-bottom {
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    background-color: #f3f9ff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #0074ff;
+    padding: .2rem .5rem .2rem .5rem;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem; }
+    .product-card-new .card-image-link .card-label-bottom span {
+      font-size: 0.75rem;
+      font-weight: bold; }
+
+.product-card-new .card-body .card-title {
+  font-size: 1rem;
+  line-height: 1;
+  color: #505050;
+  margin-bottom: .5rem; }
+
+.product-card-new .card-body .card-text {
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #adadad; }
+
+.product-card-new .card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding-top: 0; }
+  .product-card-new .card-footer .card-price {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .product-card-new .card-footer .card-price .old-price span {
+      font-size: 1.125rem;
+      color: #adadad;
+      text-decoration: line-through; }
+    .product-card-new .card-footer .card-price .new-price span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: red; }
+    .product-card-new .card-footer .card-price .new-price span + span {
+      font-size: 0.875rem;
+      color: #adadad; }
+
+.product-card-new:hover .card-header {
+  background-color: #90de23;
+  color: #fff; }
 
 #catalog-nav .nav-item .nav-link {
   color: #505050;

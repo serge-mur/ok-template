@@ -272,6 +272,10 @@ h1 {
 .title {
     @include font-size(1.5rem);
     color: $ok-dark-gray;
+    span {
+        @include font-size(1rem); 
+        color: $ok-gray;          
+    }
 }
 .sub-title {
     @include font-size(1.25rem);
@@ -348,6 +352,132 @@ h1 {
         border-bottom: 2px solid $ok-gray;
     }
 }
+
+// *************
+// category page
+// *************
+.top-banner {
+    background-color: $ok-light-gray;
+    height: 150px;
+}
+.category-sorting-block {
+    .left-block {
+        span {
+            color: $ok-gray;            
+        }
+    }
+    .right-block {
+        a {
+            font-size: 1rem;
+            color: $ok-gray;
+            &:after {
+                font-family: 'Font Awesome\ 5 Free';
+                font-weight: 900;
+                margin-left: .5rem;
+                content: "\f107";
+            }
+            &:hover {
+                text-decoration: none;
+            }                    
+        }        
+    }
+}
+
+// card
+.product-card-new {
+    .card-header {
+        background-color: $ok-light-gray;
+        color: $ok-gray;
+        font-size: 0.875rem;
+        text-align: right;
+        padding: .2rem;
+        border-bottom: none;
+    }
+    .card-image-link {
+        display: block;
+        position: relative;
+        .card-label-top {
+            position: absolute;
+            top: 1rem;
+            right: 0;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            padding: .2rem 1.5rem .2rem 1.5rem;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 1.25rem;
+            span {
+                font-size: 1.125rem;
+                font-weight: bold;
+            }
+        }
+        .card-label-bottom {
+            position: absolute;
+            bottom: 1rem;
+            right: 0;
+            background-color: $ok-light-blue;
+            display: flex;
+            align-items: center;
+            color: $ok-blue;
+            padding: .2rem .5rem .2rem .5rem;
+            border-top-left-radius: 1.25rem;
+            border-bottom-left-radius: 1.25rem;
+            span {
+                font-size: 0.75rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .card-body {
+        .card-title {
+            font-size: 1rem;
+            line-height: 1;
+            color: $ok-dark-gray;
+            margin-bottom: .5rem;
+        }
+        .card-text {
+            font-size: 0.875rem;
+            line-height: 1;        
+            color: $ok-gray;
+        }        
+    }
+    .card-footer {
+        background-color: transparent;
+        border-top: none;
+        padding-top: 0;
+        .card-price {
+            display: flex;
+            align-items: center;
+            .old-price {
+                span {
+                    font-size: 1.125rem;
+                    color: $ok-gray;
+                    text-decoration: line-through;                
+                }
+            }
+            .new-price {
+                span {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: red;           
+                }
+                span+span {
+                    font-size: 0.875rem;
+                    color: $ok-gray;             
+                }
+            }
+        }      
+    }
+    &:hover {
+        .card-header {
+            background-color: $ok-green;
+            color: #fff;
+        }
+    }
+}
+
+
 
 // **************
 // action-premium

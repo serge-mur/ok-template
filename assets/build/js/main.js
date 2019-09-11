@@ -21345,4 +21345,8 @@ $('.slider-product').slick({
 });
 
 
+
+    $('[data-toggle="tooltip"]').tooltip()
+
+
 });//document ready end
