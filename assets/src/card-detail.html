@@ -64,50 +64,70 @@
                                 </span>
                                 <span>3 отзыва</span>
                             </span>
-                            <a href="#"><i class="fas fa-heart"></i> Добавить в избранное</a>
-                            <a href="#"><i class="fas fa-share-alt"></i> Поделиться</a>
-                            <span><i class="fas fa-check"></i> В наличии</span>
-                            <span><i class="fa fa-times"></i> Физические лица</span>
-                            <span><i class="fas fa-check"></i> Юридические лица</span>
+                            <a href="#">
+                                <i class="fas fa-heart"></i> Добавить в избранное</a>
+                            <a href="#">
+                                <i class="fas fa-share-alt"></i> Поделиться</a>
+                            <span>
+                                <i class="fas fa-check"></i> В наличии</span>
+                            <span>
+                                <i class="fa fa-times"></i> Физические лица</span>
+                            <span>
+                                <i class="fas fa-check"></i> Юридические лица</span>
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6">
-                                
+
                                 <div>Выберите количество</div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                    <label class="form-check-label" for="inlineRadio3">12</label>
+                                </div>
 
                                 <div class="price-block">
                                     <div class="price-box">
-                                        <span class="new-price">1 287 руб.<span> / 33 шт</span></span>
-                                        <span class="old-price">1 287 руб.<span> / 33 шт</span></span>
+                                        <span class="price">1 287 руб.
+                                            <span> / 33 шт</span>
+                                        </span>
+                                        <span class="saving-price">
+                                            <span>Экономия 482 р. или 33% <span class="badge badge-primary">?</span></span>
+                                        </span>
                                     </div>
 
                                     <div class="price-item">
-                                        <span class="new-price">29.80 руб.<span> / 1 шт</span></span>
-                                        <span class="old-price">1 287 руб.<span> / 1 шт</span></span>
-                                    </div>                                    
+                                        <span class="new-price">29.80 руб.
+                                            <span> / 1 шт</span>
+                                        </span>
+                                        <span class="old-price">1 287 руб.
+                                            <span> / 1 шт</span>
+                                        </span>
+                                    </div>
                                 </div>
 
                                 <button class="btn btn-primary btn-lg">В корзину</button>
-                                <button class="btn">Заказ в 1 клик</button>                                
+                                <button class="btn clr-gray">Заказ в 1 клик</button>
 
-                                <div>Нравится цена?</div>
-                                <hr>
-                                <div>Поставщик: ООО "Белочка"
-                                    <a href="#">(изменить)</a>
+                                <div class="like-price-block">Нравится цена?
+                                    <i class="far fa-thumbs-up"></i>
+                                    <i class="far fa-thumbs-down"></i>                                
                                 </div>
+                               
+                                <hr>
+                                <div>Поставщик: ООО "Белочка"</div>
                                 <form class="delivery-block">
+                                    <div class="pickup-block"><i class="fas fa-map-marker-alt"></i> Бесплатно, заказ от 1000 &#8381;</div>
                                     <div class="form-group row">
-                                        <label for="select1" class="col-sm-4 col-form-label">Самовывоз</label>
-                                        <div class="col-sm-8">
-                                            <select class="form-control form-control-sm" id="select1">
-                                                <option>Бесплатно, заказ от 1000 &#8381;</option>
-                                                <option>Бесплатно, заказ от 5000 &#8381;</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="select1" class="col-sm-4 col-form-label">Доставка</label>
-                                        <div class="col-sm-8">
+                                        <label for="select1" class="col-sm-4 col-form-label text-nowrap delivery-select"><i class="fas fa-truck"></i> Доставка</label>
+                                        <div class="col">
                                             <select class="form-control form-control-sm" id="select1">
                                                 <option>Бесплатно, заказ от 1000 &#8381;</option>
                                                 <option>Бесплатно, заказ от 5000 &#8381;</option>
@@ -118,7 +138,9 @@
 
                             </div>
                             <div class="col-12 col-lg-6">
-                                <a class="d-block mb-4" href="#"><img src="img/provider_logo.png" class="img-fluid" alt=""></a>
+                                <a class="d-block mb-4" href="#">
+                                    <img src="img/provider_logo.png" class="img-fluid" alt="">
+                                </a>
                                 <table class="specification-block">
                                     <tr>
                                         <td>Производитель</td>
@@ -133,8 +155,8 @@
                                         <td>1.25 кг</td>
                                     </tr>
                                 </table>
-                                <div>Товар участвует в акции</div>
-                                <div>По этому товару доступны скидки, при заказе от 5000 &#8381;</div>
+                                <div class="block-primary">Товар участвует в акции</div>
+                                <div class="block-secondary">По этому товару доступны скидки, при заказе от 5000 &#8381;</div>
                             </div>
                         </div>
 
@@ -150,27 +172,44 @@
                         </nav>
 
                         <div class="provider-block">
-                            <div class="row">
-                                <div class="col-2">ООО "Белочка"</div>
-                                <div class="col-3">
-                                    <div>Доставка от 2 000 &#8381; (бесплатно)</div>
-                                    <div>Самовывоз от 0 &#8381; (бесплатно)</div>
+                            <div class="row align-items-center provider-item">
+                                <div class="col-12 col-lg-2">
+                                    <div class="p-2"><b>ООО "Белочка"</b></div>
                                 </div>
-                                <div class="col-2">
-                                    <span>Физические лица</span>
-                                    <span>Юридические лица</span>
+                                <div class="col-12 col-lg-3">
+                                    <div class="p-2">
+                                        <div>Самовывоз от 0 &#8381; (бесплатно)</div>                                    
+                                        <div class="form-group mb-0">
+                                            <label for="select1" class="mb-0">Доставка от 2 000 &#8381;</label>
+                                            <select class="form-control form-control-sm" id="select1">
+                                                <option>Бесплатно, заказ от 5000 &#8381;</option>
+                                                <option>300 &#8381;, заказ от 2000 &#8381;</option>
+                                            </select>
+                                        </div>                                        
+                                    </div>
                                 </div>
-                                <div class="col-1">
-                                    <i class="fas fa-wallet"></i>
-                                    <i class="fas fa-credit-card"></i>
+                                <div class="col-12 col-lg-2 clr-gray">
+                                    <div class="p-2 text-nowrap">
+                                        <div><i class="fas fa-times"></i> Физические лица</div>
+                                        <div><i class="far fa-check-circle"></i> Юридические лица</div>                                        
+                                    </div>
                                 </div>
-                                <div class="col-2">
-                                    <div>29.8 &#8381; / 1 шт.</div>
-                                    <div>983.40 &#8381; / 33 шт.</div>
+                                <div class="col-12 col-lg-1 clr-gray">
+                                    <div class="p-2">
+                                        <i class="fas fa-wallet"></i>
+                                        <i class="fas fa-credit-card"></i>                                        
+                                    </div>
                                 </div>
-                                <div class="col-2">
-                                    <button class="btn btn-more">Выбрать</button>
+                                <div class="col-12 col-lg-2">
+                                    <div class="p-2">
+                                        <div class="price-item">29.8 &#8381; / 1 шт.</div>
+                                        <div class="price-box">983.40 &#8381; / 33 шт.</div>                                        
+                                    </div>
                                 </div>
+                                <div class="col-12 col-lg-2">
+                                    <button class="btn btn-secondary m-2">Выбрать</button>
+                                </div>
+                                <div class="col-12"><div class="border-bottom"></div></div>
                             </div>
                         </div>
 
@@ -203,15 +242,16 @@
                                 <div class="w285">
                                     //= template/mini-card.html
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
 
                         <div class="description-block">
                             <h1 class="sub-title">Описание</h1>
-                            <p class="clr-gray">Товарищи! сложившаяся структура организации играет важную роль в формировании соответствующий условий
-                                активизации. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности
-                                требуют определения и уточнения модели развития. Идейные соображения высшего порядка, а также
-                                консультация с широким активом в значительной степени обуславливает создание новых предложений.</p>
+                            <p class="clr-gray">Товарищи! сложившаяся структура организации играет важную роль в формировании соответствующий
+                                условий активизации. Таким образом постоянное информационно-пропагандистское обеспечение
+                                нашей деятельности требуют определения и уточнения модели развития. Идейные соображения высшего
+                                порядка, а также консультация с широким активом в значительной степени обуславливает создание
+                                новых предложений.</p>
                         </div>
 
                         <div class="subscribe-block">
@@ -282,13 +322,9 @@
                             </div>
                             <button class="btn btn-more">Оставить отзыв</button>
                         </div>
-
-
                     </div>
                 </div>
-
             </div>
-
         </main>
 
         <footer id="footer">
@@ -298,10 +334,7 @@
     </div>
     <!-- end #panel -->
 
-    //= template/modal-region.html
-    //= template/modal-registration.html
-    //= template/modal-cart.html
-    //= template/modal-all.html
+    //= template/modal-region.html //= template/modal-registration.html //= template/modal-cart.html //= template/modal-all.html
     //= template/include-scripts.html
 </body>
 
