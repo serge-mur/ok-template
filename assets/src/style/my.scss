@@ -480,18 +480,20 @@ h1 {
 // product detail page
 // *******************
 .block-primary {
-    display: inline-block;
-    font-size: 1.125rem;
-    background-color: $ok-light-green;
-    color: $ok-green;
-    padding: .5rem;
+    display: block;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: $ok-light-blue;
+    color: $ok-dark-gray;
+    padding: 1rem;
 }
 .block-secondary {
     display: block;    
     font-size: 1rem;
+    line-height: 1;    
     background-color: $ok-light-gray;
     color: $ok-gray;
-    padding: .5rem;
+    padding: 1rem;
     b {
         color: $ok-dark-gray;
         font-weight: normal;
@@ -608,7 +610,6 @@ h1 {
 
 }
 
-
 .mini-product-card {
     border-color: transparent;
     .card-body {
@@ -654,7 +655,20 @@ h1 {
 .w285 {
     width: 285px;
 }
-
+.review-block {
+    .review-name {
+        color: $ok-dark-gray;
+    }
+    .review-order-num {
+        color: $ok-gray
+    }
+    .review-date {
+        color: $ok-gray
+    }
+    .review-text {
+        color: $ok-dark-gray;        
+    }
+}
 
 
 // **************

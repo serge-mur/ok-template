@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-12 col-lg-8">
                         <h1 class="title mb-2">Сушки "Семейка ОЗБИ" Кроха ванильные, 0.2кг х 33шт </h1>
-                        <div class="status-block my-4">
+                        <div class="status-block my-4 border-bottom">
                             <span>
                                 <span class="star-rating">
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -77,29 +77,31 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6">
-
-                                <div>Выберите количество</div>
-
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                                    <label class="form-check-label" for="inlineRadio3">12</label>
+                                <div class="select-quantity-block mb-3">
+                                    <div>Выберите количество</div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                        <label class="form-check-label" for="inlineRadio3">12</label>
+                                    </div>
                                 </div>
 
                                 <div class="price-block">
-                                    <div class="price-box">
+                                    <div class="price-box mb-3">
                                         <span class="price">1 287 руб.
                                             <span> / 33 шт</span>
                                         </span>
                                         <span class="saving-price">
-                                            <span>Экономия 482 р. или 33% <span class="badge badge-primary">?</span></span>
+                                            <span>Экономия 482 р. или 33% 
+                                                <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>
+                                            </span>
                                         </span>
                                     </div>
 
@@ -113,21 +115,26 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-primary btn-lg">В корзину</button>
-                                <button class="btn clr-gray">Заказ в 1 клик</button>
+                                <div class="buy-block my-4">
+                                    <button class="btn btn-primary btn-lg">В корзину</button>
+                                    <button class="btn clr-gray">Заказ в 1 клик</button>                                    
+                                </div>
 
                                 <div class="like-price-block">Нравится цена?
                                     <i class="far fa-thumbs-up"></i>
                                     <i class="far fa-thumbs-down"></i>                                
                                 </div>
-                               
+
                                 <hr>
-                                <div>Поставщик: ООО "Белочка"</div>
+
+                                <div class="mb-1">Поставщик: ООО "Белочка"</div>
                                 <form class="delivery-block">
                                     <div class="pickup-block"><i class="fas fa-map-marker-alt"></i> Бесплатно, заказ от 1000 &#8381;</div>
-                                    <div class="form-group row">
-                                        <label for="select1" class="col-sm-4 col-form-label text-nowrap delivery-select"><i class="fas fa-truck"></i> Доставка</label>
-                                        <div class="col">
+                                    <div class="form-group row align-items-center">
+                                        <label for="select1" class="col-auto col-form-label text-nowrap delivery-select">
+                                            <i class="fas fa-truck"></i> Доставка
+                                        </label>
+                                        <div class="col-auto">
                                             <select class="form-control form-control-sm" id="select1">
                                                 <option>Бесплатно, заказ от 1000 &#8381;</option>
                                                 <option>Бесплатно, заказ от 5000 &#8381;</option>
@@ -155,8 +162,8 @@
                                         <td>1.25 кг</td>
                                     </tr>
                                 </table>
-                                <div class="block-primary">Товар участвует в акции</div>
-                                <div class="block-secondary">По этому товару доступны скидки, при заказе от 5000 &#8381;</div>
+                                <div class="block-secondary mb-3">Товар участвует в акции</div>
+                                <div class="block-primary mb-3">По этому товару доступны скидки, при заказе от 5000 &#8381;</div>
                             </div>
                         </div>
 
@@ -166,12 +173,51 @@
                 <div class="row">
                     <div class="col-12">
 
-                        <nav class="nav nav-links">
+                        <nav class="nav nav-links mb-3">
                             <a class="nav-link active" href="#">Поставщики</a>
                             <a class="nav-link" href="#">На карте</a>
                         </nav>
 
-                        <div class="provider-block">
+                        <div class="provider-block mb-5">
+                            <div class="row align-items-center provider-item">
+                                <div class="col-12 col-lg-2">
+                                    <div class="p-2"><b>ООО "Белочка"</b></div>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <div class="p-2">
+                                        <div>Самовывоз от 0 &#8381; (бесплатно)</div>                                    
+                                        <div class="form-group mb-0">
+                                            <label for="select1" class="mb-0">Доставка от 2 000 &#8381;</label>
+                                            <select class="form-control form-control-sm" id="select1">
+                                                <option>Бесплатно, заказ от 5000 &#8381;</option>
+                                                <option>300 &#8381;, заказ от 2000 &#8381;</option>
+                                            </select>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-2 clr-gray">
+                                    <div class="p-2 text-nowrap">
+                                        <div><i class="fas fa-times"></i> Физические лица <span class="badge badge-secondary" data-toggle="tooltip" data-placement="bottom" title="Работаем с физическими лицами, с юридическими пока нет">?</span></div>
+                                        <div><i class="far fa-check-circle"></i> Юридические лица</div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-1 clr-gray">
+                                    <div class="p-2">
+                                        <i class="fas fa-wallet"></i>
+                                        <i class="fas fa-credit-card"></i>                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-2">
+                                    <div class="p-2">
+                                        <div class="price-item">29.8 &#8381; / 1 шт.</div>
+                                        <div class="price-box">983.40 &#8381; / 33 шт.</div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-2">
+                                    <button class="btn btn-secondary m-2">Выбрать</button>
+                                </div>
+                                <div class="col-12"><div class="border-bottom"></div></div>
+                            </div>
                             <div class="row align-items-center provider-item">
                                 <div class="col-12 col-lg-2">
                                     <div class="p-2"><b>ООО "Белочка"</b></div>
@@ -213,11 +259,11 @@
                             </div>
                         </div>
 
-                        <div class="more-provider-block">
-                            <h1 class="sub-title">Другие поставщики Белочка (203)
+                        <div class="more-provider-block mb-5">
+                            <h2 class="sub-title mb-3">Другие поставщики Белочка (203)
                                 <button class="btn btn-more btn-sm">посмотреть все</button>
-                            </h1>
-                            <div class="slider-product my-5" data-slideout-ignore>
+                            </h2>
+                            <div class="slider-product" data-slideout-ignore>
                                 <div class="w285">
                                     //= template/mini-card.html
                                 </div>
@@ -245,8 +291,8 @@
                             </div>
                         </div>
 
-                        <div class="description-block">
-                            <h1 class="sub-title">Описание</h1>
+                        <div class="description-block mb-5">
+                            <h2 class="sub-title">Описание</h2>
                             <p class="clr-gray">Товарищи! сложившаяся структура организации играет важную роль в формировании соответствующий
                                 условий активизации. Таким образом постоянное информационно-пропагандистское обеспечение
                                 нашей деятельности требуют определения и уточнения модели развития. Идейные соображения высшего
@@ -254,7 +300,7 @@
                                 новых предложений.</p>
                         </div>
 
-                        <div class="subscribe-block">
+                        <div class="subscribe-block mb-5">
                             <form class="row align-items-center p-4">
                                 <div class="col-12 col-lg-6 mb-2 mb-lg-0">
                                     <h3>Получите скидку на первый заказ! Мы пришлем ее вам на почту</h3>
@@ -268,23 +314,26 @@
                             </form>
                         </div>
 
-                        <div class="review-block">
-                            <h1 class="sub-title">Отзывы</h1>
+                        <div class="review-block mb-5">
+                            <h2 class="sub-title">Отзывы</h2>
                             <div class="row mb-4">
                                 <div class="col-12 col-lg-2">
                                     <div class="review-name">
                                         Ксения
                                     </div>
+                                    <div class="review-order-num">
+                                        Заказов: 23  
+                                    </div>
                                 </div>
                                 <div class="col-12 col-lg-10">
                                     <div class="review-date">3 сентября 2016, 11:38</div>
-                                    <div class="product-stars">
-                                        <span class="stars-rating">
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_contur"></i>
+                                    <div>
+                                        <span class="star-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
                                         </span>
                                     </div>
                                     <div class="review-text">
@@ -300,16 +349,19 @@
                                     <div class="review-name">
                                         Ксения
                                     </div>
+                                    <div class="review-order-num">
+                                        Заказов: 23  
+                                    </div>                                    
                                 </div>
                                 <div class="col-12 col-lg-10">
                                     <div class="review-date">3 сентября 2016, 11:38</div>
-                                    <div class="product-stars">
-                                        <span class="stars-rating">
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_color"></i>
-                                            <i class="icon-star_contur"></i>
+                                    <div>
+                                        <span class="star-rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
                                         </span>
                                     </div>
                                     <div class="review-text">
@@ -320,8 +372,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-more">Оставить отзыв</button>
+                            <div class="text-right"><button class="btn btn-more">Оставить отзыв</button></div>
                         </div>
+
+                        <div class="top-banner mb-5">
+                            banner
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -334,7 +391,10 @@
     </div>
     <!-- end #panel -->
 
-    //= template/modal-region.html //= template/modal-registration.html //= template/modal-cart.html //= template/modal-all.html
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
     //= template/include-scripts.html
 </body>
 

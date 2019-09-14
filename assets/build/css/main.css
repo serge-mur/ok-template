@@ -8283,18 +8283,20 @@ h1 {
   color: #fff; }
 
 .block-primary {
-  display: inline-block;
-  font-size: 1.125rem;
-  background-color: #f1fae8;
-  color: #90de23;
-  padding: .5rem; }
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: #f3f9ff;
+  color: #505050;
+  padding: 1rem; }
 
 .block-secondary {
   display: block;
   font-size: 1rem;
+  line-height: 1;
   background-color: #f6f6f6;
   color: #adadad;
-  padding: .5rem; }
+  padding: 1rem; }
   .block-secondary b {
     color: #505050;
     font-weight: normal; }
@@ -8413,6 +8415,18 @@ h1 {
 
 .w285 {
   width: 285px; }
+
+.review-block .review-name {
+  color: #505050; }
+
+.review-block .review-order-num {
+  color: #adadad; }
+
+.review-block .review-date {
+  color: #adadad; }
+
+.review-block .review-text {
+  color: #505050; }
 
 #catalog-nav .nav-item .nav-link {
   color: #505050;
