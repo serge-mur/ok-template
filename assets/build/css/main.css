@@ -8282,6 +8282,58 @@ h1 {
   background-color: #90de23;
   color: #fff; }
 
+.main-title {
+  font-size: 1.875rem;
+  color: #90de23;
+  background-color: #f1fae8;
+  text-transform: uppercase; }
+  @media (max-width: 1200px) {
+    .main-title {
+      font-size: calc(1.3125rem + 0.75vw) ; } }
+  .main-title span {
+    font-size: 1.5rem;
+    color: #adadad;
+    text-transform: none; }
+    @media (max-width: 1200px) {
+      .main-title span {
+        font-size: calc(1.275rem + 0.3vw) ; } }
+
+.main-subtitle {
+  font-size: 1.5rem;
+  color: #505050; }
+  @media (max-width: 1200px) {
+    .main-subtitle {
+      font-size: calc(1.275rem + 0.3vw) ; } }
+
+.brands-slider .slick-slide {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+.news-item {
+  display: block;
+  background-image: url(../img/news_back.jpg);
+  background-size: cover; }
+  .news-item .date {
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    margin: .5rem;
+    color: #505050;
+    background-color: #f6f6f6; }
+  .news-item .title {
+    font-size: 1.125rem;
+    line-height: 1;
+    color: #fff;
+    padding: .5rem; }
+  .news-item .intro {
+    font-size: 1rem;
+    line-height: 1;
+    color: #adadad;
+    padding: .5rem; }
+  .news-item:hover {
+    text-decoration: none; }
+
 .block-primary {
   display: block;
   font-size: 1rem;
@@ -8786,6 +8838,3 @@ h1 {
   font-size: 0.875rem;
   padding: .25rem 0;
   color: #000; }
-
-#modal-region .column a:hover {
-  /* color: #000; */ }
