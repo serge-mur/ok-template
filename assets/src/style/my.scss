@@ -582,6 +582,51 @@ h1 {
         color: $ok-gray;
     }
 }
+
+.select-quantity-block {
+    input[type="radio"]:checked, 
+    input[type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    input[type="radio"]:checked + label, 
+    input[type="radio"]:not(:checked) + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+    input[type="radio"]:checked + label:after, 
+    input[type="radio"]:not(:checked) + label:after {
+        display: block;    
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid $ok-gray;
+        
+        content: "";
+        position: absolute;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;    
+    }
+    input[type="radio"].disabled + label:after {
+        background-color: $ok-gray!important;
+    }
+    input[type="radio"]:not(:checked) + label:after {
+        // opacity: 0;
+    }
+    input[type="radio"]:checked + label:after {
+        border: 1px solid $ok-blue;        
+        // opacity: 1;
+    } 
+
+}
+
 .status-block {
     span, a {
         font-size: 0.75rem;        

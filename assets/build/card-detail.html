@@ -255,6 +255,18 @@
                                     </div>
                                 </div>
 
+                                <form action="">
+                                    <div class="radio-group">
+                                        <div class='radio text-center' data-value="1">1</div>
+                                        <div class='radio text-center' data-value="4">4</div>
+                                        <div class='radio text-center' data-value="12">12</div>
+                                        <br/>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="radio-value" name="radio-value" />
+                                        </div>
+                                    </div>
+                                </form>                                
+
                                 <div class="price-block">
                                     <div class="price-box mb-3">
                                         <span class="price">1 287 руб.
@@ -662,7 +674,44 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-right"><button class="btn btn-more">Оставить отзыв</button></div>
+                            <div class="text-right"><button class="btn btn-more" data-toggle="collapse" href="#collapse-review">Оставить отзыв</button></div>
+                            <div class="collapse" id="collapse-review">
+                                <div class="pt-4">
+                                    <form>
+                                        <div class="form-group" id="rating-ability-wrapper">
+                                            <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
+                                            <div>
+                                                <span class="selected-rating">0</span> <span>/ 5</span>
+                                            </div>
+                                            <button type="button" class="btnrating" data-attr="1" id="rating-star-1">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btnrating" data-attr="2" id="rating-star-2">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btnrating" data-attr="3" id="rating-star-3">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btnrating" data-attr="4" id="rating-star-4">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btnrating" data-attr="5" id="rating-star-5">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="name">Ваше имя</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Имя">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="review">Ваш отзыв</label>
+                                            <textarea class="form-control" placeholder="Отзыв" id="review" rows="3"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="top-banner mb-5">
@@ -1459,6 +1508,44 @@
         </div>
     </div>
     <script src="js/main.min.js"></script>
+
+    <style>
+        .btn-star-on>i {
+            color: yellow!important;
+        }
+        .btn-star-off>i {
+            color: gray!important;
+        }
+    </style>
+    <script>
+        $(document).ready(function($){
+            $(".btnrating").on('click',(function(e) {
+                var previous_value = $("#selected_rating").val();
+                var selected_value = $(this).attr("data-attr");
+                $("#selected_rating").val(selected_value);
+                $(".selected-rating").empty();
+                $(".selected-rating").html(selected_value);
+                for (i = 1; i <= selected_value; ++i) {
+                    $("#rating-star-"+i).toggleClass('btn-star-on');
+                    $("#rating-star-"+i).toggleClass('btn-star-off');
+                }
+                for (ix = 1; ix <= previous_value; ++ix) {
+                    $("#rating-star-"+ix).toggleClass('btn-star-off');
+                    $("#rating-star-"+ix).toggleClass('btn-star-on');
+                }
+            }));
+
+            $('.radio-group .radio').click(function() {
+                $(this).parent().find('.radio').removeClass('selected');
+                $(this).addClass('selected');
+                var val = $(this).attr('data-value');
+                //alert(val);
+                $(this).parent().find('input').val(val);
+            });
+
+        });    
+    </script>
+
 </body>
 
 </html>
