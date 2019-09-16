@@ -8304,6 +8304,11 @@ h1 {
   @media (max-width: 1200px) {
     .main-subtitle {
       font-size: calc(1.275rem + 0.3vw) ; } }
+  .main-subtitle:before {
+    color: #f6f6f6;
+    content: "|";
+    font-weight: bold;
+    padding-right: .5rem; }
 
 .brands-slider .slick-slide {
   display: inline-block;
@@ -8312,7 +8317,7 @@ h1 {
 
 .news-item {
   display: block;
-  background-image: url(../img/news_back.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/news_back.jpg);
   background-size: cover; }
   .news-item .date {
     display: inline-block;
@@ -8333,6 +8338,12 @@ h1 {
     padding: .5rem; }
   .news-item:hover {
     text-decoration: none; }
+
+.main-subscribe-block {
+  background-color: #0074ff; }
+  .main-subscribe-block h3 {
+    color: #fff;
+    font-size: 1.25rem; }
 
 .block-primary {
   display: block;
