@@ -240,32 +240,16 @@
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <div class="select-quantity-block mb-3">
-                                    <div>Выберите количество</div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                                        <label class="form-check-label" for="inlineRadio3">12</label>
-                                    </div>
-                                </div>
-
-                                <form action="">
+                                    <div class="mb-3">Выберите количество</div>
                                     <div class="radio-group">
-                                        <div class='radio text-center' data-value="1">1</div>
-                                        <div class='radio text-center' data-value="4">4</div>
-                                        <div class='radio text-center' data-value="12">12</div>
-                                        <br/>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="radio-value" name="radio-value" />
-                                        </div>
-                                    </div>
-                                </form>                                
+                                        <div class='radio' data-value="1">1</div>
+                                        <div class='radio' data-value="4">4</div>
+                                        <div class='radio disabled' data-value="12">12</div>
+                                            
+                                        <input type="hidden" class="form-control" id="radio-value" name="radio-value" />
+
+                                    </div>                                
+                                </div>                             
 
                                 <div class="price-block">
                                     <div class="price-box mb-3">
@@ -1509,14 +1493,6 @@
     </div>
     <script src="js/main.min.js"></script>
 
-    <style>
-        .btn-star-on>i {
-            color: yellow!important;
-        }
-        .btn-star-off>i {
-            color: gray!important;
-        }
-    </style>
     <script>
         $(document).ready(function($){
             $(".btnrating").on('click',(function(e) {
@@ -1527,20 +1503,21 @@
                 $(".selected-rating").html(selected_value);
                 for (i = 1; i <= selected_value; ++i) {
                     $("#rating-star-"+i).toggleClass('btn-star-on');
-                    $("#rating-star-"+i).toggleClass('btn-star-off');
                 }
                 for (ix = 1; ix <= previous_value; ++ix) {
-                    $("#rating-star-"+ix).toggleClass('btn-star-off');
                     $("#rating-star-"+ix).toggleClass('btn-star-on');
                 }
             }));
 
             $('.radio-group .radio').click(function() {
-                $(this).parent().find('.radio').removeClass('selected');
-                $(this).addClass('selected');
-                var val = $(this).attr('data-value');
-                //alert(val);
-                $(this).parent().find('input').val(val);
+                if (!$(this).hasClass("disabled")) {
+                    $(this).parent().find('.radio').removeClass('selected');
+                    $(this).addClass('selected');
+                    var val = $(this).attr('data-value');
+                    //alert(val);
+                    $(this).parent().find('input').val(val);                    
+                }
+
             });
 
         });    

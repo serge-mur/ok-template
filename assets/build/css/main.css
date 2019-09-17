@@ -8376,37 +8376,21 @@ h1 {
   .block-ternary a {
     color: #adadad; }
 
-.select-quantity-block input[type="radio"]:checked,
-.select-quantity-block input[type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px; }
-
-.select-quantity-block input[type="radio"]:checked + label,
-.select-quantity-block input[type="radio"]:not(:checked) + label {
+.select-quantity-block .radio-group .radio {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  cursor: pointer; }
-
-.select-quantity-block input[type="radio"]:checked + label:after,
-.select-quantity-block input[type="radio"]:not(:checked) + label:after {
-  display: block;
-  left: 0;
-  top: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #adadad;
-  content: "";
-  position: absolute;
-  transition: all 0.2s ease; }
-
-.select-quantity-block input[type="radio"].disabled + label:after {
-  background-color: #adadad !important; }
-
-.select-quantity-block input[type="radio"]:checked + label:after {
-  border: 1px solid #0074ff; }
+  border-radius: 3px;
+  line-height: 35px;
+  text-align: center; }
+  .select-quantity-block .radio-group .radio:hover:not(.disabled), .select-quantity-block .radio-group .radio.selected {
+    cursor: pointer;
+    color: #0074ff;
+    border: 1px solid #0074ff; }
+  .select-quantity-block .radio-group .radio.disabled {
+    color: #adadad;
+    background-color: #f6f6f6; }
 
 .status-block span, .status-block a {
   font-size: 0.75rem;
@@ -8510,6 +8494,15 @@ h1 {
 
 .w285 {
   width: 285px; }
+
+.review-block .btnrating {
+  color: #adadad;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem; }
+
+.review-block .btnrating.btn-star-on > i {
+  color: #ffe500; }
 
 .review-block .review-name {
   color: #505050; }
