@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Личный кабинет. Данные пользователя</title>
+    //= template/head.html
+</head>
+
+<body>
+
+    //= template/offcanvas-menu.html
+
+    <div id="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-banner my-4">
+                            banner
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="list-group" id="list-lk-tab">
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-premium">Премиум аккаунт</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-profile">Личные данные</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-orders">Заказы</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages">Сообщения</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-special">Специальные условия</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <h1 class="title mb-4">Личный кабинет <span>ivanov@mail.com</span></h1>
+                                   
+                        <div class="tab-content" id="nav-lk-content">
+                            <div class="tab-pane fade show active" id="list-premium">
+                                premium
+                            </div>
+
+                            <div class="tab-pane fade" id="list-profile">
+
+<div class="row">
+    <div class="col-6">
+        <form>
+            <div class="form-group">
+                <label for="first_name">Имя</label>
+                <input type="text" class="form-control" id="first_name" placeholder="Имя" value="Иван">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Фамилия</label>
+                <input type="text" class="form-control" id="last_name" placeholder="Фамилия" value="Иванов">
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Частый клиент</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Организация</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="organization">Наименование организации</label>
+                <input type="text" class="form-control" id="organization" placeholder="Организация" value="Рога & копыта">
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" class="form-control" id="phone" placeholder="Телефон" value="+ 7 777 777 77 77">
+                <a href="#"><i class="fas fa-plus-circle"></i></a>
+            </div>
+            <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+        </form>
+    </div>
+    <div class="col-6">
+        <h3>Мои адреса</h3>
+        <div class="adress-block">
+            Зеленоградская ул., д.5, кв. 50.
+        </div>
+        <a href="#" class="d-block"><i class="fas fa-plus-circle"></i> Добавить адрес доставки</a>
+    </div>
+</div>
+
+                            </div>
+                            <div class="tab-pane fade" id="list-orders">
+                                orders
+                            </div>
+                            <div class="tab-pane fade" id="list-messages">
+                                messages
+                            </div>
+                            <div class="tab-pane fade" id="list-special">
+                                special
+                            </div>
+                        </div>                        
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
+    //= template/include-scripts.html
+</body>
+
+</html>

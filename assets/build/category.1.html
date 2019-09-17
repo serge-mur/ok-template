@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>Стартовая страница</title>
+    <title>Категория</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -183,133 +183,396 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Название</th>
-                                    <th scope="col">Ссылка</th>
-                                    <th scope="col">Статус</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Шапка</td>
-                                    <td>-</td>
-                                    <td>будут правки</td>
-                                </tr>
-                                <tr>
-                                    <td>Подвал</td>
-                                    <td>-</td>
-                                    <td>будут правки</td>
-                                </tr>                                
-                                <tr>
-                                    <td>Главная</td>
-                                    <td><a href="main.html">main.html</a></td>
-                                    <td>в процессе</td>
-                                </tr>
-                                <tr>
-                                    <td>Страница категории каталога</td>
-                                    <td><a href="category.html">category.html</a></td>
-                                    <td>в процессе</td>
-                                </tr>
-                                <tr>
-                                    <td>Страница карточки товара</td>
-                                    <td><a href="card-detail.html">card-detail.html</a></td>
-                                    <td>в процессе</td>
-                                </tr>
-                                <tr>
-                                    <td>Страница акций</td>
-                                    <td><a href="action-premium.html">action-premium.html</a></td>
-                                    <td>в процессе</td>
-                                </tr>
-                                <tr>
-                                    <td>Акции категория</td>
-                                    <td><a href="action-premium-inside.html">action-premium-inside.html</a></td>
-                                    <td>в процессе</td>
-                                </tr>                                
-                                <tr>
-                                    <td>Акции карточка</td>
-                                    <td><a href="action-card-detail.html">action-card-detail.html</a></td>
-                                    <td>пока не надо</td>
-                                </tr>
-                                <tr>
-                                    <td>Личный кабинет</td>
-                                    <td><a href="lk.html">lk.html</a></td>
-                                    <td>в процессе</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <small><a href="adm-test.html">Тест</a></small>
-
-                        <h1>Гайдлайн</h1>
-
-                        <hr>
-
-                        <h1 class="title">Заголовок страницы <span>- дополнительный текст</span></h1>
-                        <h2 class="sub-title">Секция страницы</h2>
-
-                        <p class="clr-gray">Товарищи! сложившаяся структура организации играет важную роль в формировании соответствующий условий активизации. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития. Идейные соображения высшего порядка, а также консультация с широким активом в значительной степени обуславливает создание новых предложений.</p>
-
-                        <hr>
-
-                        <button class="btn btn-primary">Купить <span>(13 шт.)</span></button>
-                        <button class="btn btn-secondary">Подробнее</button>
-                        <button class="btn btn-secondary-inverse btn-lg">Купить</button>
-                        <button class="btn btn-primary-inverse btn-sm">Подробнее</button>
-                        <button class="btn btn-more btn-sm">Подробнее</button>
-
-                        <hr>
-
-                        <span>1000 &#8381; или 1000 &#x20bd;</span>
-
-                        <hr>
-                        
-                        <nav class="nav nav-links">
-                            <a class="nav-link active" href="#">Поставщики</a>
-                            <a class="nav-link" href="#">Производители</a>
-                            <a class="nav-link" href="#">Что то еще</a>
-                        </nav>
-
-                        <hr>
-
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item"><a href="#">Категория</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Карточка</li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Каталог</li>
                             </ol>
                         </nav>
-
-                        <hr>
-
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link clr-gray" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <a class="btn btn-secondary-inverse btn-sm d-lg-none mb-2" data-toggle="collapse" href="#catalog-nav" aria-expanded="false" aria-controls="catalog-nav">Фильтры</a>
+                        <aside id="sidebar">
+                        <ul class="nav flex-column flex-nowrap collapse show" id="catalog-nav">
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Кондитерские изделия</a>
+                                <div class="collapse" id="submenu1" aria-expanded="false">
+                                    <ul class="flex-column pl-4 nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsed" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1">Сухарики</a>
+                                            <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                                <ul class="flex-column nav pl-4">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Подсухарики 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Подсухарики 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Подсухарики 3</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Подсухарики 4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Хлебные чипсы</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">1</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Бакалея</a>
                             </li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">2</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Вода, напитки, соки</a>
                             </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">3</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Детское питание и товары для детей</a>
                             </li>
-                            <li class="page-item">
-                                <a class="page-link clr-gray" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
                         
-                        <hr>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">Производители</a>
+                                <div class="collapse show" id="submenu2" aria-expanded="false">
+                                    <div class="filter manufacturer-filter">
+                                        <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" value="" id="Check1">
+                                                <label class="custom-control-label" for="Check1">Производитель 1</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" value="" id="Check2">
+                                                <label class="custom-control-label" for="Check2">Производитель 2</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" value="" id="Check3">
+                                                <label class="custom-control-label" for="Check3">Производитель 3</label>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-sm btn-more">показать все</button>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-item mt-3">
+                                <a class="nav-link collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3">Поставщики</a>
+                                <div class="collapse show" id="submenu3" aria-expanded="false">
+                                    <div class="filter provider-filter">
+                                        <input type="text" class="form-control form-control-sm" id="" placeholder="Поиск">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" value="" id="Check11">
+                                                <label class="custom-control-label" for="Check11">Поставщик 1</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" value="" id="Check22">
+                                                <label class="custom-control-label" for="Check22">Поставщик 2</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" value="" id="Check33">
+                                                <label class="custom-control-label" for="Check33">Поставщик 3</label>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-sm btn-more">показать все</button>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        </ul>
+                        </aside>
+                    </div>
+                    <div class="col-12 col-lg-9">
+
+                        <div class="top-banner mb-4">
+                            banner
+                        </div>
+
+                        <h1 class="title mb-4">Чипсы, сухарики, попкорн <span> - 127 товаров в наличии</span></h1>
+
+                        <div class="row category-sorting-block mb-3 align-items-center">
+                            <div class="col-12 col-sm-6">
+                                <div class="left-block d-lg-block">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <select class="form-control form-control-sm mr-2" id="select111">
+                                                <option>12</option>
+                                                <option>24</option>
+                                                <option>36</option>
+                                            </select>
+                                            <span class="d-none d-sm-inline">товаров на странице</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="right-block d-flex justify-content-end">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch mr-2">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1">Товары по акции</label>
+                                            </div>                                      
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#">По популярности</a>                                              
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                <div class="card product-card-new">
+                                    <div class="card-header">
+                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                    </div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label-top"><span>-25%</span></div>    
+                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                    </a>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="old-price mr-2">
+                                                <span>32,60 &#8381;</span>
+                                            </div>
+                                            <div class="new-price">
+                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                            </div>
+                                        </div>        
+                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                <div class="card product-card-new">
+                                    <div class="card-header">
+                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                    </div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label-top"><span>-25%</span></div>    
+                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                    </a>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="old-price mr-2">
+                                                <span>32,60 &#8381;</span>
+                                            </div>
+                                            <div class="new-price">
+                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                            </div>
+                                        </div>        
+                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                <div class="card product-card-new">
+                                    <div class="card-header">
+                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                    </div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label-top"><span>-25%</span></div>    
+                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                    </a>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="old-price mr-2">
+                                                <span>32,60 &#8381;</span>
+                                            </div>
+                                            <div class="new-price">
+                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                            </div>
+                                        </div>        
+                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                <div class="card product-card-new">
+                                    <div class="card-header">
+                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                    </div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label-top"><span>-25%</span></div>    
+                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                    </a>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="old-price mr-2">
+                                                <span>32,60 &#8381;</span>
+                                            </div>
+                                            <div class="new-price">
+                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                            </div>
+                                        </div>        
+                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                <div class="card product-card-new">
+                                    <div class="card-header">
+                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                    </div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label-top"><span>-25%</span></div>    
+                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                    </a>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="old-price mr-2">
+                                                <span>32,60 &#8381;</span>
+                                            </div>
+                                            <div class="new-price">
+                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                            </div>
+                                        </div>        
+                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                                <div class="card product-card-new">
+                                    <div class="card-header">
+                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                    </div>
+                                    <a class="card-image-link" href="#">
+                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                        <div class="card-label-top"><span>-25%</span></div>    
+                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                    </a>
+                                
+                                    <div class="card-body">
+                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                        <div class="card-text">
+                                            Минимальная партия: 12 шт (0.96 кг)
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <div class="old-price mr-2">
+                                                <span>32,60 &#8381;</span>
+                                            </div>
+                                            <div class="new-price">
+                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                            </div>
+                                        </div>        
+                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 text-center my-4">
+                                <button class="btn btn-more">показать еще</button>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <nav class="d-flex justify-content-end" aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link clr-gray" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link clr-gray" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="text-block clr-gray">
+                            <p>Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения
+                                и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует,
+                                однако забывать, что новая модель организационной деятельности играет важную роль в формировании
+                                системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает,
+                                что постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций,
+                                занимаемых участниками в отношении поставленных задач.</p>
+                            <p>Равным образом начало повседневной работы по формированию позиции требуют определения и уточнения
+                                системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности
+                                же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и
+                                модернизации форм развития. Товарищи! укрепление и развитие структуры требуют определения
+                                и уточнения форм развития. С другой стороны дальнейшее развитие различных форм деятельности
+                                влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным
+                                потребностям.</p>
+                        </div>
 
                     </div>
+                </div>
+
+                <div class="subscribe-block my-5">
+                    <form class="row align-items-center p-4">
+                        <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                            <h3>Получите скидку на первый заказ! Мы пришлем ее вам на почту</h3>
+                        </div>
+                        <div class="col-12 col-lg-3 mb-2 mb-lg-0">
+                            <input class="form-control form-control-lg" type="text" placeholder="Введите e-mail">
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <button class="btn btn-primary btn-lg w-100">Получить</button>
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -406,7 +669,6 @@
 
     </div>
     <!-- end #panel -->
-
     <div class="modal fade" id="modal-region" tabindex="-1" role="dialog" aria-labelledby="modal-region" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
