@@ -384,6 +384,7 @@ h1 {
 }
 // card
 .product-card-new {
+    height: 100%;
     .card-header {
         background-color: $ok-light-gray;
         color: $ok-gray;
@@ -893,6 +894,7 @@ h1 {
 
 // card
 .product-card {
+    height: 100%;
     .card-header {
         background-color: $ok-yellow;
         color: #000;

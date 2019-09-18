@@ -8202,85 +8202,82 @@ h1 {
   .category-sorting-block .right-block a:hover {
     text-decoration: none; }
 
-.product-card-new .card-header {
-  background-color: #f6f6f6;
-  color: #adadad;
-  font-size: 0.875rem;
-  text-align: right;
-  padding: .2rem;
-  border-bottom: none; }
-
-.product-card-new .card-image-link {
-  display: block;
-  position: relative; }
-  .product-card-new .card-image-link .card-label-top {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    background-color: red;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    color: #fff;
-    padding: .2rem 1.5rem .2rem 1.5rem;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem; }
-    .product-card-new .card-image-link .card-label-top span {
-      font-size: 1.125rem;
-      font-weight: bold; }
-  .product-card-new .card-image-link .card-label-bottom {
-    position: absolute;
-    bottom: 1rem;
-    right: 0;
-    background-color: #f3f9ff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    color: #0074ff;
-    padding: .2rem .5rem .2rem .5rem;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem; }
-    .product-card-new .card-image-link .card-label-bottom span {
-      font-size: 0.75rem;
-      font-weight: bold; }
-
-.product-card-new .card-body .card-title {
-  font-size: 1rem;
-  line-height: 1;
-  color: #505050;
-  margin-bottom: .5rem; }
-
-.product-card-new .card-body .card-text {
-  font-size: 0.875rem;
-  line-height: 1;
-  color: #adadad; }
-
-.product-card-new .card-footer {
-  background-color: transparent;
-  border-top: none;
-  padding-top: 0; }
-  .product-card-new .card-footer .card-price {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-    .product-card-new .card-footer .card-price .old-price span {
-      font-size: 1.125rem;
-      color: #adadad;
-      text-decoration: line-through; }
-    .product-card-new .card-footer .card-price .new-price span {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: red; }
-    .product-card-new .card-footer .card-price .new-price span + span {
-      font-size: 0.875rem;
-      color: #adadad; }
-
-.product-card-new:hover .card-header {
-  background-color: #90de23;
-  color: #fff; }
+.product-card-new {
+  height: 100%; }
+  .product-card-new .card-header {
+    background-color: #f6f6f6;
+    color: #adadad;
+    font-size: 0.875rem;
+    text-align: right;
+    padding: .2rem;
+    border-bottom: none; }
+  .product-card-new .card-image-link {
+    display: block;
+    position: relative; }
+    .product-card-new .card-image-link .card-label-top {
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      background-color: red;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      color: #fff;
+      padding: .2rem 1.5rem .2rem 1.5rem;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem; }
+      .product-card-new .card-image-link .card-label-top span {
+        font-size: 1.125rem;
+        font-weight: bold; }
+    .product-card-new .card-image-link .card-label-bottom {
+      position: absolute;
+      bottom: 1rem;
+      right: 0;
+      background-color: #f3f9ff;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      color: #0074ff;
+      padding: .2rem .5rem .2rem .5rem;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem; }
+      .product-card-new .card-image-link .card-label-bottom span {
+        font-size: 0.75rem;
+        font-weight: bold; }
+  .product-card-new .card-body .card-title {
+    font-size: 1rem;
+    line-height: 1;
+    color: #505050;
+    margin-bottom: .5rem; }
+  .product-card-new .card-body .card-text {
+    font-size: 0.875rem;
+    line-height: 1;
+    color: #adadad; }
+  .product-card-new .card-footer {
+    background-color: transparent;
+    border-top: none;
+    padding-top: 0; }
+    .product-card-new .card-footer .card-price {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+      .product-card-new .card-footer .card-price .old-price span {
+        font-size: 1.125rem;
+        color: #adadad;
+        text-decoration: line-through; }
+      .product-card-new .card-footer .card-price .new-price span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: red; }
+      .product-card-new .card-footer .card-price .new-price span + span {
+        font-size: 0.875rem;
+        color: #adadad; }
+  .product-card-new:hover .card-header {
+    background-color: #90de23;
+    color: #fff; }
 
 .main-title {
   font-size: 1.875rem;
@@ -8590,84 +8587,81 @@ h1 {
   .subscribe-block h3 {
     font-size: 1.25rem; }
 
-.product-card .card-header {
-  background-color: #ffe500;
-  color: #000;
-  font-size: 0.875rem;
-  padding: 0 .5rem;
-  border-bottom: none; }
-
-.product-card .card-involved {
-  color: #adadad;
-  font-size: 0.75rem;
-  padding: .5rem; }
-
-.product-card .card-image-link {
-  display: block;
-  position: relative; }
-  .product-card .card-image-link .card-label {
-    position: absolute;
-    top: 0;
-    right: 0;
+.product-card {
+  height: 100%; }
+  .product-card .card-header {
     background-color: #ffe500;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
     color: #000;
-    padding: .2rem 0 .2rem .5rem;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem; }
-    .product-card .card-image-link .card-label span {
-      font-size: 1.125rem;
-      font-weight: bold;
-      margin-right: .5rem; }
-    .product-card .card-image-link .card-label span + span {
-      font-size: 0.625rem;
-      line-height: 1; }
-
-.product-card .card-body .card-title {
-  font-size: 1rem;
-  line-height: 1;
-  color: #505050;
-  margin-bottom: .5rem; }
-
-.product-card .card-body .card-text {
-  font-size: 0.875rem;
-  line-height: 1;
-  color: #adadad; }
-
-.product-card .card-footer {
-  background-color: transparent;
-  border-top: none; }
-  .product-card .card-footer .card-price {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
-    .product-card .card-footer .card-price .old-price {
-      white-space: nowrap; }
-      .product-card .card-footer .card-price .old-price span {
-        font-size: 1.125rem;
-        color: #adadad;
-        text-decoration: line-through; }
-      .product-card .card-footer .card-price .old-price span + span {
-        font-size: 0.875rem;
-        color: #adadad;
-        text-decoration: none; }
-    .product-card .card-footer .card-price .new-price {
-      white-space: nowrap; }
-      .product-card .card-footer .card-price .new-price span {
-        font-size: 1.5rem;
-        color: #0074ff; }
-      .product-card .card-footer .card-price .new-price span + span {
-        font-size: 0.875rem;
-        color: #adadad; }
-  .product-card .card-footer .note {
     font-size: 0.875rem;
+    padding: 0 .5rem;
+    border-bottom: none; }
+  .product-card .card-involved {
+    color: #adadad;
+    font-size: 0.75rem;
+    padding: .5rem; }
+  .product-card .card-image-link {
+    display: block;
+    position: relative; }
+    .product-card .card-image-link .card-label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #ffe500;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      color: #000;
+      padding: .2rem 0 .2rem .5rem;
+      border-top-left-radius: 1.25rem;
+      border-bottom-left-radius: 1.25rem; }
+      .product-card .card-image-link .card-label span {
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-right: .5rem; }
+      .product-card .card-image-link .card-label span + span {
+        font-size: 0.625rem;
+        line-height: 1; }
+  .product-card .card-body .card-title {
+    font-size: 1rem;
+    line-height: 1;
+    color: #505050;
+    margin-bottom: .5rem; }
+  .product-card .card-body .card-text {
+    font-size: 0.875rem;
+    line-height: 1;
     color: #adadad; }
+  .product-card .card-footer {
+    background-color: transparent;
+    border-top: none; }
+    .product-card .card-footer .card-price {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center; }
+      .product-card .card-footer .card-price .old-price {
+        white-space: nowrap; }
+        .product-card .card-footer .card-price .old-price span {
+          font-size: 1.125rem;
+          color: #adadad;
+          text-decoration: line-through; }
+        .product-card .card-footer .card-price .old-price span + span {
+          font-size: 0.875rem;
+          color: #adadad;
+          text-decoration: none; }
+      .product-card .card-footer .card-price .new-price {
+        white-space: nowrap; }
+        .product-card .card-footer .card-price .new-price span {
+          font-size: 1.5rem;
+          color: #0074ff; }
+        .product-card .card-footer .card-price .new-price span + span {
+          font-size: 0.875rem;
+          color: #adadad; }
+    .product-card .card-footer .note {
+      font-size: 0.875rem;
+      color: #adadad; }
 
 .category-card {
   display: block;
