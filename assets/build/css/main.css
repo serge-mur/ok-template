@@ -8828,6 +8828,79 @@ h1 {
 .w285 {
     width: 285px;
 } */
+section h2 {
+  font-size: 3rem; }
+  @media (max-width: 1200px) {
+    section h2 {
+      font-size: calc(1.425rem + 2.1vw) ; } }
+
+#sect-1 h1 {
+  font-size: 3rem;
+  color: #000;
+  line-height: 1;
+  font-weight: bold; }
+  @media (max-width: 1200px) {
+    #sect-1 h1 {
+      font-size: calc(1.425rem + 2.1vw) ; } }
+  #sect-1 h1 span {
+    color: #90de23; }
+
+#sect-1 .intro {
+  position: relative;
+  background-color: #f1fae8;
+  color: #505050;
+  font-size: 1.5rem; }
+  #sect-1 .intro .stamp {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+#sect-4 {
+  background-color: #f6f6f6; }
+  #sect-4 .slider-one h3 {
+    font-size: 1.5rem; }
+  #sect-4 .slider-one p {
+    font-size: 1.5rem; }
+
+#sect-5 {
+  background-color: #f1fae8; }
+  #sect-5 .slider-one h3 {
+    font-size: 1.5rem; }
+  #sect-5 .slider-one p {
+    font-size: 1.5rem; }
+
+#sect-6 {
+  background-image: url(../img/landing/back_6.jpg);
+  background-size: cover; }
+  #sect-6 .slider-one h3 {
+    font-size: 1.5rem; }
+  #sect-6 .slider-one p {
+    font-size: 1.5rem; }
+
+#sect-8 {
+  background-image: url(../img/landing/back_8.jpg);
+  background-size: cover; }
+
+#sect-9 {
+  background-color: #f6f6f6; }
+
+#sect-11 {
+  background-image: url(../img/landing/back_11.jpg);
+  background-size: cover; }
+
+#sect-13 {
+  background-color: #f1fae8; }
+  #sect-13 h3 {
+    font-size: 3rem;
+    color: #000;
+    line-height: 1;
+    font-weight: bold; }
+    @media (max-width: 1200px) {
+      #sect-13 h3 {
+        font-size: calc(1.425rem + 2.1vw) ; } }
+    #sect-13 h3 span {
+      color: #90de23; }
+
 .modal-content h1 {
   font-size: 1.5rem;
   line-height: 1; }

@@ -1155,6 +1155,109 @@ h1 {
     width: 285px;
 } */
 
+
+// ************
+// landing page
+// ************
+
+section {
+    h2 {
+        @include font-size(3rem);
+    }
+}
+#sect-1 {
+    h1 {
+        @include font-size(3rem);
+        color: #000;
+        line-height: 1;
+        font-weight: bold;
+        span {
+            color: $ok-green;
+        }
+    }
+    .intro {
+        position: relative;
+        background-color: $ok-light-green;
+        color: $ok-dark-gray;
+        font-size: 1.5rem;
+        .stamp {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+#sect-2 {
+    .cat-item {
+        h3 {
+
+        }
+        p {
+
+        }
+    }
+}
+#sect-4 {
+    background-color: $ok-light-gray;
+    .slider-one {
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+#sect-5 {
+    background-color: $ok-light-green;
+    .slider-one {
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+#sect-6 {
+    background-image: url(../img/landing/back_6.jpg);
+    background-size: cover;
+    .slider-one {
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+#sect-8 {
+    background-image: url(../img/landing/back_8.jpg);
+    background-size: cover;
+    
+}
+#sect-9 {
+    background-color: $ok-light-gray;
+
+}
+#sect-11 {
+    background-image: url(../img/landing/back_11.jpg);
+    background-size: cover;
+    
+}
+#sect-13 {
+    background-color: $ok-light-green;
+    h3 {
+        @include font-size(3rem);
+        color: #000;
+        line-height: 1;
+        font-weight: bold;
+        span {
+            color: $ok-green;
+        }
+    }
+}
+
 // FIX IT!!!
 .modal-content h1 {
     font-size: 1.5rem;
