@@ -786,6 +786,7 @@ h1 {
             color: $ok-dark-gray;
             font-size: 1.125rem;
             line-height: 1;
+            padding-left: 0;
             &[data-toggle] {
                 &:after {
                     font-family: 'Font Awesome\ 5 Free';
@@ -804,6 +805,7 @@ h1 {
         }
         .filter {
             padding: 0 1rem;
+            padding-left: 0;
             .form-group {
                 margin: .5rem 0;
             }

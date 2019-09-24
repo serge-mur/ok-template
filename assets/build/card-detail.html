@@ -178,6 +178,13 @@
             </div>
         </header>
 
+        <style>
+            /* Скрываем все блоки с классом toggle-* кроме первого */
+            .toggle-block>[class^='toggle-']:not(:first-child) {
+                display: none;
+            }
+        </style>
+
         <main id="main" class="my-2">
 
             <div class="container">
@@ -244,7 +251,8 @@
                                     <div class="radio-group">
                                         <div class='radio' data-value="1">1</div>
                                         <div class='radio' data-value="4">4</div>
-                                        <div class='radio disabled' data-value="12">12</div>
+                                        <div class='radio' data-value="12">12</div>
+                                        <div class='radio disabled' data-value="24">24</div>
                                             
                                         <input type="hidden" class="form-control" id="radio-value" name="radio-value" />
 
@@ -252,16 +260,46 @@
                                 </div>                             
 
                                 <div class="price-block">
-                                    <div class="price-box mb-3">
-                                        <span class="price">1 287 руб.
-                                            <span> / 33 шт</span>
-                                        </span>
-                                        <span class="saving-price">
-                                            <span>Экономия 482 р. или 33% 
-                                                <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>
+                                    
+                                <div class="toggle-block">
+                                    <div class="toggle-1">
+                                        <div class="price-box mb-3">
+                                            <span class="price">1 287 руб.
+                                                <span> / 1 шт</span>
                                             </span>
-                                        </span>
+                                            <span class="saving-price">
+                                                <span>Экономия 482 р. или 33% 
+                                                    <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>
+                                                </span>
+                                            </span>
+                                        </div>                                        
                                     </div>
+                                    <div class="toggle-4">
+                                        <div class="price-box mb-3">
+                                            <span class="price">112 руб.
+                                                <span> / 4 шт</span>
+                                            </span>
+                                            <span class="saving-price">
+                                                <span>Экономия 482 р. или 33% 
+                                                    <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>
+                                                </span>
+                                            </span>
+                                        </div>                                        
+                                    </div>
+                                    <div class="toggle-12">
+                                        <div class="price-box mb-3">
+                                            <span class="price">348 руб.
+                                                <span> / 12 шт</span>
+                                            </span>
+                                            <span class="saving-price">
+                                                <span>Экономия 482 р. или 33% 
+                                                    <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>
+                                                </span>
+                                            </span>
+                                        </div>                                        
+                                    </div>
+
+                                </div>
 
                                     <div class="price-item">
                                         <span class="new-price">29.80 руб.
@@ -313,7 +351,20 @@
                                     </tr>
                                     <tr>
                                         <td>Тип упаковки</td>
-                                        <td>10 шт x 0.13 кг</td>
+                                        <td>
+                                            <div class="toggle-block">
+                                                <div class="toggle-1">
+                                                    1 шт x 0.13 кг
+                                                </div>
+                                                <div class="toggle-4">
+                                                    4 шт x 0.13 кг
+                                                </div>
+                                                <div class="toggle-12">
+                                                    12 шт x 0.13 кг
+                                                </div>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Вес упаковки</td>
@@ -1515,7 +1566,11 @@
                     $(this).addClass('selected');
                     var val = $(this).attr('data-value');
                     //alert(val);
-                    $(this).parent().find('input').val(val);                    
+                    $(this).parent().find('input').val(val);  
+
+                    // показываем/скрываем блоки
+                    $(".toggle-block>[class^='toggle-']").hide();
+                    $(".toggle-block>[class='toggle-"+val+"']").show();                  
                 }
 
             });

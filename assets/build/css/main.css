@@ -8516,7 +8516,8 @@ h1 {
 #catalog-nav .nav-item .nav-link {
   color: #505050;
   font-size: 1.125rem;
-  line-height: 1; }
+  line-height: 1;
+  padding-left: 0; }
   #catalog-nav .nav-item .nav-link[data-toggle]:after {
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
@@ -8529,7 +8530,8 @@ h1 {
     content: "\f106"; }
 
 #catalog-nav .nav-item .filter {
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  padding-left: 0; }
   #catalog-nav .nav-item .filter .form-group {
     margin: .5rem 0; }
 
