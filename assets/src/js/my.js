@@ -142,5 +142,56 @@ $('.brands-slider').slick({
 
 $('[data-toggle="tooltip"]').tooltip()
 
+// landing js
+$('.landing-slider-product').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+             slidesToScroll: 3
+            }
+        },                  
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },               
+        {
+            breakpoint: 321,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+    ]
+});
+
+$('.slider-one').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true
+});
+
+$('.slider-two').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [                
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },               
+    ]
+});
+
 
 });//document ready end

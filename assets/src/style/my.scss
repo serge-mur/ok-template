@@ -12,6 +12,9 @@ h1 {
 .clr-yellow {
     color: $ok-yellow;
 }
+.clr-green {
+    color: $ok-green;
+}
 .bg-light-gray {
     background-color: $ok-light-gray;
 }
@@ -1165,6 +1168,11 @@ h1 {
 section {
     h2 {
         @include font-size(3rem);
+        // text-transform: uppercase;
+        color: #000;
+        line-height: 1;
+        font-weight: bold;
+        text-align: center;
     }
 }
 #sect-1 {
@@ -1182,20 +1190,35 @@ section {
         background-color: $ok-light-green;
         color: $ok-dark-gray;
         font-size: 1.5rem;
+        line-height: 1;
         .stamp {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -77px;
+            right: -77px;
         }
     }
 }
 #sect-2 {
     .cat-item {
+        display: block;
+        position: relative;
         h3 {
-
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            font-size: 1.125rem;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            padding: 0 1.5rem;
         }
         p {
-
+            position: absolute;
+            top: 50%;
+            width: 100%;            
+            color: #fff;
+            font-size: 0.875rem;
+            text-align: center;
         }
     }
 }
@@ -1204,9 +1227,12 @@ section {
     .slider-one {
         h3 {
             font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1;            
         }
         p {
             font-size: 1.5rem;
+            line-height: 1;
         }
     }
 }
@@ -1215,37 +1241,160 @@ section {
     .slider-one {
         h3 {
             font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1;            
         }
         p {
             font-size: 1.5rem;
+            line-height: 1;            
         }
     }
 }
 #sect-6 {
     background-image: url(../img/landing/back_6.jpg);
     background-size: cover;
-    .slider-one {
-        h3 {
-            font-size: 1.5rem;
+    p {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+}
+#sect-7 {
+    .col {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        div {
+            // font-size: 1.5rem;
+            @include font-size(1.5rem);
+            line-height: 1;
+            color: $ok-dark-gray;
         }
-        p {
-            font-size: 1.5rem;
+        div+div {
+            // font-size: 3.75rem;
+            @include font-size(3.75rem);
+            font-weight: bold;
+            color: $ok-green;
+        }
+        div+div+div {
+            // font-size: 1.5rem;
+            @include font-size(1.5rem);
+            line-height: 1; 
+            font-weight: normal;         
+            color: $ok-dark-gray;            
         }
     }
+    .masha-block {
+        div {
+            @include font-size(1.5rem);
+            line-height: 1;
+            font-weight: normal;
+            color: $ok-dark-gray;
+            padding-left: 1.5rem;
+        }
+    }
+    h3 {
+        text-align: center;
+        @include font-size(2.25rem);
+        line-height: 1;
+        font-weight: normal;
+        color: $ok-green;
+    } 
 }
 #sect-8 {
     background-image: url(../img/landing/back_8.jpg);
     background-size: cover;
+    h2 {
+        @include font-size(2.25rem);
+        color: $ok-dark-gray;        
+    }
+    .face {
+        text-align: center;
+        a {
+            font-size: 1.5rem;
+            color: $ok-dark-gray;
+            padding: 1rem;
+            &.active {
+                text-decoration: underline;
+            }            
+        }
+    }
+    .privacy {
+        font-size: 1.5rem;
+        color: $ok-green;
+        &:hover {
+            color: $ok-green;         
+        }
+    }
     
 }
 #sect-9 {
     background-color: $ok-light-gray;
-
+    p {
+        font-size: 1.5rem;
+    }
+}
+#sect-10 {
+    [class^='col'] {
+        text-align: center;
+        p {
+            margin-top: 1rem;
+            font-size: 1.125rem;
+            line-height: 1;
+            font-weight: bold;
+        }
+    }
 }
 #sect-11 {
     background-image: url(../img/landing/back_11.jpg);
     background-size: cover;
-    
+    .slider-two {
+        .review-slide {
+            background-color: #fff;
+            border-radius: 1.25rem;
+            padding: 1.5rem;
+            .name {
+                font-size: 1.125rem;
+                font-weight: bold;
+            }
+            .text {
+                font-size: 1.125rem;
+            }
+            .link {
+                font-size: 1.125rem;
+            }
+        }
+    }    
+}
+#sect-12 {
+    .accordion {
+  
+        [data-toggle='collapse'] {
+            color: $ok-dark-gray;
+            font-size: 1.5rem;
+            line-height: 1;
+            background-color: $ok-light-blue;
+            padding: .5rem 1.5rem;
+            &:hover {
+                text-decoration: none;
+            }
+            &:after {
+                font-family: 'Font Awesome\ 5 Free';
+                font-weight: 900;
+                vertical-align: middle;
+                float: right;
+                content: "\f106";
+                color: $ok-blue;
+            }
+            &.collapsed:after {
+                content: "\f107";
+            }
+            &+div {
+                color: $ok-dark-gray;
+                font-size: 1.5rem;
+                line-height: 1;
+                padding: .5rem 1.5rem;
+            }
+        }
+    }
 }
 #sect-13 {
     background-color: $ok-light-green;
