@@ -8090,6 +8090,8 @@ h1 {
   .btn-primary-inverse span {
     text-transform: lowercase;
     font-size: 0.875rem; }
+  .btn-primary-inverse.active {
+    color: #fff !important; }
 
 .btn-secondary {
   color: #fff !important;
@@ -8300,7 +8302,8 @@ h1 {
 
 .main-subtitle {
   font-size: 1.5rem;
-  color: #505050; }
+  color: #505050;
+  text-align: left; }
   @media (max-width: 1200px) {
     .main-subtitle {
       font-size: calc(1.275rem + 0.3vw) ; } }
