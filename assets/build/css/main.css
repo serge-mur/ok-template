@@ -8970,16 +8970,9 @@ section h2 {
     @media (max-width: 1200px) {
       #sect-8 h2 {
         font-size: calc(1.35rem + 1.2vw) ; } }
-  #sect-8 .face {
-    text-align: center; }
-    #sect-8 .face a {
-      font-size: 1.5rem;
-      color: #505050;
-      padding: 1rem; }
-      #sect-8 .face a.active {
-        text-decoration: underline; }
   #sect-8 .privacy {
     font-size: 1.5rem;
+    line-height: 1;
     color: #90de23; }
     #sect-8 .privacy:hover {
       color: #90de23; }

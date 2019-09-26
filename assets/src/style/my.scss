@@ -1310,19 +1310,9 @@ section {
         @include font-size(2.25rem);
         color: $ok-dark-gray;        
     }
-    .face {
-        text-align: center;
-        a {
-            font-size: 1.5rem;
-            color: $ok-dark-gray;
-            padding: 1rem;
-            &.active {
-                text-decoration: underline;
-            }            
-        }
-    }
     .privacy {
         font-size: 1.5rem;
+        line-height: 1;
         color: $ok-green;
         &:hover {
             color: $ok-green;         

@@ -291,15 +291,34 @@
                     <div class="row">
                         <div class="col-12 align-items-center">
                             <h2 class="my-4">Подпишитесь на самые выгодные акции и промо предложения и получите специальный прайс</h2>
-                            <div class="face mb-4"><a class="active" href="#">Физ. лицо</a><a href="#">Юр. лицо</a></div>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="" placeholder="Имя">
-                                <input type="email" class="form-control" id="" placeholder="E-mail">
-                                <input type="text" class="form-control" id="" placeholder="Город">                       
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-secondary mt-4 w-50">Подписаться на акции</button>                                
-                                <a class="privacy d-block mt-2 mb-4" href="#">Политика конфиденциальности</a>                            
+
+                            <nav class="nav nav-links mb-3 justify-content-center">
+                                <a class="nav-link active" data-toggle="tab" href="#fiz-face">Физ. лицо</a>
+                                <a class="nav-link" data-toggle="tab" href="#jur-face">Юр. лицо</a>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="fiz-face">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="" placeholder="Имя">
+                                        <input type="email" class="form-control" id="" placeholder="E-mail">
+                                        <input type="text" class="form-control" id="" placeholder="Город">                       
+                                    </div>
+                                    <div class="col-12 col-lg-6 text-center mx-auto">
+                                        <button class="btn btn-secondary mt-4">Подписаться на акции</button>                                
+                                        <a class="privacy d-block mt-2 mb-4" href="#">Политика конфиденциальности</a>                            
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="jur-face">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="" placeholder="Имя">
+                                        <input type="email" class="form-control" id="" placeholder="E-mail">
+                                        <input type="text" class="form-control" id="" placeholder="Город">                       
+                                    </div>
+                                    <div class="col-12 col-lg-6 text-center mx-auto">
+                                        <button class="btn btn-secondary mt-4">Подписаться на акции</button>                                
+                                        <a class="privacy d-block mt-2 mb-4" href="#">Политика конфиденциальности</a>                            
+                                    </div>
+                                </div>
                             </div>
                         </div>                        
                     </div>
@@ -388,10 +407,10 @@
                         <div class="col-12">
                             <h2 class="my-4">Часто задаваемые вопросы</h2>
                             <div class="accordion" id="faq-accordion">
-                                <a class="d-block" href="#" data-toggle="collapse" data-target="#collapseOne">
+                                <a class="d-block collapsed" href="#" data-toggle="collapse" data-target="#collapseOne">
                                     Как я могу убедиться в качестве товара?
                                 </a>
-                                <div id="collapseOne" class="collapse show">
+                                <div id="collapseOne" class="collapse">
                                     Оплата заказа происходит только после того как вы его проверите. В всегда сможете убедиться в качестве товара перед оплаты заказа.
                                 </div>
                                 <a class="d-block collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo">
