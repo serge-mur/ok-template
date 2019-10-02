@@ -7821,6 +7821,9 @@ h1 {
 .clr-gray {
   color: #adadad; }
 
+.clr-dark-gray {
+  color: #505050; }
+
 .clr-yellow {
   color: #ffe500; }
 
@@ -8207,6 +8210,13 @@ h1 {
   .category-sorting-block .right-block a:hover {
     text-decoration: none; }
 
+.category-sorting-block .right-block .btn[data-toggle='dropdown'] {
+  color: #adadad; }
+
+.category-sorting-block .right-block .dropdown-menu .dropdown-item {
+  font-size: 0.875rem;
+  color: #adadad; }
+
 .product-card-new {
   height: 100%; }
   .product-card-new .card-header {
@@ -8342,11 +8352,23 @@ h1 {
   .news-item:hover {
     text-decoration: none; }
 
+.sidebar-news-block .news-item {
+  margin-bottom: 1rem; }
+
+.text-block img {
+  margin-bottom: 1rem; }
+
 .main-subscribe-block {
   background-color: #0074ff; }
   .main-subscribe-block h3 {
     color: #fff;
     font-size: 1.25rem; }
+
+.sidebar-banner {
+  border: 1px solid #f6f6f6;
+  border-radius: .5rem; }
+  .sidebar-banner div {
+    line-height: 1; }
 
 .block-primary {
   display: block;
