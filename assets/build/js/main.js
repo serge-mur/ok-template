@@ -21228,6 +21228,33 @@ return Popper;
 
 $(document).ready(function () {
 
+// Dropdown main menu   
+var firstLevelTop, secondLevelTop, firstLevelHeight, firstLevelWidth, mainMenuWidth;
+$(".dropdown").hover(
+    function () {
+        console.log('hover');
+        $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+        $(this).addClass('open');
+        firstLevelTop = $('#dropdownMenuLink+.dropdown-menu').offset().top;
+        firstLevelHeight = $('#dropdownMenuLink+.dropdown-menu').outerHeight();
+        firstLevelWidth = $('#dropdownMenuLink+.dropdown-menu').outerWidth();
+        mainMenuWidth = $('#content-width').width();
+    },
+    function () {
+        $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+        $(this).removeClass('open');
+    });
+
+    $('.dropdown-submenu>.dropdown-item').hover(function() {
+        secondLevelTop = $(this).offset().top;
+        $(this).next('.dropdown-menu').css({
+            "top": firstLevelTop-secondLevelTop,
+            "height": firstLevelHeight,
+            "width": mainMenuWidth-firstLevelWidth
+        });
+    });
+
+
 // https://github.com/Mango/slideout
 var slideout = new Slideout({
     'panel': document.getElementById('panel'),

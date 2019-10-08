@@ -25,6 +25,65 @@ h1 {
     background-color: $ok-light-blue;
 }
 
+// dropdown main menu
+.dropdown-menu {
+    margin-top: 8px;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+    width: 280px;
+    .dropdown-item {
+        display: block;
+        font-size: 1rem;
+        color: $ok-gray!important;
+        white-space: normal;
+        line-height: 1;
+        padding: .75rem 1rem;
+        &:hover {
+            color: $ok-dark-gray!important;  
+            text-decoration: none;
+        }
+    }
+}
+.dropdown-submenu {
+    position: relative;
+    &>a:after {
+        content: ">";
+        color: $ok-gray;
+        float: right;
+    }
+    &>.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    &:hover>.dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu {
+        .mega-menu {
+            .mega-menu-items {
+                a {
+                    display: block;
+                    font-size: 1rem;
+                    line-height: 1;
+                    color: $ok-gray;
+                    padding: .5rem 1.5rem .5rem 0;
+                    &:hover {
+                        color: $ok-dark-gray;  
+                        text-decoration: none;
+                    }
+                }
+            }
+            .banner {
+                background-color: $ok-light-gray;
+            }
+        }
+
+    }
+}    
+
+
 /* https://github.com/Mango/slideout */  
 .slideout-menu {
     position: fixed;

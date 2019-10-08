@@ -111,13 +111,103 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="row justify-content-between justify-content-md-start align-items-center">
+                                <div class="col-12" id="content-width"></div>
                                 <div class="col-auto">
             
                                     <button class="btn btn-catalog nav-link toggle-button d-lg-none"><i class="fas fa-bars"></i> Меню</button>
             
-                                    <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" role="button"
-                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
+                                    <div class="dropdown">
+                                        <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" role="button"
+                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
+                                        
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Кондитерские изделия</a></li>
+                                            <li><a class="dropdown-item" href="#">Бакалея</a></li>
+                                            <li><a class="dropdown-item" href="#">Чай, кофе, какао</a></li>
+                                            <li><a class="dropdown-item" href="#">Вода, напитки, соки</a></li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="#">Консервация</a>
+                                                <div class="dropdown-menu p-3">
+                                                    <div class="mega-menu h-100">
+                                                        <div class="row h-100">
+                                                            <div class="col-4 d-flex flex-column justify-content-between">
+                                                                <div class="mega-menu-items">
+                                                                    <a href="#">Консервация 1</a>
+                                                                    <a href="#">Консервация 2</a>
+                                                                    <a href="#">Консервация 3</a>
+                                                                    <a href="#">Консервация 4</a>
+                                                                    <a href="#">Консервация 5</a>
+                                                                    <a href="#">Консервация 6</a>
+                                                                    <a href="#">Консервация 7</a>
+                                                                </div>
+                                                                <div class="brands-block">
+                                                                    <div class="row">
+                                                                        <a class="col-6" href="#">
+                                                                            <img class="img-fluid p-2" src="../img/brands/brand_1.png" alt="">
+                                                                        </a>
+                                                                        <a class="col-6" href="#">
+                                                                            <img class="img-fluid p-2" src="../img/brands/brand_2.png" alt="">
+                                                                        </a>
+                                                                        <a class="col-6" href="#">
+                                                                            <img class="img-fluid p-2" src="../img/brands/brand_3.png" alt="">
+                                                                        </a>
+                                                                        <a class="col-6" href="#">
+                                                                            <img class="img-fluid p-2" src="../img/brands/brand_4.png" alt="">
+                                                                        </a>                                                            
+                                                                    </div>
+                                                                </div>                                                     
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="banner h-100"></div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="card product-card">
+                                                                    <div class="card-header">
+                                                                        До окончания акции: <span>7</span> дней
+                                                                    </div>
+                                                                
+                                                                    <div class="card-involved"><i class="fas fa-check"></i> Участвуют: <span>56</span></div>
+                                                                
+                                                                    <a class="card-image-link" href="#">
+                                                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                                                        <div class="card-label"><span>-25%</span><span>от оптовой<br>цены</span></div>    
+                                                                    </a>
+                                                                
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                                                        <div class="card-text">
+                                                                            Минимальная партия: 12 шт (0.96 кг)
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <div class="card-price">
+                                                                            <div class="old-price">
+                                                                                <span>32,60 &#8381;</span><span>/1 шт.</span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span>32,30 &#8381;</span><span>/1 шт.</span>
+                                                                            </div>
+                                                                        </div>        
+                                                                    </div>
+                                                                </div>                                                    
+                                                            </div>
+                                                        </div>
+                                            
+                                                    </div>
+                                                </div>                                               
+                                            </li>
+            
+                                            <li><a class="dropdown-item" href="#">Товары для животных</a></li>
+                                            <li><a class="dropdown-item" href="#">Молочные продукты, сыры, яйцо</a></li>
+                                            <li><a class="dropdown-item" href="#">Мясо, птица, рыба, гастрономия</a></li>
+                                            <li><a class="dropdown-item" href="#">Замороженные продукты</a></li>
+                                            <li><a class="dropdown-item" href="#">Детское питание и товары для детей</a></li>
+                                            <li><a class="dropdown-item" href="#">Овощи, фрукты, зелень</a></li>
+                                            <li><a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
+                                        </ul>
+                                    </div>
+            <!--                         
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="catalog-menu">
                                         <a class="dropdown-item" href="#">Кондитерские изделия</a>
                                         <a class="dropdown-item" href="#">Бакалея</a>
@@ -132,7 +222,7 @@
                                         <a class="dropdown-item" href="#">Овощи, фрукты, зелень</a>
                                         <a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
                                     </div>
-            
+             -->
                                 </div>
                                 <div class="col-auto d-none d-md-block">
                                     <ul class="nav" id="main-menu">
