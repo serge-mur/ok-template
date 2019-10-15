@@ -292,9 +292,9 @@
                         <div class="providers-list">
                             <div class="provider-item">
                                 <div class="provider-header" data-toggle="collapse" href="#collapseProvider-1">
-                                    <span>Поставщик: Главторг</span>
-                                    <i class="fas fa-wallet"></i>
-                                    <i class="fas fa-credit-card"></i> 
+                                    Поставщик: <span>Главторг</span>
+                                    <i class="fas fa-wallet" data-toggle="tooltip" data-placement="bottom" title="Оплата наличными"></i>
+                                    <i class="fas fa-credit-card" data-toggle="tooltip" data-placement="bottom" title="Оплата картой"></i> 
                                 </div>
                                 <div class="provider-body collapse show" id="collapseProvider-1">
                                     <div class="text">
@@ -309,8 +309,8 @@
                                                         <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">                                                        
                                                     </a>
                                                 </div>                                                
-                                                <div class="col-2">
-                                                    <a class="d-block" href="#" target="_blank">Мороженое буренка</a>
+                                                <div class="col-5">
+                                                    <a class="product-title" href="#" target="_blank">Мороженое буренка</a>
                                                     <div>
                                                         Артикул <span>559658</span>
                                                     </div>
@@ -318,7 +318,7 @@
                                                         Тип упаковки <span>33 шт x 0.2 кг</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-2">
+                                                <div class="col-1">
                                                     <div>Скидка</div>
                                                     <div>-50%</div>
                                                 </div>
@@ -326,22 +326,22 @@
                                                     <div>Количество</div>
                                                     <div class="counter">
                                                         <button type="button" class="but counterBut dec">-</button>
-                                                        <input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+                                                        <input type="text" class="field fieldCount" value="1" data-min="1" data-max="999">
                                                         <button type="button" class="but counterBut inc">+</button>
                                                     </div>
-                                                    <div>Продается по 12 штук</div>
+                                                    <small>Продается по 12 штук</small>
                                                 </div>
-                                                <div class="col-2">
+                                                <div class="col-1">
                                                     <div>Цена</div>
                                                     <div>1000</div>
                                                     <div>999</div>
                                                 </div>
-                                                <div class="col-2">
+                                                <div class="col-1">
                                                     <div>Сумма</div>
                                                     <div>1000</div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <i class="fas fa-times"></i>
+                                                <div class="col-12 text-right">
+                                                    <a href="#" class="btn-close"><i class="fas fa-times"></i></a> 
                                                 </div>
                                             </div>
                                         </div>
@@ -354,32 +354,36 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="total">
-                                                    <span>Главторг</span>
-                                                    <span>Итого: 930 руб.</span>
+                                                    Главторг
+                                                    <span class="float-right">Итого: 930 руб.</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-4">
-                                                <div>
-                                                    Самовывоз<br>
-                                                    <span>Осталось добавить товаров на 1300 руб.</span>
+                                                <div class="delivery-block">
+                                                    <div>
+                                                        Самовывоз<br>
+                                                        <span>Осталось добавить товаров на 1300 руб.</span>
+                                                    </div>
+                                                    <div>0 руб.</div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 50%">1200 руб.</div>
+                                                    </div>
+                                                    <div>Минимальна сумма заказа 4000 руб.</div>
                                                 </div>
-                                                <div>0 руб.</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%">1200 руб.</div>
-                                                </div>
-                                                <div>Минимальна сумма заказа 4000 руб.</div>
                                             </div>
-                                            <div class="col-4">
-                                                <div>
-                                                    Доставка по Москве и МО
+                                            <div class="col-4">                
+                                                <div class="delivery-block active">
+                                                    <div>
+                                                        Доставка по Москве и МО
+                                                    </div>
+                                                    <div>300 руб.</div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 100%">3200 руб.</div>
+                                                    </div>
+                                                    <div>Минимальна сумма заказа 3000 руб.</div>
                                                 </div>
-                                                <div>300 руб.</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 100%">3200 руб.</div>
-                                                </div>
-                                                <div>Минимальна сумма заказа 3000 руб.</div>
                                             </div>
                                             <div class="col-4">
                                                 <button class="btn btn-primary w-100 text-nowrap">Перейти в каталог поставщика</button>

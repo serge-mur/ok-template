@@ -1493,6 +1493,139 @@ section {
     }
 }
 
+
+// *********
+// cart page
+// *********
+
+.providers-list {
+    .provider-item {
+        .provider-header {
+            background-color: $ok-light-gray;
+            padding: .5rem;
+            color: $ok-gray;
+            span {
+                color: $ok-blue;
+                margin-right: 1.5rem;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &:after {
+                font-family: 'Font Awesome\ 5 Free';
+                font-weight: 900;
+                vertical-align: middle;
+                float: right;
+                content: "\f106";
+                color: $ok-blue;
+            }
+            &.collapsed:after {
+                content: "\f107";
+            }
+        }
+        .provider-body {
+            .text {
+                font-size: 0.875rem;
+                color: $ok-gray;
+                padding: 1rem .5rem;
+            }
+            .products-list {
+                .product-item {
+                    color: $ok-gray;
+                    span {
+                        color: $ok-dark-gray;
+                    }
+                    .product-title {
+                        display: block;
+                        font-size: 1.125rem;
+                        line-height: 1;
+                        font-weight: bold;
+                        color: $ok-dark-gray;
+                        margin-bottom: 1rem;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .counter {
+                        display: flex;
+                        button {
+                            width: 30px;
+                            height: 30px;
+                            color: #fff;
+                            background-color: $ok-blue;
+                            border-color: transparent;
+                            border-radius: 50%;
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                        input {
+                            width: 2.5rem;
+                            text-align: center;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .provider-total {
+                .total {
+                    font-size: 1.125rem;
+                    color: $ok-gray;
+                    span {
+                        color: $ok-dark-gray;
+                    }
+                    padding: .5rem;
+                    border-bottom: 1px solid $ok-light-gray;
+                }
+                .delivery-block {
+                    height: 100%;
+                    background-color: $ok-light-gray;
+                    border: 1px solid $ok-gray;
+                    padding: .5rem;
+                    &.active {
+                        border: 1px solid $ok-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+.total-block {
+    border: 1px solid $ok-green;
+    padding: 1rem;
+    .location-block {
+
+    }
+    .total-providers-list {
+        .provider-item {
+            .provider-header {
+                background-color: $ok-light-gray;
+                color: $ok-gray;
+                span {
+                    color: $ok-dark-gray;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                &:after {
+                    font-family: 'Font Awesome\ 5 Free';
+                    font-weight: 900;
+                    vertical-align: middle;
+                    float: right;
+                    content: "\f106";
+                    color: $ok-green;
+                }
+                &.collapsed:after {
+                    content: "\f107";
+                }
+            }
+        }
+    }
+}
+
+
+
+
 // FIX IT!!!
 .modal-content h1 {
     font-size: 1.5rem;
