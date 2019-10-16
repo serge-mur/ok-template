@@ -26,4 +26,8 @@
 // the last carousel you'll ever need
 //= ../../../node_modules/slick-carousel/slick/slick.js
 
+// plugin for responsive tables
+//= ../../../node_modules/tablesaw/dist/stackonly/tablesaw.stackonly.jquery.js
+//= ../../../node_modules/tablesaw/dist/tablesaw-init.js
+
 //= my.js

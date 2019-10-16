@@ -1531,9 +1531,29 @@ section {
             }
             .products-list {
                 .product-item {
-                    color: $ok-gray;
-                    span {
-                        color: $ok-dark-gray;
+                    table {
+                        th {
+                            color: $ok-gray;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+                        td {
+                            div {
+                                color: $ok-dark-gray;                                
+                            }
+                            span {
+                                color: $ok-gray;
+                            }
+                            img {
+                                min-width: 50px;
+                            }
+                        }
+                    }
+                    .small {
+                        display: inline-block;
+                        margin-top: .5rem;
+                        line-height: 1;
+                        color: $ok-gray;
                     }
                     .product-title {
                         display: block;
@@ -1551,10 +1571,14 @@ section {
                         button {
                             width: 30px;
                             height: 30px;
-                            color: #fff;
-                            background-color: $ok-blue;
+                            color: $ok-dark-gray;
+                            background-color: $ok-light-gray;
                             border-color: transparent;
                             border-radius: 50%;
+                            &:hover {
+                                color: #fff;
+                                background-color: $ok-blue;
+                            }
                             &:focus {
                                 outline: none;
                             }
@@ -1576,13 +1600,21 @@ section {
                     }
                     padding: .5rem;
                     border-bottom: 1px solid $ok-light-gray;
+                    margin-bottom: 1rem;
                 }
                 .delivery-block {
                     height: 100%;
                     background-color: $ok-light-gray;
                     border: 1px solid $ok-gray;
+                    font-size: 0.875rem;
                     padding: .5rem;
+                    .message {
+                        color: $ok-gray;
+                    }
                     &.active {
+                        .message {
+                            color: $ok-blue;
+                        }
                         border: 1px solid $ok-blue;
                     }
                 }
@@ -1594,7 +1626,14 @@ section {
     border: 1px solid $ok-green;
     padding: 1rem;
     .location-block {
-
+        color: $ok-gray;
+        span {
+            color: $ok-dark-gray;
+        }
+        .adress {
+            font-size: 0.875rem;
+        }
+        padding-bottom: 1rem;
     }
     .total-providers-list {
         .provider-item {
@@ -1619,6 +1658,35 @@ section {
                     content: "\f107";
                 }
             }
+            .provider-body {
+                padding: .5rem 0;
+                .check {
+                    font-size: 0.875rem;                    
+                    color: $ok-green;
+                    line-height: 1;
+                }
+                .err {
+                    font-size: 0.875rem;
+                    color: red;
+                    line-height: 1;                    
+                }
+            }
+        }
+    }
+    .price-block {
+        .delivery {
+            font-size: 0.875rem;
+            color: $ok-gray;
+        }
+    }
+    .total-price-block {
+        .saving {
+            font-size: 0.875rem;
+            color: $ok-gray;
+        }
+        .total {
+            font-size: 1.125rem;
+            color: $ok-dark-gray;
         }
     }
 }
