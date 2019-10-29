@@ -34,7 +34,7 @@
 
                 <div class="row">
                     <div class="col-12 col-lg-9">
-                        
+
                         <h1 class="title mb-4">Корзина</h1>
 
                         <div class="providers-list mb-5">
@@ -42,11 +42,13 @@
                                 <div class="provider-header" data-toggle="collapse" href="#collapseProvider-1">
                                     Поставщик: <span>Главторг</span>
                                     <i class="fas fa-wallet" data-toggle="tooltip" data-placement="bottom" title="Оплата наличными"></i>
-                                    <i class="fas fa-credit-card" data-toggle="tooltip" data-placement="bottom" title="Оплата картой"></i> 
+                                    <i class="fas fa-credit-card" data-toggle="tooltip" data-placement="bottom" title="Оплата картой"></i>
                                 </div>
                                 <div class="provider-body collapse show" id="collapseProvider-1">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.</p>
                                     </div>
 
                                     <div class="products-list">
@@ -67,7 +69,7 @@
                                                     <tr>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" target="_blank">
-                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">                                                        
+                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
                                                             </a>
                                                         </td>
                                                         <td data-tablesaw-no-labels>
@@ -80,7 +82,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <div>-50%</div> 
+                                                            <div>-50%</div>
                                                         </td>
                                                         <td>
                                                             <div class="counter">
@@ -91,15 +93,15 @@
                                                             <span class="small">Продается по 12 штук</span>
                                                         </td>
                                                         <td>
-                                                            <div><s>1000</s></div>
-                                                            <div>999</div>
+                                                            <div class="text-nowrap"><s>1000</s></div>
+                                                            <div class="text-nowrap">999</div>
                                                         </td>
                                                         <td>
-                                                            <div>1000</div>
-                                                        </td>                                                        
+                                                            <div class="text-nowrap">1000</div>
+                                                        </td>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" class="btn-close"><i class="fas fa-times"></i></a>
-                                                        </td>                                                        
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -121,7 +123,7 @@
                                                     <tr>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" target="_blank">
-                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">                                                        
+                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
                                                             </a>
                                                         </td>
                                                         <td data-tablesaw-no-labels>
@@ -134,7 +136,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <div>-50%</div> 
+                                                            <div>-50%</div>
                                                         </td>
                                                         <td>
                                                             <div class="counter">
@@ -145,15 +147,15 @@
                                                             <span class="small">Продается по 12 штук</span>
                                                         </td>
                                                         <td>
-                                                            <div><s>1000</s></div>
-                                                            <div>999</div>
+                                                            <div class="text-nowrap"><s>1000</s></div>
+                                                            <div class="text-nowrap">999</div>
                                                         </td>
                                                         <td>
-                                                            <div>1000</div>
-                                                        </td>                                                        
+                                                            <div class="text-nowrap">1000</div>
+                                                        </td>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" class="btn-close"><i class="fas fa-times"></i></a>
-                                                        </td>                                                        
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -171,7 +173,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-lg-4 mb-4">
-                                                <div class="delivery-block d-flex flex-column justify-content-between">
+                                                <label class="form-check-label delivery-block d-flex flex-column justify-content-between" for="pickup-delivery-1">
+                                                    <input type="radio" class="form-check-input" id="pickup-delivery-1" name="delivery-1" value="pickup-delivery-1" checked>
                                                     <div class="message">
                                                         Самовывоз<br>
                                                         <span class="clr-dark-gray">Осталось добавить товаров на 1300 руб.</span>
@@ -184,10 +187,11 @@
                                                         </div>
                                                         <div class="small clr-green">Минимальна сумма заказа 4000 руб.</div>                                                        
                                                     </div>
-                                                </div>
+                                                </label>
                                             </div>
-                                            <div class="col-12 col-lg-4 mb-4">                
-                                                <div class="delivery-block d-flex flex-column justify-content-between active">
+                                            <div class="col-12 col-lg-4 mb-4">
+                                                <label class="form-check-label delivery-block d-flex flex-column justify-content-between" for="express-delivery-1">
+                                                    <input type="radio" class="form-check-input" id="express-delivery-1" name="delivery-1" value="express-delivery-1">
                                                     <div class="message">
                                                         Доставка по Москве и МО<br>
                                                         <span>&nbsp;</span>
@@ -199,25 +203,27 @@
                                                         </div>
                                                         <div class="small clr-green">Минимальна сумма заказа 3000 руб.</div>                                                        
                                                     </div>
-                                                </div>
+                                                </label>
                                             </div>
                                             <div class="col-12 col-lg-4 mb-4 d-flex align-items-center">
                                                 <button class="btn btn-primary w-100">В каталог поставщика</button>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="provider-item">
                                 <div class="provider-header" data-toggle="collapse" href="#collapseProvider-2">
                                     Поставщик: <span>Главторг</span>
                                     <i class="fas fa-wallet" data-toggle="tooltip" data-placement="bottom" title="Оплата наличными"></i>
-                                    <i class="fas fa-credit-card" data-toggle="tooltip" data-placement="bottom" title="Оплата картой"></i> 
+                                    <i class="fas fa-credit-card" data-toggle="tooltip" data-placement="bottom" title="Оплата картой"></i>
                                 </div>
                                 <div class="provider-body collapse show" id="collapseProvider-2">
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.</p>
                                     </div>
 
                                     <div class="products-list">
@@ -238,7 +244,7 @@
                                                     <tr>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" target="_blank">
-                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">                                                        
+                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
                                                             </a>
                                                         </td>
                                                         <td data-tablesaw-no-labels>
@@ -251,7 +257,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <div>-50%</div> 
+                                                            <div>-50%</div>
                                                         </td>
                                                         <td>
                                                             <div class="counter">
@@ -262,15 +268,15 @@
                                                             <span class="small">Продается по 12 штук</span>
                                                         </td>
                                                         <td>
-                                                            <div><s>1000</s></div>
-                                                            <div>999</div>
+                                                            <div class="text-nowrap"><s>1000</s></div>
+                                                            <div class="text-nowrap">999</div>
                                                         </td>
                                                         <td>
-                                                            <div>1000</div>
-                                                        </td>                                                        
+                                                            <div class="text-nowrap">1000</div>
+                                                        </td>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" class="btn-close"><i class="fas fa-times"></i></a>
-                                                        </td>                                                        
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -292,7 +298,7 @@
                                                     <tr>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" target="_blank">
-                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">                                                        
+                                                                <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
                                                             </a>
                                                         </td>
                                                         <td data-tablesaw-no-labels>
@@ -305,7 +311,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <div>-50%</div> 
+                                                            <div>-50%</div>
                                                         </td>
                                                         <td>
                                                             <div class="counter">
@@ -316,15 +322,15 @@
                                                             <span class="small">Продается по 12 штук</span>
                                                         </td>
                                                         <td>
-                                                            <div><s>1000</s></div>
-                                                            <div>999</div>
+                                                            <div class="text-nowrap"><s>1000</s></div>
+                                                            <div class="text-nowrap">999 руб.</div>
                                                         </td>
                                                         <td>
-                                                            <div>1000</div>
-                                                        </td>                                                        
+                                                            <div class="text-nowrap">1000 руб.</div>
+                                                        </td>
                                                         <td data-tablesaw-no-labels>
                                                             <a href="#" class="btn-close"><i class="fas fa-times"></i></a>
-                                                        </td>                                                        
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -342,7 +348,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-lg-4 mb-4">
-                                                <div class="delivery-block d-flex flex-column justify-content-between">
+                                                <label class="form-check-label delivery-block d-flex flex-column justify-content-between" for="pickup-delivery-2">
+                                                    <input type="radio" class="form-check-input" id="pickup-delivery-2" name="delivery-2" value="pickup-delivery-2" checked>
                                                     <div class="message">
                                                         Самовывоз<br>
                                                         <span class="clr-dark-gray">Осталось добавить товаров на 1300 руб.</span>
@@ -355,10 +362,11 @@
                                                         </div>
                                                         <div class="small clr-green">Минимальна сумма заказа 4000 руб.</div>                                                        
                                                     </div>
-                                                </div>
+                                                </label>
                                             </div>
-                                            <div class="col-12 col-lg-4 mb-4">                
-                                                <div class="delivery-block d-flex flex-column justify-content-between active">
+                                            <div class="col-12 col-lg-4 mb-4">
+                                                <label class="form-check-label delivery-block d-flex flex-column justify-content-between" for="express-delivery-2">
+                                                    <input type="radio" class="form-check-input" id="express-delivery-2" name="delivery-2" value="express-delivery-2">
                                                     <div class="message">
                                                         Доставка по Москве и МО<br>
                                                         <span>&nbsp;</span>
@@ -370,14 +378,14 @@
                                                         </div>
                                                         <div class="small clr-green">Минимальна сумма заказа 3000 руб.</div>                                                        
                                                     </div>
-                                                </div>
+                                                </label>
                                             </div>
                                             <div class="col-12 col-lg-4 mb-4 d-flex align-items-center">
                                                 <button class="btn btn-primary w-100">В каталог поставщика</button>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -418,14 +426,14 @@
 
                             <div class="form-group my-4">
                                 <input type="text" class="form-control" placeholder="Введите промокод">
-                            </div>                            
+                            </div>
 
                             <div class="total-price-block mb-4">
                                 <div class="saving">Вы экономите: 4505 руб.</div>
                                 <div class="total">Итого: 1205 руб.</div>
                             </div>
 
-                            <button class="btn btn-primary w-100 text-nowrap">Продолжить</button>                            
+                            <button class="btn btn-primary w-100 text-nowrap">Продолжить</button>
 
                         </div>
 
@@ -448,12 +456,12 @@
     //= template/include-scripts.html
 
     <script>
-        $(document).ready(function($){
+        $(document).ready(function($) {
 
             function catalogItemCounter(field) {
-                var fieldCount = function (el) {
+                var fieldCount = function(el) {
                     var
-                        // Мин. значение
+                    // Мин. значение
                         min = el.data('min') || false,
                         // Макс. значение
                         max = el.data('max') || false,
@@ -461,6 +469,7 @@
                         dec = el.prev('.dec'),
                         // Кнопка увеличения кол-ва
                         inc = el.next('.inc');
+
                     function init(el) {
                         if (!el.attr('disabled')) {
                             dec.on('click', decrement);
@@ -483,17 +492,28 @@
                             }
                         };
                     }
-                    el.each(function () {
+                    el.each(function() {
                         init($(this));
                     });
                 };
-                $(field).each(function () {
+                $(field).each(function() {
                     fieldCount($(this));
                 });
             }
             catalogItemCounter('.fieldCount');
 
-        });    
+            $('.provider-total .form-check-input:checked').closest('.form-check-label').toggleClass('active');
+            $('.provider-total .form-check-input').change(function() {
+                if ($(!this.checked)) {
+                    var providerTotal = $(this).closest('.provider-total');
+                    console.log(providerTotal);
+                    providerTotal.find('.form-check-label').removeClass('active');
+                    $(this).closest('.form-check-label').toggleClass('active');
+                }
+            });
+
+
+        });
     </script>
 
 </body>

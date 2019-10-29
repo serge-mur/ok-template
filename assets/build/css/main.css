@@ -7977,7 +7977,8 @@ h1 {
     color: #000;
     text-decoration: none; }
 
-#search, #search-mobile {
+#search,
+#search-mobile {
   border-right: 1px solid transparent; }
 
 .btn-search {
@@ -8105,6 +8106,8 @@ h1 {
   .btn-primary span {
     text-transform: lowercase;
     font-size: 0.875rem; }
+  .btn-primary.disabled {
+    color: #fff !important; }
 
 .btn-primary-inverse {
   color: #0074ff !important;
@@ -8459,7 +8462,8 @@ h1 {
     color: #adadad;
     background-color: #f6f6f6; }
 
-.status-block span, .status-block a {
+.status-block span,
+.status-block a {
   font-size: 0.75rem;
   color: #adadad;
   white-space: nowrap;
@@ -8529,7 +8533,11 @@ h1 {
     color: #505050; }
 
 .mini-product-card {
-  border-color: transparent; }
+  border-color: transparent;
+  height: 350px; }
+  .mini-product-card img {
+    max-height: 183px;
+    max-width: 183px; }
   .mini-product-card .card-body {
     padding-top: .5rem;
     padding-bottom: 0; }
@@ -9131,8 +9139,7 @@ section h2 {
 
 .providers-list .provider-item .provider-body .products-list .product-item table th {
   color: #adadad;
-  font-weight: normal;
-  text-align: center; }
+  font-weight: normal; }
 
 .providers-list .provider-item .provider-body .products-list .product-item table td div {
   color: #505050; }
@@ -9141,7 +9148,9 @@ section h2 {
   color: #adadad; }
 
 .providers-list .provider-item .provider-body .products-list .product-item table td img {
-  min-width: 50px; }
+  min-width: 50px;
+  max-width: 80px;
+  max-height: 50px; }
 
 .providers-list .provider-item .provider-body .products-list .product-item .small {
   display: inline-block;
@@ -9189,17 +9198,25 @@ section h2 {
     color: #505050; }
 
 .providers-list .provider-item .provider-body .provider-total .delivery-block {
+  position: relative;
   height: 100%;
   background-color: #f6f6f6;
   border: 1px solid #adadad;
   font-size: 0.875rem;
   padding: .5rem; }
+  .providers-list .provider-item .provider-body .provider-total .delivery-block:hover {
+    cursor: pointer; }
   .providers-list .provider-item .provider-body .provider-total .delivery-block .message {
     color: #adadad; }
   .providers-list .provider-item .provider-body .provider-total .delivery-block.active {
     border: 1px solid #0074ff; }
     .providers-list .provider-item .provider-body .provider-total .delivery-block.active .message {
       color: #0074ff; }
+  .providers-list .provider-item .provider-body .provider-total .delivery-block .form-check-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0; }
 
 .total-block {
   border: 1px solid #90de23;

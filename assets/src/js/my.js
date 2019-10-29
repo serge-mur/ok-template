@@ -220,5 +220,15 @@ $('.slider-two').slick({
     ]
 });
 
+// blue border active delivery
+$('.provider-total .form-check-input:checked').closest('.form-check-label').toggleClass('active');
+$('.provider-total .form-check-input').change(function() {
+    if($(!this.checked)) {
+        var providerTotal = $(this).closest('.provider-total');
+        // console.log(providerTotal);
+        providerTotal.find('.form-check-label').removeClass('active');                    
+        $(this).closest('.form-check-label').toggleClass('active'); 
+    }
+});
 
 });//document ready end
