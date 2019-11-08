@@ -928,6 +928,37 @@ h1 {
     }
 }
 
+// ************
+// manufacturer
+// ************
+.bestsellers-block {
+    border: 1px solid red;
+    border-radius: .5rem;
+    position: relative;
+    .bestsellers-header {
+        position: absolute;
+        top: -15px;
+        left: calc(50% - 82px);
+        background-color: red;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        padding: 0 1rem;
+    }   
+}
+.man-rating {
+    color: $ok-gray;
+    span {
+        padding-right: .5rem;
+    }
+} 
+
+
+
+
+
+
+
 // **************
 // action-premium
 // **************
