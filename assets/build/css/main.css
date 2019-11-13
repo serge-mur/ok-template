@@ -7875,8 +7875,15 @@ h1 {
     .dropdown-submenu .dropdown-menu .mega-menu .mega-menu-items a:hover {
       color: #505050;
       text-decoration: none; }
-  .dropdown-submenu .dropdown-menu .mega-menu .banner {
-    background-color: #f6f6f6; }
+  .dropdown-submenu .dropdown-menu .mega-menu .mega-menu-brands a {
+    display: block;
+    font-size: 1rem;
+    line-height: 1;
+    color: #adadad;
+    padding: .5rem 1.5rem .5rem 0; }
+    .dropdown-submenu .dropdown-menu .mega-menu .mega-menu-brands a:hover {
+      color: #505050;
+      text-decoration: none; }
 
 /* https://github.com/Mango/slideout */
 .slideout-menu {
@@ -8273,7 +8280,9 @@ h1 {
     border-bottom: none; }
   .product-card-new .card-image-link {
     display: block;
-    position: relative; }
+    position: relative;
+    max-width: 200px;
+    max-height: 180px; }
     .product-card-new .card-image-link .card-label-top {
       position: absolute;
       top: 1rem;

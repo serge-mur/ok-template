@@ -82,8 +82,18 @@ h1 {
                     }
                 }
             }
-            .banner {
-                background-color: $ok-light-gray;
+            .mega-menu-brands {
+                a {
+                    display: block;
+                    font-size: 1rem;
+                    line-height: 1;
+                    color: $ok-gray;
+                    padding: .5rem 1.5rem .5rem 0;
+                    &:hover {
+                        color: $ok-dark-gray;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
@@ -510,6 +520,8 @@ h1 {
     .card-image-link {
         display: block;
         position: relative;
+        max-width: 200px;
+        max-height: 180px;
         .card-label-top {
             position: absolute;
             top: 1rem;
