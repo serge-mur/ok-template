@@ -25,6 +25,12 @@ $(".dropdown").hover(
             "width": mainMenuWidth-firstLevelWidth
         });
     });
+    
+    $('.dropdown-menu').hover(function() {
+        $("body").css("overflow","hidden");
+    }, function() {
+        $("body").css("overflow","auto");
+    });
 
 
 // https://github.com/Mango/slideout

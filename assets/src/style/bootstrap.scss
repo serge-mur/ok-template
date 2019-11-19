@@ -1,7 +1,7 @@
-// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
-@import "variables";
+// rewrite default Bootstrap 4 variables
+@import "bootstrap-variables";
 
-// Подключение нужных SCSS исходников Bootstrap 4
+// include SCSS Bootstrap 4
 @import "../../../node_modules/bootstrap/scss/_functions";
 @import "../../../node_modules/bootstrap/scss/_variables";
 @import "../../../node_modules/bootstrap/scss/_mixins";
@@ -40,8 +40,5 @@
 @import "../../../node_modules/bootstrap/scss/_utilities";
 @import "../../../node_modules/bootstrap/scss/_print";
 
-// Подключение своих SCSS файлов
-@import "../../../node_modules/slick-carousel/slick/slick.scss";
-@import "slick-theme.scss";
-@import "../../../node_modules/tablesaw/dist/stackonly/tablesaw.stackonly.css";
-@import "my";
+// custom scss for bs4
+@import "my-bootstrap";

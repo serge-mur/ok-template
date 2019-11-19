@@ -1,0 +1,71 @@
+// Variables
+
+// colors
+$ok-green: #90de23;
+$ok-light-green: #f1fae8;
+$ok-blue: #0074ff;
+$ok-light-blue: #f3f9ff;
+$ok-yellow: #ffe500;
+
+$ok-light-gray: #f6f6f6; // background blocks
+$ok-gray: #adadad; // light color text
+$ok-dark-gray: #505050; // text
+
+$primary: $ok-blue;
+$secondary: $ok-green;
+
+
+// fonts 
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
+$font-family-base: 'PT Sans', sans-serif;
+$body-color: $ok-dark-gray;
+
+// options
+$enable-responsive-font-sizes: true;
+
+// links
+$link-color: $ok-blue;
+
+// buttons
+$btn-border-radius: 1.25rem;
+$border-radius-lg: 1.25rem;
+$border-radius-sm: 1.25rem;
+
+// Breadcrumbs
+$breadcrumb-padding-x: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: $ok-gray;
+$breadcrumb-active-color: $ok-gray;
+$breadcrumb-divider: "\2022";
+
+// Pagination
+$pagination-color: $ok-dark-gray;
+$pagination-bg: transparent;
+$pagination-border-color: transparent;
+$pagination-hover-color: $ok-blue;
+$pagination-hover-bg: transparent;
+$pagination-hover-border-color: transparent;
+$pagination-active-color: $ok-blue;
+$pagination-active-bg: transparent;
+$pagination-active-border-color: transparent;
+
+// Dropdown menu container and contents.
+$dropdown-border-radius: 1.25rem;
+$dropdown-link-color: $ok-gray;
+$dropdown-link-hover-color: $ok-blue!important;
+$dropdown-link-hover-bg: transparent;
+$dropdown-link-active-color: $ok-blue;
+$dropdown-link-active-bg: transparent; 
+
+// border
+$border-color: #e8e8e8;
+$border-radius-lg: 1.25rem;
+
+// form
+// $input-border-color: $ok-light-gray;
+$custom-control-indicator-checked-bg: $ok-green;
+
+// Progress bars
+$progress-bg: #fff;
+$progress-bar-bg: $ok-green;
