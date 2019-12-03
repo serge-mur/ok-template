@@ -22,6 +22,9 @@ h1 {
 .clr-green {
     color: $ok-green;
 }
+.clr-blue {
+    color: $ok-blue!important;
+}
 
 .bg-light-gray {
     background-color: $ok-light-gray;
@@ -1732,6 +1735,104 @@ section {
         }
     }
 }
+
+
+// **
+// lk
+// **
+#list-lk-tab {
+    background-color: $ok-light-gray;
+    border: none;
+    .list-group-item {
+        color: $ok-gray;
+        border: none;
+        background-color: transparent;
+        &:first-child {
+            background-color: $ok-green;
+            color: #fff;
+            &.active {
+                background-color: $ok-green;
+                color: #fff;               
+            }
+        }
+        &.active {
+            color: $ok-dark-gray;
+        }
+    }
+}
+
+.add-phone {
+    i {
+        color: $ok-light-gray;
+        font-size: 2.375rem;
+        padding-left: .5rem;
+        &:hover {
+            text-decoration: none;
+            color: $ok-dark-gray;        
+        }
+    }
+}
+
+.add-adress {
+    display: flex;
+    color: $ok-gray;
+    align-items: center;
+    &:hover {
+        text-decoration: none;
+        color: $ok-gray;
+    }
+    i {
+        color: $ok-light-gray;
+        font-size: 2.375rem;
+        padding-right: .5rem;
+        &:hover {
+            text-decoration: none;
+            color: $ok-dark-gray;        
+        }
+    }
+}
+
+.chat-block {
+    overflow-y: scroll;
+    .chat-item {
+        margin-bottom: 1rem;
+        .name {
+            color: $ok-gray;
+        }
+        .date {
+            color: $ok-gray;            
+        }
+    }
+}
+.table-orders {
+    font-size: 1rem;
+    th {
+        color: $ok-gray;
+        font-weight: normal;
+        line-height: 1;
+    }
+}
+
+.table-order-detail {
+    font-size: 1rem;
+    th {
+        color: $ok-gray;
+        font-weight: normal;
+        line-height: 1;
+    }
+    .product-title {
+        display: block;
+        font-size: 1.125rem;
+        line-height: 1;
+        font-weight: bold;
+        color: $ok-dark-gray;
+        margin-bottom: .5rem;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 
 // FIX IT!!!
 .modal-content h1 {

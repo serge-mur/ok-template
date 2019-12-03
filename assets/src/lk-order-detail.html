@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Личный кабинет. Детальная заказа</title>
+    //= template/head.html
+</head>
+
+<body>
+
+    //= template/offcanvas-menu.html
+
+    <div id="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-banner my-4">
+                            banner
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 mb-3">
+                        <div class="list-group" id="list-lk-tab">
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-premium"><i class="fas fa-gem"></i> Премиум аккаунт</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-profile">Личные данные</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-orders">Заказы</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages">Сообщения</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-special">Специальные условия</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        
+                        <h1 class="title mb-4">Заказ №1 <span>ivanov@mail.com</span></h1>
+
+                        <a href="lk.html#list-orders" class="btn btn-secondary mb-2">Вернуться</a>
+
+                        <p>Тут добавить данные заказа</p>
+
+                        <h3 class="sub-title">Состав заказа</h3>
+                        <table class="table table-borderless tablesaw tablesaw-stack table-order-detail" data-tablesaw-mode="stack">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>&nbsp;</th>
+                                    <th>&nbsp;</th>
+                                    <th>Скидка</th>
+                                    <th>Количество</th>
+                                    <th>Цена</th>
+                                    <th>Сумма</th>
+                                    <th>Оплата</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td data-tablesaw-no-labels>
+                                        <a href="#" target="_blank">
+                                            <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
+                                        </a>
+                                    </td>
+                                    <td data-tablesaw-no-labels>
+                                        <a class="product-title" href="#" target="_blank">Мороженое буренка</a>
+                                        <div>
+                                            <span class="clr-gray">Артикул:</span> <span>559658</span>
+                                        </div>
+                                        <div>
+                                            <span class="clr-gray">Тип упаковки:</span> <span>33 шт x 0.2 кг</span>
+                                        </div>
+                                    </td>
+                                    <td>-50%</td>
+                                    <td>36</td>
+                                    <td nowrap>999 руб.</td>
+                                    <td nowrap>1000 руб.</td>
+                                    <td><i class="fas fa-wallet"></i></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td data-tablesaw-no-labels>
+                                        <a href="#" target="_blank">
+                                            <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
+                                        </a>
+                                    </td>
+                                    <td data-tablesaw-no-labels>
+                                        <a class="product-title" href="#" target="_blank">Мороженое буренка</a>
+                                        <div>
+                                            <span class="clr-gray">Артикул:</span> <span>559658</span>
+                                        </div>
+                                        <div>
+                                            <span class="clr-gray">Тип упаковки:</span> <span>33 шт x 0.2 кг</span>
+                                        </div>
+                                    </td>
+                                    <td>-50%</td>
+                                    <td>36</td>
+                                    <td nowrap>999 руб.</td>
+                                    <td nowrap>1000 руб.</td>
+                                    <td><i class="fas fa-wallet"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>                      
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
+    //= template/include-scripts.html
+</body>
+
+</html>

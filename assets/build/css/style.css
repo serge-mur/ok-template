@@ -21,6 +21,9 @@ h1 {
 .clr-green {
   color: #90de23; }
 
+.clr-blue {
+  color: #0074ff !important; }
+
 .bg-light-gray {
   background-color: #f6f6f6; }
 
@@ -1321,6 +1324,79 @@ section h2 {
   .total-block .total-price-block .total {
     font-size: 1.125rem;
     color: #505050; }
+
+#list-lk-tab {
+  background-color: #f6f6f6;
+  border: none; }
+  #list-lk-tab .list-group-item {
+    color: #adadad;
+    border: none;
+    background-color: transparent; }
+    #list-lk-tab .list-group-item:first-child {
+      background-color: #90de23;
+      color: #fff; }
+      #list-lk-tab .list-group-item:first-child.active {
+        background-color: #90de23;
+        color: #fff; }
+    #list-lk-tab .list-group-item.active {
+      color: #505050; }
+
+.add-phone i {
+  color: #f6f6f6;
+  font-size: 2.375rem;
+  padding-left: .5rem; }
+  .add-phone i:hover {
+    text-decoration: none;
+    color: #505050; }
+
+.add-adress {
+  display: -ms-flexbox;
+  display: flex;
+  color: #adadad;
+  -ms-flex-align: center;
+      align-items: center; }
+  .add-adress:hover {
+    text-decoration: none;
+    color: #adadad; }
+  .add-adress i {
+    color: #f6f6f6;
+    font-size: 2.375rem;
+    padding-right: .5rem; }
+    .add-adress i:hover {
+      text-decoration: none;
+      color: #505050; }
+
+.chat-block {
+  overflow-y: scroll; }
+  .chat-block .chat-item {
+    margin-bottom: 1rem; }
+    .chat-block .chat-item .name {
+      color: #adadad; }
+    .chat-block .chat-item .date {
+      color: #adadad; }
+
+.table-orders {
+  font-size: 1rem; }
+  .table-orders th {
+    color: #adadad;
+    font-weight: normal;
+    line-height: 1; }
+
+.table-order-detail {
+  font-size: 1rem; }
+  .table-order-detail th {
+    color: #adadad;
+    font-weight: normal;
+    line-height: 1; }
+  .table-order-detail .product-title {
+    display: block;
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #505050;
+    margin-bottom: .5rem; }
+    .table-order-detail .product-title:hover {
+      text-decoration: none; }
 
 .modal-content h1 {
   font-size: 1.5rem;
