@@ -775,6 +775,33 @@ h1 {
     }
 }
 
+.buy-block {
+    .counter {
+        display: inline-flex;
+        button {
+            width: 40px;
+            height: 40px;
+            color: $ok-dark-gray;
+            background-color: $ok-light-gray;
+            border-color: transparent;
+            border-radius: 50%;
+            &:hover {
+                color: #fff;
+                background-color: $ok-blue;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        input {
+            width: 3rem;
+            text-align: center;
+            border: none;
+        }
+    }
+}
+
+
 .provider-block {
     background-color: $ok-light-gray;
     .provider-item {
