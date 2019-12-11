@@ -1722,6 +1722,9 @@
                 var quantity = parseInt($('.counter .count').val());
                     if(quantity>step){
                         $('.counter .count').val(quantity - step);
+                    } else {
+                        $('.buy-step-2').hide();
+                        $('.buy-step-1').show();
                     }
             });
 
