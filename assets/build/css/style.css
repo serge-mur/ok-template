@@ -1418,6 +1418,100 @@ section h2 {
     .table-order-detail .product-title:hover {
       text-decoration: none; }
 
+.intro-title {
+  font-size: 1.5rem;
+  text-align: center; }
+  .intro-title span {
+    font-size: 3.4375rem;
+    color: #0074ff; }
+
+.infographics-block {
+  background-color: #0074ff;
+  color: #fff; }
+  .infographics-block h3 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .infographics-block h3 + p {
+    text-align: center; }
+  .infographics-block .act-block {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    min-height: 150px;
+    padding: 1rem;
+    border: 3px dashed #90de23;
+    border-radius: 1.5rem; }
+    .infographics-block .act-block .icon-block {
+      margin-right: 1rem; }
+    .infographics-block .act-block .text {
+      font-size: 1rem;
+      line-height: 1.2;
+      color: #fff; }
+      .infographics-block .act-block .text a {
+        color: #90de23;
+        text-decoration: underline; }
+        .infographics-block .act-block .text a:hover {
+          text-decoration: none; }
+      .infographics-block .act-block .text small {
+        margin-top: 1rem;
+        display: block; }
+
+.pickup-info-block h3 {
+  font-size: 1.5rem; }
+
+.pickup-info-block .list-block .list-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .pickup-info-block .list-block .list-item .num {
+    display: -ms-flexbox;
+    display: flex;
+    width: 5.7rem;
+    height: 5.7rem;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    font-size: 4.125rem;
+    color: #0074ff; }
+  .pickup-info-block .list-block .list-item .text {
+    background-color: #f6f6f6;
+    padding: .5rem 1rem;
+    margin-left: -1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    line-height: 1; }
+
+.payment-info-block {
+  background-color: #f1fae8; }
+  .payment-info-block h3 {
+    font-size: 1.5rem; }
+  .payment-info-block .shirt-block {
+    text-align: center; }
+    .payment-info-block .shirt-block .img {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 150px;
+      height: 150px;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      background-color: #fff;
+      border: 3px solid #90de23;
+      border-radius: 50%; }
+    .payment-info-block .shirt-block .text {
+      margin-top: -50px;
+      background-color: #fff;
+      text-align: center;
+      border: 3px solid #90de23;
+      border-radius: 1rem; }
+
 .modal-content h1 {
   font-size: 1.5rem;
   line-height: 1; }

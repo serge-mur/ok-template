@@ -1860,6 +1860,117 @@ section {
     }
 }
 
+// *************
+// delivery page
+// *************
+.intro-title {
+    font-size: 1.5rem;
+    text-align: center;
+    span {
+        font-size: 3.4375rem;
+        color: $ok-blue;
+    }
+}
+
+.infographics-block {
+    background-color: $ok-blue;
+    color: #fff;
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h3+p {
+        text-align: center;
+    }
+    .act-block {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        min-height: 150px;
+        padding: 1rem;
+        border: 3px dashed $ok-green; 
+        border-radius: 1.5rem; 
+        .icon-block {
+            margin-right: 1rem;
+        }      
+        .text {
+            font-size: 1rem;
+            line-height: 1.2;
+            color: #fff;
+            a {
+                color: $ok-green;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            small {
+                margin-top: 1rem;
+                display: block;
+            }
+        } 
+    }    
+}
+
+.pickup-info-block {
+    h3 {
+        font-size: 1.5rem;
+    }
+    .list-block {
+        .list-item {
+            display: flex;
+            align-items: center;
+            .num {
+                display: flex;
+                width: 5.7rem;
+                height: 5.7rem;
+                align-items: center;
+                justify-content: center;
+                background-color: $ok-light-gray;
+                border-radius: 50%;
+                font-size: 4.125rem;
+                color: $ok-blue;
+            }
+            .text {
+                background-color: $ok-light-gray;
+                padding: .5rem 1rem;
+                margin-left: -1rem;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.payment-info-block {
+    background-color: $ok-light-green;
+    h3 {
+        font-size: 1.5rem;
+    }
+    .shirt-block {
+        text-align: center;
+        .img {
+            display: inline-flex;
+            width: 150px;
+            height: 150px;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border: 3px solid $ok-green;
+            border-radius: 50%;
+        }
+        .text {
+            margin-top: -50px;
+            background-color: #fff;
+            text-align: center;
+            border: 3px solid $ok-green;
+            border-radius: 1rem;
+        }
+    }
+}
+
+
 
 // FIX IT!!!
 .modal-content h1 {
