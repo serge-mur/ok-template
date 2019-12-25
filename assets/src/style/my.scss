@@ -1675,6 +1675,7 @@ section {
                     }
                     .message {
                         color: $ok-gray;
+                        padding-left: 1rem;
                     }
                     &.active {
                         .message {
@@ -1684,9 +1685,8 @@ section {
                     }
                     .form-check-input {
                         position: absolute;
-                        top: 0;
-                        right: 0;
-                        opacity: 0;
+                        top: .4rem;
+                        left: 1.5rem;
                     }
                 }
             }
@@ -1869,6 +1869,7 @@ section {
     span {
         font-size: 3.4375rem;
         color: $ok-blue;
+        line-height: 1;
     }
 }
 
@@ -1923,6 +1924,7 @@ section {
             .num {
                 display: flex;
                 width: 5.7rem;
+                min-width: 5.7rem;
                 height: 5.7rem;
                 align-items: center;
                 justify-content: center;
@@ -1934,7 +1936,7 @@ section {
             .text {
                 background-color: $ok-light-gray;
                 padding: .5rem 1rem;
-                margin-left: -1rem;
+                margin-left: -.5rem;
                 border-top-right-radius: 1rem;
                 border-bottom-right-radius: 1rem;
                 line-height: 1;
@@ -1944,7 +1946,7 @@ section {
 }
 
 .payment-info-block {
-    background-color: $ok-light-green;
+    background: linear-gradient(to bottom, transparent 20%, #cdff88 20%, #cdff88 80%, transparent 80%);
     h3 {
         font-size: 1.5rem;
     }
@@ -1957,15 +1959,25 @@ section {
             align-items: center;
             justify-content: center;
             background-color: #fff;
-            border: 3px solid $ok-green;
+            border: 3px solid #cdff88;
             border-radius: 50%;
+            position: relative;
+            .slice {
+                position: absolute;
+                bottom: -3px;
+                left: 10px;
+                right: 10px;
+                background-color: #fff;
+                height: 17px;
+            }            
         }
         .text {
-            margin-top: -50px;
+            margin-top: -20px;
             background-color: #fff;
             text-align: center;
-            border: 3px solid $ok-green;
+            border: 3px solid #cdff88;
             border-radius: 1rem;
+            padding: 1rem;
         }
     }
 }
