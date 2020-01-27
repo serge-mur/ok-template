@@ -2039,3 +2039,77 @@ section {
 #modal-region .column a:hover {
     // color: #000;
 }
+
+// ****
+// blog
+// ****
+// sidebar
+.sidebar-nav {
+    .nav-item {
+        .nav-link {
+            color: $ok-dark-gray;
+            font-size: 1.125rem;
+            line-height: 1;
+            &:hover, &.active {
+                background-color: $ok-light-gray;
+            }
+        }
+    }
+}
+
+// blog list
+.card-blog {
+    height: 100%;
+    border: none;
+    .card-body {
+        padding: 0;
+        .card-title {
+            font-size: 1rem;
+            line-height: 1;
+            color: $ok-dark-gray; 
+        }
+        .card-text {
+            font-size: 1rem;
+            line-height: 1;
+            color: $ok-gray;
+            padding-left: .5rem;
+        }
+    }
+    .card-footer {
+        padding: 1rem 0;
+        text-align: right;
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+// blog article
+
+.article-date {
+    color: $ok-dark-gray;
+    i {
+        margin-right: .5rem;
+    }
+}
+
+.article-know {
+    // border: 1px solid red;
+    // border-radius: .5rem;
+    position: relative;
+    background-color: $ok-light-gray;
+    padding: 1.5rem;
+    .article-know-header {
+        position: absolute;
+        top: -15px;
+        left: 3rem;
+        background-color: $ok-green;
+        color: #fff;
+        font-size: 1rem;
+        // border-radius: .5rem;
+        padding: 0 1rem;
+    }
+    p {
+        margin-bottom: 0;
+    }  
+}

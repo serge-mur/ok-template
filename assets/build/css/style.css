@@ -1564,6 +1564,53 @@ section h2 {
   padding: .25rem 0;
   color: #000; }
 
+.sidebar-nav .nav-item .nav-link {
+  color: #505050;
+  font-size: 1.125rem;
+  line-height: 1; }
+  .sidebar-nav .nav-item .nav-link:hover, .sidebar-nav .nav-item .nav-link.active {
+    background-color: #f6f6f6; }
+
+.card-blog {
+  height: 100%;
+  border: none; }
+  .card-blog .card-body {
+    padding: 0; }
+    .card-blog .card-body .card-title {
+      font-size: 1rem;
+      line-height: 1;
+      color: #505050; }
+    .card-blog .card-body .card-text {
+      font-size: 1rem;
+      line-height: 1;
+      color: #adadad;
+      padding-left: .5rem; }
+  .card-blog .card-footer {
+    padding: 1rem 0;
+    text-align: right;
+    background-color: transparent;
+    border: none; }
+
+.article-date {
+  color: #505050; }
+  .article-date i {
+    margin-right: .5rem; }
+
+.article-know {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 1.5rem; }
+  .article-know .article-know-header {
+    position: absolute;
+    top: -15px;
+    left: 3rem;
+    background-color: #90de23;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 1rem; }
+  .article-know p {
+    margin-bottom: 0; }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("../img/ajax-loader.gif") center center no-repeat; }
