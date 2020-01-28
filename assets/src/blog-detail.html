@@ -57,7 +57,7 @@
                     <div class="col-12 col-lg-9">
                         <div class="article-wrapper-block">
                             
-                            <h1 class="title mb-4">Что должно быть в морозилке, что бы собрать стол за 30 минут? Что должно быть в морозилке, что бы собрать стол за 30 минут?</h1>
+                            <h1 class="title mb-4">Что должно быть в морозилке, что бы собрать стол за 30 минут?</h1>
                             
                             <div class="article-date">
                                 <i class="far fa-clock"></i> 23.01.2020
@@ -67,37 +67,40 @@
                                 <i class="far fa-calendar-alt"></i> Ожидаемое время прочтения: 1 минута
                             </div>
 
-                            <div class="article-slider">
+                            <div class="article-slider mb-5">
                                 <div><img class="img-fluid" src="img/blog/pexels-photo-2662875.jpg" alt=""></div>
                                 <div><img class="img-fluid" src="img/blog/pexels-photo-2662875.jpg" alt=""></div>
                                 <div><img class="img-fluid" src="img/blog/pexels-photo-2662875.jpg" alt=""></div>
                             </div>
                             
-                            <div class="article-text">
+                            <div class="article-text mb-5">
                                 <h2 class="sub-title">Плотные обеды</h2>
                                 <p>Давно прошли те времена, когда обед обязательно должен был состоять из первого блюда, второго и компота. Диетологи часто критикуют супы и борщи за то, что мясные бульоны, на которых они готовятся, не содержат ничего полезного, кроме коллагена, а сами блюда являются способом «забить» желудок пустой едой.</p>
                                 <p>Гораздо полезнее съесть одно блюдо, содержащее необходимое количество питательных веществ и нутриентов, а также имеющее нужное количество калорий. Безусловно, при правильном подходе хозяйка сможет самостоятельно сделать мясной фарш и котлеты из него, которые при случае можно размораживать.</p>
                                 <p>Но сейчас имеется масса альтернативных вариантов, когда можно сэкономить время не только на изготовлении полуфабриката, но и на покупке. Многие магазины делают доставку продуктов прямо на дом.</p>
                             </div>
                             
-                            <a href="#" class="article-banner">
+                            <a href="#" class="article-banner d-block mb-5">
                                 <img class="img-fluid" src="img/blog/pexels-photo-357576.jpg" alt="">
                             </a>
 
-                            <div class="article-quote">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue risus, finibus eget nunc non, egestas pellentesque purus. Phasellus ut gravida tellusLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue
+                            <div class="article-quote mb-5">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue risus, finibus eget nunc non, egestas pellentesque purus. Phasellus ut gravida tellusLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue</p>
+                                <p class="text-right">(c) Цитата</p>
                             </div>
                             
-                            <div class="article-know my-5">
-                                <div class="article-know-header">Бестселлеры</div>
+                            <div class="article-know mb-5">
+                                <div class="article-know-header">Полезно знать</div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue risus, finibus eget nunc non, egestas pellentesque purus. Phasellus ut gravida tellusLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue</p>
                             </div>
 
-                            <div class="article-profitably">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue risus, finibus eget nunc non, egestas pellentesque purus. Phasellus ut gravida tellusLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue
+                            <div class="article-profitably mb-5">
+                                <div class="article-profitably-header">Как купить выгодно?</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue risus, finibus eget nunc non, egestas pellentesque purus. Phasellus ut gravida tellusLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue</p>
+                                </div>
                             </div>
 
-                            <div class="article-text">
+                            <div class="article-text mb-5">
                                 <h2 class="sub-title">Внимание!</h2>
                                 <p>Давно прошли те времена, когда обед обязательно должен был состоять из первого блюда, второго и компота. Диетологи часто критикуют супы и борщи за то, что мясные бульоны, на которых они готовятся, не содержат ничего полезного, кроме коллагена, а сами блюда являются способом «забить» желудок пустой едой.</p>
                             </div>
@@ -132,7 +135,7 @@
                                 </div>
                             </div>
 
-                            <div class="article-news">
+                            <div class="article-news mb-5">
 
                                <button class="btn btn-more btn-sm mb-3">Ко всем статьям</button>
                             
@@ -172,6 +175,8 @@
 
         <footer id="footer">
             //= template/footer.html
+
+            <a id="button"></a>
         </footer>
 
     </div>
@@ -183,11 +188,67 @@
     //= template/include-scripts.html
 
     <script>
+
+    jQuery(document).ready(function() {
+
+        // to top button
+        var btn = $('#button');
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.show();
+        } else {
+            btn.hide();
+        }
+        });
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
+
         $('.article-slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true
         });
+
+        // customization
+        // var $slider = $('.article-slider');
+        // if ($slider.length) {
+        //     var currentSlide;
+        //     var slidesCount;
+        //     var sliderCounter = document.createElement('div');
+        //     sliderCounter.classList.add('slider-counter');
+
+        //     var updateSliderCounter = function(slick, currentIndex) {
+        //         currentSlide = slick.slickCurrentSlide() + 1;
+        //         slidesCount = slick.slideCount;
+        //         $(sliderCounter).html('<span class="prev"><i class="fas fa-arrow-left"></i></span> '+currentSlide + '/' +slidesCount+' <span class="next"><i class="fas fa-arrow-right"></i></span>')
+        //     };
+
+        //     $slider.on('init', function(event, slick) {
+        //         $slider.append(sliderCounter);
+        //         updateSliderCounter(slick);
+        //     });
+
+        //     $slider.on('afterChange', function(event, slick, currentSlide) {
+        //         updateSliderCounter(slick, currentSlide);
+        //     });
+
+        //     $slider.slick({
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1,
+        //         arrows: false,
+        //         // prevArrow: $('.fa-arrow-left'),
+        //         // nextArrow: $('.fa-arrow-right'),
+        //         dots: true        
+        //     });
+        // }
+        // $('.prev').on('click', function() {
+        //     $slider.slick('slickNext');
+        // });
+        // $('.next').on('click', function() {
+        //     $slider.slick('slickPrev');
+        // });
 
         $('.slider-article-product').slick({
             slidesToShow: 4,
@@ -218,6 +279,7 @@
             ]
         });
 
+    });
     </script>
 
 </body>
