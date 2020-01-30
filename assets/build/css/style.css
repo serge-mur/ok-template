@@ -1579,11 +1579,12 @@ section h2 {
     .card-blog .card-body .card-title {
       font-size: 1rem;
       line-height: 1;
-      color: #505050; }
+      color: #505050;
+      font-weight: bold; }
     .card-blog .card-body .card-text {
       font-size: 1rem;
       line-height: 1;
-      color: #adadad;
+      color: #505050;
       padding-left: .5rem; }
   .card-blog .card-footer {
     padding: 1rem 0;
@@ -1674,7 +1675,7 @@ section h2 {
 
 .article-slider .slick-prev {
   left: 15px;
-  z-index: 1000; }
+  z-index: 1; }
 
 .article-slider .slick-next {
   right: 15px; }
@@ -1809,7 +1810,7 @@ section h2 {
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -30px;
   list-style: none;
   display: block;
   text-align: center;
@@ -1848,15 +1849,15 @@ section h2 {
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 6px;
+        font-size: 10px;
         line-height: 20px;
         text-align: center;
-        color: black;
+        color: #0074ff;
         opacity: 0.75;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
-      color: black;
+      color: #90de23;
       opacity: 0.7; }
 
 .char-slider,
