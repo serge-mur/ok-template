@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>Личный кабинет. Данные пользователя</title>
+    <title>Личный кабинет.</title>
     //= template/head.html
 </head>
 
@@ -28,9 +28,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 mb-3">
                         <div class="list-group" id="list-lk-tab">
-                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-premium">Премиум аккаунт</a>
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-premium"><i class="fas fa-gem"></i> Премиум аккаунт</a>
                             <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-profile">Личные данные</a>
                             <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-orders">Заказы</a>
                             <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages">Сообщения</a>
@@ -38,13 +38,15 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
-                        <h1 class="title mb-4">Premium Аккаунт <span>ivanov@mail.com</span></h1>
-                                   
+         
                         <div class="tab-content" id="nav-lk-content">
                             <div class="tab-pane fade show active" id="list-premium">
+
+                                <h1 class="title mb-4">Premium Аккаунт <span>ivanov@mail.com</span></h1>
+
                                 <p>OTKOROBKI.RU – продукты без наценки магазинов. Более 70 000 товаров в наличии, напрямую от поставщиков и производителей. Мы предлагаем Вам 2 варианта покупок на OTKOROBKI.RU: </p>
                                 
-                                <table class="table">
+                                <table class="table table-responsive">
                                     <thead>
                                       <tr>
                                         <th scope="col">Возможности:</th>
@@ -91,8 +93,8 @@
                                       </tr>
                                       <tr>
                                         <th scope="row"></th>
-                                        <td><a href="#" class="btn btn-primary">Перейти в каталог</a></td>
-                                        <td><a href="#" class="btn btn-secondary">Купить Premium</a></td>
+                                        <td><a href="#" class="btn btn-primary btn-sm">Перейти в каталог</a></td>
+                                        <td><a href="#" class="btn btn-secondary btn-sm">Купить Premium</a></td>
 
                                       </tr>
                                     </tbody>
@@ -101,115 +103,128 @@
                             </div>
 
                             <div class="tab-pane fade" id="list-profile">
+                                    <h1 class="title mb-4">Личный кабинет <span>ivanov@mail.com</span></h1>
 
-<div class="row">
-    <div class="col-6">
-        <form>
-            <div class="form-group">
-                <label for="first_name">Имя</label>
-                <input type="text" class="form-control" id="first_name" placeholder="Имя" value="Иван">
-            </div>
-            <div class="form-group">
-                <label for="last_name">Фамилия</label>
-                <input type="text" class="form-control" id="last_name" placeholder="Фамилия" value="Иванов">
-            </div>
-            <div class="form-group">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Частый клиент</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Организация</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="organization">Наименование организации</label>
-                <input type="text" class="form-control" id="organization" placeholder="Организация" value="Рога & копыта">
-            </div>
-            <div class="form-group">
-                <label for="phone">Телефон</label>
-                <input type="text" class="form-control" id="phone" placeholder="Телефон" value="+ 7 777 777 77 77">
-                <a href="#"><i class="fas fa-plus-circle"></i></a>
-            </div>
-            <button type="submit" class="btn btn-primary">Сохранить изменения</button>
-        </form>
-    </div>
-    <div class="col-6">
-        <h3>Мои адреса</h3>
-        <div class="adress-block">
-            Зеленоградская ул., д.5, кв. 50.
-        </div>
-        <a href="#" class="d-block"><i class="fas fa-plus-circle"></i> Добавить адрес доставки</a>
-    </div>
-</div>
+                                    <form class="row mb-5">
+                                        <div class="col-12 col-lg-6">
+
+                                            <div class="form-group">
+                                                <label for="first_name">Имя</label>
+                                                <input type="text" class="form-control" id="first_name" placeholder="Имя" value="Иван">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="last_name">Фамилия</label>
+                                                <input type="text" class="form-control" id="last_name" placeholder="Фамилия" value="Иванов">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Частый клиент</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">Организация</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="organization">Наименование организации</label>
+                                                <input type="text" class="form-control" id="organization" placeholder="Организация" value="Рога & копыта">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Телефон</label>
+                                                <div class="d-flex add-phone">
+                                                    <input type="text" class="form-control" id="phone" placeholder="Телефон" value="+ 7 777 777 77 77">                        
+                                                    <a href="#"><i class="fas fa-plus-circle"></i></a>                        
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <h3 class="sub-title">Мои адреса</h3>
+                                            <div class="block-secondary mb-3">
+                                                Зеленоградская ул., д.5, кв. 50.
+                                            </div>
+                                            <a href="#" class="add-adress mb-3"><i class="fas fa-plus-circle"></i> Добавить адрес доставки</a>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                                        </div>
+                                    </form>
 
                             </div>
                             <div class="tab-pane fade" id="list-orders">
-
-
-                                <table class="table table-borderless tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                                <h1 class="title mb-4">Заказы <span>ivanov@mail.com</span></h1>
+                                <table class="table table-borderless tablesaw tablesaw-stack table-orders" data-tablesaw-mode="stack">
                                     <thead>
                                         <tr>
-                                            <th>№</th>
-                                            <th>&nbsp;</th>
-                                            <th>&nbsp;</th>
-                                            <th>Скидка</th>
-                                            <th>Количество</th>
-                                            <th>Цена</th>
+                                            <th>#</th>
+                                            <th>Дата</th>
+                                            <th>Дистрибьютор</th>
+                                            <th>Статус заказа</th>
                                             <th>Сумма</th>
+                                            <th>Статус клиента</th>
+                                            <th>Доставка</th>
+                                            <th>Отзыв</th>
                                             <th>&nbsp;</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td data-tablesaw-no-labels>
-                                                <a href="#" target="_blank">
-                                                    <img class="img-fluid" src="img/13376_middle.jpg" alt="Мороженое буренка">
-                                                </a>
-                                            </td>
-                                            <td data-tablesaw-no-labels>
-                                                <a class="product-title" href="#" target="_blank">Мороженое буренка</a>
-                                                <div>
-                                                    Артикул <span>559658</span>
-                                                </div>
-                                                <div>
-                                                    Тип упаковки <span>33 шт x 0.2 кг</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>-50%</div>
-                                            </td>
-                                            <td>
-                                                <div class="counter">
-                                                    <button type="button" class="but counterBut dec">-</button>
-                                                    <input type="text" class="field fieldCount" value="1" data-min="1" data-max="999">
-                                                    <button type="button" class="but counterBut inc">+</button>
-                                                </div>
-                                                <span class="small">Продается по 12 штук</span>
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap"><s>1000</s></div>
-                                                <div class="text-nowrap">999 руб.</div>
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">1000 руб.</div>
-                                            </td>
-                                            <td data-tablesaw-no-labels>
-                                                <a href="#" class="btn-close"><i class="fas fa-times"></i></a>
-                                            </td>
+                                            <td>10.02.19</td>
+                                            <td>ООО "Александров"</td>
+                                            <td>Закрыт</td>
+                                            <td>1200</td>
+                                            <td>Premium</td>
+                                            <td>Курьером</td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td><a href="lk-order-detail.html" class="btn btn-secondary btn-sm">Подробнее</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>10.02.19</td>
+                                            <td>ООО "Александров"</td>
+                                            <td>Закрыт</td>
+                                            <td>1200</td>
+                                            <td>Premium</td>
+                                            <td>Курьером</td>
+                                            <td><i class="fas fa-check"></i></td>
+                                            <td data-tablesaw-no-labels><a href="lk-order-detail.html" class="btn btn-secondary btn-sm">Подробнее</a></td>
                                         </tr>
                                     </tbody>
-                                </table>
-
+                                </table>                                
 
                             </div>
                             <div class="tab-pane fade" id="list-messages">
-                                messages
+                                <h1 class="title mb-4">Сообщения <span>ivanov@mail.com</span></h1>
+                                <p>Вопросы? Предложения? <span class="clr-gray">Введите текст сообщения и нажмите кнопку "Отправить сообщение"</span></p>
+                                <div class="chat-block border mb-3 p-3">
+                                    <div class="chat-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="name">Вы:</div>
+                                            <div class="date">20.08.19 08:30</div>
+                                        </div>
+                                        <div class="message">Здравствуйте, сколько будет доставка по Москве при заказе 5000 р?</div>
+                                    </div>
+                                    <div class="chat-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="name clr-blue">Оператор Василий:</div>
+                                            <div class="date">20.08.19 08:35</div>
+                                        </div>
+                                        <div class="message">Здравствуйте, 500 р.</div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <textarea class="form-control" id="message1" rows="3" placeholder="Текст сообщения"></textarea>
+                                    <a href="#" class="btn btn-primary my-3">Отправить сообщение</a>
+                                </form>
                             </div>
                             <div class="tab-pane fade" id="list-special">
-                                special
+                                <h1 class="title mb-4">Специальные условия <span>ivanov@mail.com</span></h1>
+                                <p>Склады, предоставляющие спецусловия</p>
+                                <hr>
+                                <p>У вас нет спецусловий</p>
+                                <a href="#" class="btn btn-primary my-2">Купить Premium</a>
                             </div>
                         </div>                        
 

@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/tablesaw/stackonly/tablesaw.stackonly.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -343,7 +346,7 @@
                                         <div class='radio' data-value="12">12</div>
                                         <div class='radio disabled' data-value="24">24</div>
                                             
-                                        <input type="hidden" class="form-control" id="radio-value" name="radio-value" />
+                                        <input type="hidden" class="form-control" id="radio-value" name="radio-value" value="1" />
 
                                     </div>                                
                                 </div>                             
@@ -401,8 +404,21 @@
                                 </div>
 
                                 <div class="buy-block my-4">
-                                    <button class="btn btn-primary btn-lg">В корзину</button>
-                                    <button class="btn clr-gray">Заказ в 1 клик</button>                                    
+                                    
+                                    <div class="buy-step-1">
+                                        <button class="btn btn-primary btn-lg" id="buy-btn">В корзину</button>
+                                        <button class="btn clr-gray">Заказ в 1 клик</button>                                        
+                                    </div>
+
+                                    <div class="buy-step-2">
+                                        <div class="counter">
+                                            <button type="button" class="quantity-minus">-</button>
+                                            <input type="text" class="count" data-step="" value="">
+                                            <button type="button" class="quantity-plus">+</button>
+                                        </div>
+                                        <button class="btn clr-gray">В корзине</button>                                        
+                                    </div>
+                                   
                                 </div>
 
                                 <div class="like-price-block">Нравится цена?
@@ -1631,7 +1647,14 @@
             </div>
         </div>
     </div>
-    <script src="js/main.min.js"></script>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="lib/slideout/slideout.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/tablesaw/stackonly/tablesaw.stackonly.jquery.js"></script>
+    <script src="lib/tablesaw/tablesaw-init.js"></script>
+    <script src="js/script.js"></script>
 
     <script>
         $(document).ready(function($){
@@ -1654,14 +1677,55 @@
                     $(this).parent().find('.radio').removeClass('selected');
                     $(this).addClass('selected');
                     var val = $(this).attr('data-value');
-                    //alert(val);
-                    $(this).parent().find('input').val(val);  
+                    $(this).parent().find('input').val(val); 
+                    
+                    setCounter(parseInt(val));
 
                     // показываем/скрываем блоки
                     $(".toggle-block>[class^='toggle-']").hide();
-                    $(".toggle-block>[class='toggle-"+val+"']").show();                  
+                    $(".toggle-block>[class='toggle-"+val+"']").show();
                 }
 
+            });
+
+            // buying process
+            $('.buy-step-2').hide();
+            $('#buy-btn').click(function() {
+                $('.buy-step-1').hide();
+                $('.buy-step-2').show();
+                
+                var count = parseInt($('#radio-value').val());
+                // console.log('count '+ count);
+                setCounter(count);
+            });
+
+            $('#radio-value').change(function() { 
+                var count = parseInt($('#radio-value').val());
+                console.log('count '+ count);
+                setCounter(count);   
+            }); 
+
+            function setCounter(step) {
+                var quantity = step;
+                $('.counter .count').val(quantity);
+                $('.counter .count').attr('data-step', quantity);
+            }
+
+            $('.counter .quantity-plus').click(function(e){
+                var step = parseInt($('.counter .count').attr('data-step'));
+                var quantity = parseInt($('.counter .count').val());
+                    $('.counter .count').val(quantity + step);  
+            });
+
+            $('.counter .quantity-minus').click(function(e){
+                var step = parseInt($('.counter .count').attr('data-step'));
+                var quantity = parseInt($('.counter .count').val());
+                    if(quantity>step){
+                        $('.counter .count').val(quantity - step);
+                    } else {
+                        $('.buy-step-2').hide();
+                        $('.buy-step-1').show();
+                    }
             });
 
         });    

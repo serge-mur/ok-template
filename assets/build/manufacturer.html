@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/tablesaw/stackonly/tablesaw.stackonly.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -390,9 +393,18 @@
 
                         <div class="text-block clr-gray">
                             <p>Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что новая модель организационной деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <div class="collapse" id="collapse-text">
+                                <p>Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения
+                                и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует,
+                                однако забывать, что новая модель организационной деятельности играет важную роль в формировании
+                                системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает,
+                                что постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций,
+                                занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                            <a class="btn btn-more btn-sm" data-toggle="collapse" href="#collapse-text">Подробнее</a>
                         </div>
 
-                        <div class="man-rating mb-5">
+                        <div class="man-rating mb-5 mt-3">
                             <span>Рейтинг производителя</span>
                             <span class="star-rating">
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -748,12 +760,100 @@
                         </div>
 
                         <div class="text-block clr-gray">
+
                             <p>Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения
                                 и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует,
                                 однако забывать, что новая модель организационной деятельности играет важную роль в формировании
                                 системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает,
                                 что постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций,
+                                занимаемых участниками в отношении поставленных задач.</p>                                
+
+                            <div class="collapse" id="collapse-text">
+                                <p>Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения
+                                и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует,
+                                однако забывать, что новая модель организационной деятельности играет важную роль в формировании
+                                системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает,
+                                что постоянный количественный рост и сфера нашей активности позволяет оценить значение позиций,
                                 занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                            <a class="btn btn-more btn-sm" data-toggle="collapse" href="#collapse-text">Подробнее</a>
+                        </div>
+
+                        <div class="registration-block mt-5">
+                            <h2 class="sub-title">Для начала сотрудничества заполните простую форму регистрации:</h2>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group my-3">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Частый клиент</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Организация</label>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <!-- <label for="organization">Название компании</label> -->
+                                            <input type="text" class="form-control form-control-lg" id="organization" placeholder="Название компании">
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label for="city">Город</label> -->
+                                            <input type="text" class="form-control form-control-lg" id="city" placeholder="Город">
+                                        </div>                                        
+                                        <div class="form-group">
+                                            <!-- <label for="name">Контактное лицо</label> -->
+                                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Контактное лицо">
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label for="phone">Телефон</label> -->
+                                            <input type="text" class="form-control form-control-lg" id="phone" placeholder="Телефон">                  
+                                        </div>                                        
+                                        <div class="form-group">
+                                            <!-- <label for="mail">Почта</label> -->
+                                            <input type="mail" class="form-control form-control-lg" id="mail" placeholder="Почта">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <small>Проверочный код</small>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="https://otkorobki.ru/site/captcha?v=5df094ca2e5778.54616424" alt="картинка">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control form-control-lg" id="code" placeholder="Введите код">                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="check1">
+                                            <label class="form-check-label" for="check1">Нажимая кнопку <a href="#">«Отправить заявку»</a>, я принимаю условия Пользовательского соглашения и даю свое согласие Откоробки.ру на обработку моей персональной информации на условиях, определенных <a href="#">Политикой конфиденциальности</a></label>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-lg w-100">Отправить заявку</button>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+                            </form>
+
+
                         </div>
 
                     </div>
@@ -1560,7 +1660,25 @@
             </div>
         </div>
     </div>
-    <script src="js/main.min.js"></script>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="lib/slideout/slideout.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/tablesaw/stackonly/tablesaw.stackonly.jquery.js"></script>
+    <script src="lib/tablesaw/tablesaw-init.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $('#collapse-text').on('shown.bs.collapse', function () {    
+            $("a[href='#collapse-text']").text('Свернуть');
+        });
+    
+        $('#collapse-text').on('hidden.bs.collapse', function () {
+            $("a[href='#collapse-text']").text('Подробнее');
+        });    
+    </script>
+
 </body>
 
 </html>
