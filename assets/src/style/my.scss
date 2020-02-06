@@ -262,6 +262,37 @@ h1 {
 }
 
 // header icons
+
+.header-profile,
+.header-cart {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    &:hover {
+        text-decoration: none;
+    }
+    div {
+        color: #000;
+        font-size: 0.75rem;
+    }
+} 
+.header-goods {
+    display: inline-block;
+    color: $ok-dark-gray;
+    background-color: $ok-light-gray;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    padding: .5rem;
+    text-align: left;
+    vertical-align: middle;
+    .quantity {
+        background-color: $ok-green;
+        border-radius: 2px;
+        padding: 2px;
+    }
+}
+
+
 .btn-cart {
     border-radius: 30px;
     background-color: $ok-light-green;
