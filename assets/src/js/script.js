@@ -58,6 +58,9 @@ slideout
 document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
 });
+document.querySelector('.toggle-button-bottom').addEventListener('click', function() {
+    slideout.toggle();
+});
 
 // Sticky navbar
 // Custom function which toggles between sticky class (is-sticky)

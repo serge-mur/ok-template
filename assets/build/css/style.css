@@ -1760,6 +1760,34 @@ section h2 {
     line-height: 50px;
     color: #0074ff; }
 
+.sticky-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff; }
+
+.cart-mini,
+.favorite-mini,
+.catalog-mini,
+.profile-mini {
+  display: block;
+  position: relative; }
+  .cart-mini .num-goods,
+  .favorite-mini .num-goods,
+  .catalog-mini .num-goods,
+  .profile-mini .num-goods {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background-color: #90de23;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 0 2px;
+    border-radius: 2px; }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("../img/ajax-loader.gif") center center no-repeat; }
