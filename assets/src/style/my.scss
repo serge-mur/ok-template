@@ -262,6 +262,37 @@ h1 {
 }
 
 // header icons
+
+.header-profile,
+.header-cart {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    &:hover {
+        text-decoration: none;
+    }
+    div {
+        color: #000;
+        font-size: 0.75rem;
+    }
+} 
+.header-goods {
+    display: inline-block;
+    color: $ok-dark-gray;
+    background-color: $ok-light-gray;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    padding: .5rem;
+    text-align: left;
+    vertical-align: middle;
+    .quantity {
+        background-color: $ok-green;
+        border-radius: 2px;
+        padding: 2px;
+    }
+}
+
+
 .btn-cart {
     border-radius: 30px;
     background-color: $ok-light-green;
@@ -2293,3 +2324,32 @@ section {
         color: $ok-blue;
     }
 }
+
+// bottom sticky
+.sticky-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+}
+.cart-mini,
+.favorite-mini,
+.catalog-mini,
+.profile-mini {
+    display: block;
+    position: relative;
+    .num-goods {
+        position: absolute;
+        right: -7px;
+        top: -7px;
+        background-color: $ok-green;
+        color: #000;
+        font-size: 0.75rem;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
+}
+
