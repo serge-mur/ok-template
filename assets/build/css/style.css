@@ -190,6 +190,33 @@ h1 {
   .btn-search:hover {
     color: #fff; }
 
+.header-profile,
+.header-cart {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle; }
+  .header-profile:hover,
+  .header-cart:hover {
+    text-decoration: none; }
+  .header-profile div,
+  .header-cart div {
+    color: #000;
+    font-size: 0.75rem; }
+
+.header-goods {
+  display: inline-block;
+  color: #505050;
+  background-color: #f6f6f6;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  padding: .5rem;
+  text-align: left;
+  vertical-align: middle; }
+  .header-goods .quantity {
+    background-color: #90de23;
+    border-radius: 2px;
+    padding: 2px; }
+
 .btn-cart {
   border-radius: 30px;
   background-color: #f1fae8;
@@ -1732,6 +1759,34 @@ section h2 {
     font-size: 2em;
     line-height: 50px;
     color: #0074ff; }
+
+.sticky-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff; }
+
+.cart-mini,
+.favorite-mini,
+.catalog-mini,
+.profile-mini {
+  display: block;
+  position: relative; }
+  .cart-mini .num-goods,
+  .favorite-mini .num-goods,
+  .catalog-mini .num-goods,
+  .profile-mini .num-goods {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background-color: #90de23;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 0 2px;
+    border-radius: 2px; }
 
 /* Slider */
 .slick-loading .slick-list {
