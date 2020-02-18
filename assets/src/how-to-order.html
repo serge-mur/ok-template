@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Как сделать заказ</title>
+    //= template/head.html
+</head>
+<style>
+    .numlist {
+        display: inline-flex;
+        background-color: #0074ff;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: .5rem;
+    }
+</style>
+<body>
+
+    //= template/offcanvas-menu.html
+
+    <div id="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Как сделать заказ</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-block clr-gray">
+                            
+                            <h1 class="title mb-4">Как сделать заказ</h1>
+
+                            <p><span class="numlist">1</span>Поиск товара</p>
+                            <img class="img-fluid" src="img/how_to_order/1.jpg" alt="Поиск товара 1">
+                            <img class="img-fluid" src="img/how_to_order/2.jpg" alt="Поиск товара 2">
+                            <img class="img-fluid" src="img/how_to_order/3.jpg" alt="Поиск товара 3">
+
+                            <p><span class="numlist">2</span>Подбор товара по параметрам</p>
+                            <img class="img-fluid" src="img/how_to_order/4.jpg" alt="Подбор товара по параметрам 1">
+                            <img class="img-fluid" src="img/how_to_order/5.jpg" alt="Подбор товара по параметрам 2">
+
+                            <p><span class="numlist">3</span>Оформление заказа</p>
+                            <img class="img-fluid" src="img/how_to_order/6.jpg" alt="Оформление заказа 1">
+                            <img class="img-fluid" src="img/how_to_order/7.jpg" alt="Оформление заказа 2">
+                            <img class="img-fluid" src="img/how_to_order/8.jpg" alt="Оформление заказа 3">
+                            <img class="img-fluid" src="img/how_to_order/9.jpg" alt="Оформление заказа 4">
+
+                            <p><span class="numlist">4</span>После оформления заказа поставщик свяжется с вами, подтвердит заказ и обговорит день и время доставки.<br>
+                                Если в вашем заказе более одного поставщика, то вам отзвонит каждый поставщик.</p>
+
+                            <p class="clr-blue">Оплата</p>
+                            <p>Вы получаете ваш заказ, проверяете и после этого оплачиваете курьеру.<br>    
+                            Если вы юридическое лицо - вы можете оплатить безналом по договору с поставщиком.<br> 
+                            Если вы физическое лицо - вы можете оплатить заказ наличными. Не все поставщики в данный момент принимают к оплате карты, при подтверждении заказа вам отзвонит оператор и уточнит возможные способы оплаты.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
+    //= template/include-scripts.html
+</body>
+
+</html>
