@@ -26,7 +26,7 @@ $(".dropdown").hover(
         });
     });
     
-    $('.dropdown-menu').hover(function() {
+    $('.btn-catalog+.dropdown-menu').hover(function() {
         $("body").css("overflow","hidden");
     }, function() {
         $("body").css("overflow","auto");

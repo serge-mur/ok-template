@@ -21,6 +21,40 @@
             .toggle-block>[class^='toggle-']:not(:first-child) {
                 display: none;
             }
+            .dislike-dropdown {
+                border: 1px solid red;
+                border-radius: 3px;
+            }
+            .dislike-dropdown .btn-red {
+                border: 1px solid red;
+                background-color: red;
+                border-left: 1px solid transparent;
+                color: #fff;
+            }
+            .dislike-dropdown .btn-red:hover {
+                color: #fff;
+            }
+            .dropdown-bubble+.dropdown-menu {
+                    margin-top: 1em;
+            }
+            .dropdown-bubble+.dropdown-menu:before,
+            .dropdown-bubble+.dropdown-menu:after{
+                content: ' ';
+                display: block;
+                border-style: solid;
+                border-width: 0 .5em .8em .5em;
+                border-color: transparent;
+                position: absolute;
+                left: 3em;
+            }
+            .dropdown-bubble+.dropdown-menu:before {
+                top: -.8em;
+                border-bottom-color: red;
+            }
+            .dropdown-bubble+.dropdown-menu:after {
+                top: -.7em;
+                border-bottom-color: #fff;
+            }
         </style>
 
         <main id="main" class="my-2">
@@ -168,8 +202,15 @@
                                 </div>
 
                                 <div class="like-price-block">Нравится цена?
-                                    <i class="far fa-thumbs-up"></i>
-                                    <i class="far fa-thumbs-down"></i>                                
+                                    <a href="#"><i class="far fa-thumbs-up"></i></a>
+                                    <a href="#" data-toggle="dropdown" class="dropdown-bubble" data-offset="-50,0"><i class="far fa-thumbs-down"></i></a>
+                                    <div class="dropdown-menu p-3 dislike-dropdown">
+                                        <form action="">
+                                            <p>Оставьте e-mail и мы уведомим о снижении цены</p>
+                                            <input type="email" class="form-control form-control-sm mb-3" id="email1" placeholder="E-mail">
+                                            <button type="submit" class="btn btn-red btn-sm w-100">Хочу узнать о снижении цены</button>
+                                        </form>
+                                    </div>
                                 </div>
 
                                 <hr>
@@ -565,6 +606,19 @@
                         $('.buy-step-1').show();
                     }
             });
+
+            // Keep Bootstrap Dropdown Open When Clicked Inside
+            $('.dropdown-toggle').on('click', function(event) {
+                $('.dropdown-menu').slideToggle();
+                event.stopPropagation();
+            });
+            $('.dropdown-menu').on('click', function(event) {
+                event.stopPropagation();
+            });
+            $(window).on('click', function() {
+                $('.dropdown-menu').slideUp();
+            });
+
 
         });    
     </script>
