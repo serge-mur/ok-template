@@ -38,13 +38,23 @@ h1 {
   .dropdown-menu .dropdown-item {
     display: block;
     font-size: 1rem;
-    color: #adadad !important;
+    color: #505050 !important;
     white-space: normal;
     line-height: 1;
     padding: .75rem 1rem; }
     .dropdown-menu .dropdown-item:hover {
-      color: #505050 !important;
-      text-decoration: none; }
+      color: #fff !important;
+      background-color: #0074ff;
+      text-decoration: none;
+      position: relative; }
+      .dropdown-menu .dropdown-item:hover:after {
+        position: absolute;
+        content: '';
+        right: -20px;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: #0074ff; }
 
 .dropdown-submenu {
   position: relative; }
@@ -59,12 +69,14 @@ h1 {
     margin-left: 0px; }
   .dropdown-submenu:hover > .dropdown-menu {
     display: block; }
+  .dropdown-submenu .dropdown-menu .mega-menu .more-category {
+    padding: 1.5rem; }
   .dropdown-submenu .dropdown-menu .mega-menu .mega-menu-items a {
     display: block;
     font-size: 1rem;
     line-height: 1;
     color: #adadad;
-    padding: .5rem 1.5rem .5rem 0; }
+    padding: .5rem 1.5rem .5rem 1.5rem; }
     .dropdown-submenu .dropdown-menu .mega-menu .mega-menu-items a:hover {
       color: #505050;
       text-decoration: none; }
@@ -73,7 +85,7 @@ h1 {
     font-size: 1rem;
     line-height: 1;
     color: #adadad;
-    padding: .5rem 1.5rem .5rem 0; }
+    padding: .5rem 1.5rem .5rem 1.5rem; }
     .dropdown-submenu .dropdown-menu .mega-menu .mega-menu-brands a:hover {
       color: #505050;
       text-decoration: none; }

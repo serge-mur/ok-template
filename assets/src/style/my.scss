@@ -43,13 +43,27 @@ h1 {
     .dropdown-item {
         display: block;
         font-size: 1rem;
-        color: $ok-gray!important;
+        color: $ok-dark-gray!important;
         white-space: normal;
         line-height: 1;
         padding: .75rem 1rem;
         &:hover {
-            color: $ok-dark-gray!important;
+            color: #fff!important;
+            background-color: $ok-blue;
             text-decoration: none;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: '';
+                right: -20px;
+                top: 0;
+                width: 20px;
+                height: 100%;
+                background-color: $ok-blue;
+                // border: 20px solid transparent;
+                // border-left: 20px solid green;
+
+            }
         }
     }
 }
@@ -72,13 +86,16 @@ h1 {
     }
     .dropdown-menu {
         .mega-menu {
+            .more-category {
+                padding: 1.5rem;
+            }
             .mega-menu-items {
                 a {
                     display: block;
                     font-size: 1rem;
                     line-height: 1;
                     color: $ok-gray;
-                    padding: .5rem 1.5rem .5rem 0;
+                    padding: .5rem 1.5rem .5rem 1.5rem;
                     &:hover {
                         color: $ok-dark-gray;
                         text-decoration: none;
@@ -91,7 +108,7 @@ h1 {
                     font-size: 1rem;
                     line-height: 1;
                     color: $ok-gray;
-                    padding: .5rem 1.5rem .5rem 0;
+                    padding: .5rem 1.5rem .5rem 1.5rem;
                     &:hover {
                         color: $ok-dark-gray;
                         text-decoration: none;
