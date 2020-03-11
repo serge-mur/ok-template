@@ -126,17 +126,34 @@
             <div class="main-menu-line py-2" data-toggle="sticky-onscroll">
                 <div class="container">
                     <div class="row">
+            
+                        <div class="col-12">
+                            <div id="mobile" class="d-md-none">
+            
+                                    <div>mobile</div> 
+                                    <img src="img/logo_transparent.png" alt="">
+                                    <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
+                                    <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i></button>
+                                                
+                            </div>
+                            <div id="desktop" class="d-none d-md-block">                    
+                                desktop
+                            </div>
+                        </div>
+            
+            <!--            
+                     
                         <div class="col-12">
                             <div class="row justify-content-between justify-content-md-start align-items-center">
                                 <div class="col-12" id="content-width"></div>
                                 <div class="col-auto">
             
-                                    <button class="btn btn-catalog nav-link toggle-button d-lg-none"><i class="fas fa-bars"></i> Меню</button>
+                                    <button class="btn btn-catalog nav-link toggle-button d-lg-none"><i class="fas fa-bars"></i></button>
+                                    <a data-toggle="collapse" href="#collapseSearch" class="btn btn-search-collapse"><i
+                                            class="fas fa-search"></i></a>
             
                                     <div class="dropdown">
-                                        <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" role="button"
-                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
+                                        <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" id="dropdownMenuLink" data-toggle="dropdown"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
                                         
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Кондитерские изделия</a></li>
@@ -149,7 +166,7 @@
                                                     <div class="mega-menu h-100">
                                                         <div class="row h-100">
                                                             <div class="col-8">
-                                                                <div class="megamenu-top-block d-flex flex-column justify-content-between h-50 border-bottom">
+                                                                <div class="megamenu-top-block d-flex flex-column justify-content-between h-50">
                                                                     <div class="mega-menu-items" style="column-count:2;">
                                                                         <a href="#">Готовые блюда</a>
                                                                         <a href="#">Мед</a>
@@ -225,48 +242,32 @@
                                             <li><a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
                                         </ul>
                                     </div>
-            <!--                         
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="catalog-menu">
-                                        <a class="dropdown-item" href="#">Кондитерские изделия</a>
-                                        <a class="dropdown-item" href="#">Бакалея</a>
-                                        <a class="dropdown-item" href="#">Чай, кофе, какао</a>
-                                        <a class="dropdown-item" href="#">Вода, напитки, соки</a>
-                                        <a class="dropdown-item" href="#">Консервация</a>
-                                        <a class="dropdown-item" href="#">Товары для животных</a>
-                                        <a class="dropdown-item" href="#">Молочные продукты, сыры, яйцо</a>
-                                        <a class="dropdown-item" href="#">Мясо, птица, рыба, гастрономия</a>
-                                        <a class="dropdown-item" href="#">Замороженные продукты</a>
-                                        <a class="dropdown-item" href="#">Детское питание и товары для детей</a>
-                                        <a class="dropdown-item" href="#">Овощи, фрукты, зелень</a>
-                                        <a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
-                                    </div>
-             -->
                                 </div>
                                 <div class="col-auto d-none d-md-block">
                                     <ul class="nav" id="main-menu">
-                                        <!-- <li class="nav-item">
-                                            <a class="nav-link" href="#">Лучшие предложения</a>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span class="percent">%</span> Акции</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Новинки</a>
-                                        </li> -->
+                                            <a class="nav-link" href="#"><span class="percent">%</span> Акции</a>
+                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"><span class="percent">%</span> Акции</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-auto d-none d-md-block">
-                                    <button class="btn btn-secondary text-capitalize"><i class="far fa-gem"></i> Акции Premium</button>
+                                <div class="col-auto d-md-none text-right">
+                                    <img src="img/logo_transparent.png" alt="">
                                 </div>
                                 <div class="col-auto d-md-none text-right">
-                                    <a data-toggle="collapse" href="#collapseSearch" aria-expanded="false"
-                                        aria-controls="collapseSearch" class="btn btn-search-collapse"><i
-                                            class="fas fa-search"></i></a>
+                                    
                                     <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
                                     <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i></button>
                                 </div>
                             </div>
                         </div>
+             -->
+            
                         <div class="col-12 collapse py-4" id="collapseSearch">
                             <form class="" action="">
                                 <div class="input-group">
@@ -1090,16 +1091,15 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h4 class="modal-title">Производители</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <a href="#" class="d-block">Все производители</a>                              
-                    <p><b>Производители категории: Кондитерские изделия</b> <span>(72 производителя)</span></p>
                     <form action="">
                         <div class="input-group my-4">
-                            <input type="text" class="form-control" id="search" placeholder="Начните вводить название производителя" aria-label="Search">
+                            <input type="text" class="form-control" id="list-search" placeholder="Поиск..." aria-label="Search">
                             <div class="input-group-append">
                                 <button class="btn btn-search" type="button">
                                     <i class="fa fa-search"></i>
@@ -1107,174 +1107,105 @@
                             </div>
                         </div>
                     </form>
-    
-                    <ul class="nav" id="pills-tab" role="tablist">
-                        <li>
-                            <a class="active" id="pills-cat-tab" data-toggle="pill" href="#pills-cat" role="tab" aria-controls="pills-cat" aria-selected="true">по категориям</a>
-                        </li>
-                        <span>&nbsp;|&nbsp;</span>
-                        <li>
-                            <a class="" id="pills-alf-tab" data-toggle="pill" href="#pills-alf" role="tab" aria-controls="pills-alf" aria-selected="false">по алфавиту</a>
-                        </li>
-                    </ul>
                     
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-cat" role="tabpanel" aria-labelledby="pills-cat-tab">
-                            <ul class="column cat my-4">
-                                <li>
-                                    <a href="#">Кондитерские изделия</a>
-                                </li>
-                                <li>
-                                    <a href="#">Бакалея</a>
-                                </li>
-                                <li>
-                                    <a href="#">Чай, кофе, какао</a>
-                                </li>
-                                <li>
-                                    <a href="#">Вода, напитки, соки</a>
-                                </li>
-                                <li>
-                                    <a href="#">Товары для животных</a>
-                                </li>
-                                <li>
-                                    <a href="#">Молочные продукты, сыры, яйцо</a>
-                                </li>
-                                <li>
-                                    <a href="#">Мясо, птица, рыба, гастрономия</a>
-                                </li>
-                                <li>
-                                    <a href="#">Замороженные продукты</a>
-                                </li>
-                                <li>
-                                    <a href="#">Детское питание и товары для детей</a>
-                                </li>
-                                <li>
-                                    <a href="#">Овощи, фрукты, зелень</a>
-                                </li>
-                                <li>
-                                    <a href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane fade" id="pills-alf" role="tabpanel" aria-labelledby="pills-alf-tab">
-                            <div class="liters-en my-4">
-                                <a href="#">A</a>
-                                <span>B</span>
-                                <a href="#">C</a>
-                                <a href="#">D</a>
-                                <span>E</span>
-                                <a href="#">F</a>
-                                <span>G</span>
-                                <span>H</span>
-                                <span>I</span>
-                                <span>J</span>
-                                <span>K</span>
-                                <span>L</span>
-                                <span>M</span>
-                                <span>N</span>
-                                <span>O</span>
-                                <span>P</span>
-                                <span>Q</span>
-                                <span>R</span>
-                                <span>S</span>
-                                <span>T</span>
-                                <span>U</span>
-                                <span>V</span>
-                                <span>W</span>
-                                <span>X</span>
-                                <span>Y</span>
-                                <span>Z</span>
-                            </div>
-                            <div class="liters-ru mb-4">
-                                <a href="#">А</a>
-                                <span>Б</span>
-                                <a href="#">В</a>
-                                <a href="#">Г</a>
-                                <span>Д</span>
-                                <a href="#">Е</a>
-                                <span>Ж</span>
-                                <span>З</span>
-                                <span>И</span>
-                                <span>Й</span>
-                                <span>К</span>
-                                <span>Л</span>
-                                <span>М</span>
-                                <span>Н</span>
-                                <span>О</span>
-                                <span>П</span>
-                                <span>Р</span>
-                                <span>С</span>
-                                <span>Т</span>
-                                <span>У</span>
-                                <span>Ф</span>
-                                <span>Х</span>
-                                <span>Ц</span>
-                                <span>Ч</span>
-                                <span>Ш</span>
-                                <span>Щ</span>
-                                <span>Ы</span>
-                                <span>Э</span>
-                                <span>Ю</span>
-                                <span>Я</span>                      
-                            </div>
-                        </div>
-                    </div>              
+                    <div class="responsive-column" id="items-list">
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                    </div>             
     
                 </div>
+    <!--             
                 <div class="modal-footer">
-                    
-                    <ul class="column">
-                        <li>
-                            <a href="#">ООО "Белёвские Сладости"</a>
-                        </li>
-                        <li>
-                            <a href="#">Компания "Конти"</a>
-                        </li>
-                        <li>
-                            <a href="#">ООО "Дело вкуса"</a>
-                        </li>
-                        <li>
-                            <a href="#">ЗАО Егорьевский хлебокомбинат</a>
-                        </li>
-                        <li>
-                            <a href="#">Кондитерская фабрика "Акконд"</a>
-                        </li>
-                        <li>
-                            <a href="#">Кондитерская фабрика "Славянка"</a>
-                        </li>
-                        <li>
-                            <a href="#">Азовская кондитерская фабрика</a>
-                        </li>
-                        <li>
-                            <a href="#">ООО Лакомства для здоровья</a>
-                        </li>
-                        <li>
-                            <a href="#">Объединенные кондитеры - РотФронт</a>
-                        </li>
-                        <li>
-                            <a href="#">Раменский кондитерский комбинат</a>
-                        </li>
-                    </ul> 
-    
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination justify-content-center">
+                    <nav class="d-flex justify-content-end" aria-label="Page navigation">
+                        <ul class="pagination">
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                                <a class="page-link clr-gray" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link clr-gray" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
                                 </a>
                             </li>
                         </ul>
-                    </nav>                
-    
+                    </nav>
                 </div>
+                 -->
             </div>
         </div>
     </div>

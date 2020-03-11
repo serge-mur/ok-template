@@ -187,6 +187,55 @@
     //= template/modal-cart.html
     //= template/modal-all.html
     //= template/include-scripts.html
+
+
+<style>
+    @media (max-width: 575px) { 
+        .responsive-column {
+            max-height: 50vh;
+            overflow: scroll;
+        } 
+    }    
+    @media (min-width: 576px) {  
+        .responsive-column {
+            columns: 2;
+        } 
+        .responsive-column a {
+            display: inline-block;
+        }    
+    }
+    @media (min-width: 992px) { 
+        .responsive-column {
+            columns: 3;
+        }  
+    }
+
+    .responsive-column a {
+        display: block;        
+        color: #505050;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: .5rem 1rem .5rem 0;
+    }
+    .responsive-column a:hover {
+        color: #505050;
+        text-decoration: underline;
+    }
+</style>
+        
+<script>
+
+$(document).ready(function(){
+    $("#list-search").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#items-list a").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+
+</script>
+
 </body>
 
 </html>

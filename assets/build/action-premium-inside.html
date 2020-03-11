@@ -126,17 +126,34 @@
             <div class="main-menu-line py-2" data-toggle="sticky-onscroll">
                 <div class="container">
                     <div class="row">
+            
+                        <div class="col-12">
+                            <div id="mobile" class="d-md-none">
+            
+                                    <div>mobile</div> 
+                                    <img src="img/logo_transparent.png" alt="">
+                                    <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
+                                    <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i></button>
+                                                
+                            </div>
+                            <div id="desktop" class="d-none d-md-block">                    
+                                desktop
+                            </div>
+                        </div>
+            
+            <!--            
+                     
                         <div class="col-12">
                             <div class="row justify-content-between justify-content-md-start align-items-center">
                                 <div class="col-12" id="content-width"></div>
                                 <div class="col-auto">
             
-                                    <button class="btn btn-catalog nav-link toggle-button d-lg-none"><i class="fas fa-bars"></i> Меню</button>
+                                    <button class="btn btn-catalog nav-link toggle-button d-lg-none"><i class="fas fa-bars"></i></button>
+                                    <a data-toggle="collapse" href="#collapseSearch" class="btn btn-search-collapse"><i
+                                            class="fas fa-search"></i></a>
             
                                     <div class="dropdown">
-                                        <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" role="button"
-                                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
+                                        <a class="btn btn-catalog nav-link dropdown-toggle d-none d-lg-block" href="#" id="dropdownMenuLink" data-toggle="dropdown"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
                                         
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Кондитерские изделия</a></li>
@@ -149,7 +166,7 @@
                                                     <div class="mega-menu h-100">
                                                         <div class="row h-100">
                                                             <div class="col-8">
-                                                                <div class="megamenu-top-block d-flex flex-column justify-content-between h-50 border-bottom">
+                                                                <div class="megamenu-top-block d-flex flex-column justify-content-between h-50">
                                                                     <div class="mega-menu-items" style="column-count:2;">
                                                                         <a href="#">Готовые блюда</a>
                                                                         <a href="#">Мед</a>
@@ -225,48 +242,32 @@
                                             <li><a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
                                         </ul>
                                     </div>
-            <!--                         
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="catalog-menu">
-                                        <a class="dropdown-item" href="#">Кондитерские изделия</a>
-                                        <a class="dropdown-item" href="#">Бакалея</a>
-                                        <a class="dropdown-item" href="#">Чай, кофе, какао</a>
-                                        <a class="dropdown-item" href="#">Вода, напитки, соки</a>
-                                        <a class="dropdown-item" href="#">Консервация</a>
-                                        <a class="dropdown-item" href="#">Товары для животных</a>
-                                        <a class="dropdown-item" href="#">Молочные продукты, сыры, яйцо</a>
-                                        <a class="dropdown-item" href="#">Мясо, птица, рыба, гастрономия</a>
-                                        <a class="dropdown-item" href="#">Замороженные продукты</a>
-                                        <a class="dropdown-item" href="#">Детское питание и товары для детей</a>
-                                        <a class="dropdown-item" href="#">Овощи, фрукты, зелень</a>
-                                        <a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
-                                    </div>
-             -->
                                 </div>
                                 <div class="col-auto d-none d-md-block">
                                     <ul class="nav" id="main-menu">
-                                        <!-- <li class="nav-item">
-                                            <a class="nav-link" href="#">Лучшие предложения</a>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span class="percent">%</span> Акции</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Новинки</a>
-                                        </li> -->
+                                            <a class="nav-link" href="#"><span class="percent">%</span> Акции</a>
+                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"><span class="percent">%</span> Акции</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-auto d-none d-md-block">
-                                    <button class="btn btn-secondary text-capitalize"><i class="far fa-gem"></i> Акции Premium</button>
+                                <div class="col-auto d-md-none text-right">
+                                    <img src="img/logo_transparent.png" alt="">
                                 </div>
                                 <div class="col-auto d-md-none text-right">
-                                    <a data-toggle="collapse" href="#collapseSearch" aria-expanded="false"
-                                        aria-controls="collapseSearch" class="btn btn-search-collapse"><i
-                                            class="fas fa-search"></i></a>
+                                    
                                     <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
                                     <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i></button>
                                 </div>
                             </div>
                         </div>
+             -->
+            
                         <div class="col-12 collapse py-4" id="collapseSearch">
                             <form class="" action="">
                                 <div class="input-group">
@@ -364,7 +365,7 @@
                                                 <label class="custom-control-label" for="Check3">Производитель 3</label>
                                             </div>
                                         </div>
-                                        <button class="btn btn-sm btn-more">показать все</button>
+                                        <button class="btn btn-sm btn-more" data-toggle="modal" data-target="#modal-all">показать все</button>
                                     </div>
                                 </div>
                             </li>

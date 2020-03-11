@@ -4,7 +4,7 @@ $(document).ready(function () {
 var firstLevelTop, secondLevelTop, firstLevelHeight, firstLevelWidth, mainMenuWidth;
 $(".dropdown").hover(
     function () {
-        console.log('hover');
+        // console.log('hover');
         $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
         $(this).addClass('open');
         firstLevelTop = $('#dropdownMenuLink+.dropdown-menu').offset().top;
@@ -55,9 +55,9 @@ slideout
         this.panel.classList.remove('panel-open');
         this.panel.removeEventListener('click', close);
     });
-document.querySelector('.toggle-button').addEventListener('click', function() {
-    slideout.toggle();
-});
+// document.querySelector('.toggle-button').addEventListener('click', function() {
+//     slideout.toggle();
+// });
 document.querySelector('.toggle-button-bottom').addEventListener('click', function() {
     slideout.toggle();
 });
@@ -79,6 +79,7 @@ var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
 // Find all data-toggle="sticky-onscroll" elements
 $('[data-toggle="sticky-onscroll"]').each(function () {
     var sticky = $(this);
+    console.log('sticky: '+sticky);
     var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
     sticky.before(stickyWrapper);
     sticky.addClass('sticky');
