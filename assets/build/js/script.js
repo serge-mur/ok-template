@@ -55,9 +55,9 @@ slideout
         this.panel.classList.remove('panel-open');
         this.panel.removeEventListener('click', close);
     });
-// document.querySelector('.toggle-button').addEventListener('click', function() {
-//     slideout.toggle();
-// });
+document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+});
 document.querySelector('.toggle-button-bottom').addEventListener('click', function() {
     slideout.toggle();
 });

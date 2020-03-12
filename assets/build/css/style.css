@@ -237,49 +237,62 @@ h1 {
     border-radius: 2px;
     padding: 2px; }
 
-.btn-cart {
-  border-radius: 30px;
-  background-color: #f1fae8;
-  color: #90de23;
-  font-size: 1rem; }
-  .btn-cart:hover {
-    background-color: #90de23;
-    color: #fff; }
-
-.btn-user {
-  background-color: #f3f9ff;
-  color: #0074ff;
-  border-radius: 50%; }
-  .btn-user:hover {
-    background-color: #0074ff;
-    color: #fff; }
-
 .main-menu-line {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
   box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75); }
 
-.btn-catalog {
+#mobile .btn-catalog {
+  color: #fff; }
+  #mobile .btn-catalog:hover, #mobile .btn-catalog:focus {
+    color: #505050; }
+
+#mobile .btn-search-collapse {
+  color: #fff; }
+  #mobile .btn-search-collapse:hover {
+    color: #fff; }
+
+#mobile .mob-logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex: auto;
+      flex: auto; }
+
+#mobile .btn-cart {
+  color: #fff;
+  font-size: 1rem; }
+  #mobile .btn-cart:hover {
+    color: #fff; }
+
+#mobile .btn-user {
+  color: #fff; }
+  #mobile .btn-user:hover {
+    color: #fff; }
+
+@media (max-width: 767px) {
+  .main-menu-line {
+    background-color: #90de23; }
+  .sticky.is-sticky {
+    background-color: #90de23; } }
+
+#desktop .btn-catalog {
   background-color: #f3f9ff;
   font-weight: bold;
   color: #0074ff;
   border-radius: 40px; }
-  .btn-catalog:hover, .btn-catalog:focus {
+  #desktop .btn-catalog:hover, #desktop .btn-catalog:focus {
     background-color: #0074ff;
     color: #fff; }
 
-.dropdown-menu .dropdown-item {
-  color: #505050; }
-
-#main-menu .nav-link {
+#desktop #main-menu .nav-link {
   font-size: 1rem;
   color: #505050; }
-  #main-menu .nav-link:hover {
+  #desktop #main-menu .nav-link:hover {
     color: #000; }
-  #main-menu .nav-link .percent {
-    background-color: #ffe500;
-    border-radius: 50%;
-    padding: .25em .4em; }
 
 #footer {
   background-color: #f6f6f6; }

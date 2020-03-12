@@ -322,27 +322,7 @@ h1 {
     }
 }
 
-
-.btn-cart {
-    border-radius: 30px;
-    background-color: $ok-light-green;
-    color: $ok-green;
-    font-size: 1rem;
-    &:hover {
-        background-color: $ok-green;
-        color: #fff;
-    }
-}
-
-.btn-user {
-    background-color: $ok-light-blue;
-    color: $ok-blue;
-    border-radius: 50%;
-    &:hover {
-        background-color: $ok-blue;
-        color: #fff;
-    }
-}
+// menu line
 
 .main-menu-line {
     border-top: 1px solid #ebebeb;
@@ -352,38 +332,85 @@ h1 {
     box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75);
 }
 
-// catalog menu
-.btn-catalog {
-    background-color: $ok-light-blue;
-    font-weight: bold;
-    color: $ok-blue;
-    border-radius: 40px;
-    &:hover,
-    &:focus {
-        background-color: $ok-blue;
+// mobile menu
+#mobile {
+    .btn-catalog {
         color: #fff;
-    }
-}
-
-.dropdown-menu {
-    .dropdown-item {
-        color: $ok-dark-gray;
-    }
-}
-
-#main-menu {
-    .nav-link {
-        font-size: 1rem;
-        color: $ok-dark-gray;
+        &:hover,
+        &:focus {
+            color: $ok-dark-gray;
+        }
+    }    
+    .btn-search-collapse {
+        color: #fff;
         &:hover {
-            color: #000;
-        }
-        .percent {
-            background-color: $ok-yellow;
-            border-radius: 50%;
-            padding: .25em .4em;
+            color: #fff;
         }
     }
+    .mob-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: auto;
+    }  
+    .btn-cart {
+        color: #fff;
+        font-size: 1rem;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .btn-user {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+@media (max-width: 767px) {  
+    .main-menu-line {
+        background-color: $ok-green;
+    }
+    .sticky {
+        &.is-sticky {
+            background-color: $ok-green;
+        }
+    }
+}
+
+// mobile menu
+#desktop {
+    .btn-catalog {
+        background-color: $ok-light-blue;
+        font-weight: bold;
+        color: $ok-blue;
+        border-radius: 40px;
+        &:hover,
+        &:focus {
+            background-color: $ok-blue;
+            color: #fff;
+        }
+    }
+    // .dropdown-menu {
+    //     .dropdown-item {
+    //         color: $ok-dark-gray;
+    //     }
+    // }
+    .dropdown {
+
+    }
+    #main-menu {
+
+        .nav-link {
+            font-size: 1rem;
+            color: $ok-dark-gray;
+            &:hover {
+                color: #000;
+            }
+
+        }
+    }    
+
 }
 
 // footer

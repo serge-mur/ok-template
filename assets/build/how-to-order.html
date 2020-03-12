@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container d-none d-md-block">
                 <div class="row align-items-center my-4">
                     <div class="col-12 col-md-6 col-lg-3 order-1 order-lg-1">
                         <a href="/" class="d-block">
@@ -140,16 +140,129 @@
                     <div class="row">
             
                         <div class="col-12">
-                            <div id="mobile" class="d-md-none">
+                            <div id="mobile" class="d-md-none d-flex justify-content-between">
+                                
+                                <button class="btn btn-catalog toggle-button"><i class="fas fa-bars"></i></button>
+                                <a data-toggle="collapse" href="#collapseSearch" class="btn btn-search-collapse"><i class="fas fa-search"></i></a>                        
             
-                                    <div>mobile</div> 
-                                    <img src="img/logo_transparent.png" alt="">
-                                    <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
-                                    <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i></button>
+                                <div class="mob-logo"><img class="img-fluid" src="img/logo_transparent.png" alt="otkorobki.ru"></div> 
+                                
+                                <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
+                                <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i></button>
                                                 
                             </div>
                             <div id="desktop" class="d-none d-md-block">                    
-                                desktop
+            
+                                <ul class="nav" id="main-menu">
+                                    <li class="nav-item dropdown">
+                                        <a class="btn btn-catalog dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
+            
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Кондитерские изделия</a></li>
+                                            <li><a class="dropdown-item" href="#">Бакалея</a></li>
+                                            <li><a class="dropdown-item" href="#">Чай, кофе, какао</a></li>
+                                            <li><a class="dropdown-item" href="#">Вода, напитки, соки</a></li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item" href="#">Консервация</a>
+                                                <div class="dropdown-menu p-3">
+                                                    <div class="mega-menu h-100">
+                                                        <div class="row h-100">
+                                                            <div class="col-8">
+                                                                <div class="megamenu-top-block d-flex flex-column justify-content-between h-50">
+                                                                    <div class="mega-menu-items" style="column-count:2;">
+                                                                        <a href="#">Готовые блюда</a>
+                                                                        <a href="#">Мед</a>
+                                                                        <a href="#">Молочные консервы</a>
+                                                                        <a href="#">Мясные консервы</a>
+                                                                        <a href="#">Овощные консервы</a>
+                                                                        <a href="#">Плодово-ягодные консервы</a>
+                                                                        <a href="#">Рыбные консервы</a>
+                                                                        <a href="#">Готовые блюда</a>
+                                                                        <a href="#">Мед</a>
+                                                                        <a href="#">Молочные консервы</a>
+                                                                    </div>
+                                                                    <a href="#" class="d-block more-category">Все подкатегории</a>                                                        
+                                                                </div>
+                                                                <div class="megamenu-bottom-block d-flex flex-column justify-content-between h-50">
+                                                                    <div class="mega-menu-brands" style="column-count:2;">
+                                                                        <a href="#">ITLV</a>
+                                                                        <a href="#">Lorado</a>
+                                                                        <a href="#">Coopoliva</a>
+                                                                        <a href="#">ЕКО</a>
+                                                                        <a href="#">St. Dalfour</a>
+                                                                        <a href="#">Solvita</a>
+                                                                        <a href="#">Корзина</a>
+                                                                        <a href="#">Донская Кухня</a>
+                                                                        <a href="#">Noyan</a>
+                                                                    </div>
+                                                                    <a href="#" class="d-block more-category">Все бренды</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="card product-card-new">
+                                                                    <div class="card-header">
+                                                                        Экономия 483 р. <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom" title="Мы постоянно мониторим цены и отвечаем за выгоду">?</span>   
+                                                                    </div>
+                                                                    <a class="card-image-link" href="#">
+                                                                        <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                                                        <div class="card-label-top"><span>-25%</span></div>    
+                                                                        <div class="card-label-bottom"><span>Продается поштучно</span></div>
+                                                                    </a>
+                                                                
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                                                        <div class="card-text">
+                                                                            Минимальная партия: 12 шт (0.96 кг)
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <div class="card-price">
+                                                                            <div class="old-price mr-2">
+                                                                                <span>32,60 &#8381;</span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                                                            </div>
+                                                                        </div>        
+                                                                        <button class="btn btn-primary-inverse w-100 my-2 font-weight-bold">В корзину</button>
+                                                                    </div>
+                                                                </div>
+            
+                                                            </div>
+                                                        </div>
+                                            
+                                                    </div>
+                                                </div>                                               
+                                            </li>
+            
+                                            <li><a class="dropdown-item" href="#">Товары для животных</a></li>
+                                            <li><a class="dropdown-item" href="#">Молочные продукты, сыры, яйцо</a></li>
+                                            <li><a class="dropdown-item" href="#">Мясо, птица, рыба, гастрономия</a></li>
+                                            <li><a class="dropdown-item" href="#">Замороженные продукты</a></li>
+                                            <li><a class="dropdown-item" href="#">Детское питание и товары для детей</a></li>
+                                            <li><a class="dropdown-item" href="#">Овощи, фрукты, зелень</a></li>
+                                            <li><a class="dropdown-item" href="#">Бытовая химия, товары для дома, красоты и здоровья</a></li>
+                                        </ul>
+            
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="/img/arrow.png"> Вкусные цены</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="/img/percent.png"> Акции</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="/img/italian.png"> Итальянские каникулы</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="/img/postnie.png"> Постные недели</a>
+                                    </li>
+                                </ul>
+            
+                            </div>
+            
+            
+            
                             </div>
                         </div>
             
@@ -246,7 +359,7 @@
                                             </li>
             
                                             <li><a class="dropdown-item" href="#">Товары для животных</a></li>
-                                            <li><a class="dropdown-item" href="#">Молочные продукты, сыры, яйцо</a></li>
+                                            <li><a class="dropdown-item" href="#">Молочные продукты, сы��ы, яйцо</a></li>
                                             <li><a class="dropdown-item" href="#">Мясо, птица, рыба, гастрономия</a></li>
                                             <li><a class="dropdown-item" href="#">Замороженные продукты</a></li>
                                             <li><a class="dropdown-item" href="#">Детское питание и товары для детей</a></li>
