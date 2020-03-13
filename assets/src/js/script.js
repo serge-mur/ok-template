@@ -1,6 +1,51 @@
 $(document).ready(function () {
 
-// Dropdown main menu   
+    $('.subnav:first-child').addClass('active');
+
+    var activeEl = null;
+    var activeSubnavTop, subnavTop, megamenuHeight;
+
+    // $('#test').on('shown.bs.dropdown', function () {
+    //     alert('test');
+    // });
+
+    // $("#dropdownMenuLink").hover(function () {
+
+    //     activeSubnavTop = $(this).parent('.subnav').offset().top;
+    //     subnavTop = $('.subnav:first-child').offset().top;
+    //     megamenuHeight = $('.mega-menu').outerHeight();
+
+    //     $('.menu-block, .card-block').css('height', megamenuHeight);
+    // });
+
+
+    $(".subnav-link").hover(function () {
+
+        if ($('.subnav:first-child').hasClass('active')) {
+            $('.subnav:first-child').removeClass('active');
+        }
+
+        if (activeEl != null) {
+            $(activeEl).parent('.subnav').removeClass('active');
+        }
+
+        $(this).parent('.subnav').addClass('active');
+        
+        activeSubnavTop = $(this).parent('.subnav').offset().top;
+        subnavTop = $('.subnav:first-child').offset().top;
+        megamenuHeight = $('.mega-menu').outerHeight();
+
+        $('.menu-block, .card-block').css('height', megamenuHeight);
+        $(this).parent('.subnav').children(".subnav-content").css('top', '-'+(activeSubnavTop-subnavTop)+'px');
+
+    }, function () {
+
+        activeEl = this;
+
+    });
+
+
+/* Dropdown main menu   
 var firstLevelTop, secondLevelTop, firstLevelHeight, firstLevelWidth, mainMenuWidth;
 $(".dropdown").hover(
     function () {
@@ -32,6 +77,7 @@ $(".dropdown").hover(
         $("body").css("overflow","auto");
     });
 
+*/
 
 // https://github.com/Mango/slideout
 var slideout = new Slideout({
