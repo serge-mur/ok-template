@@ -412,16 +412,16 @@
             
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><img src="/img/arrow.png"> Вкусные цены</a>
+                                        <a class="nav-link" href="#"><img src="img/arrow.png"> Вкусные цены</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><img src="/img/percent.png"> Акции</a>
+                                        <a class="nav-link" href="#"><img src="img/percent.png"> Акции</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><img src="/img/italian.png"> Итальянские каникулы</a>
+                                        <a class="nav-link" href="#"><img src="img/italian.png"> Итальянские каникулы</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#"><img src="/img/postnie.png"> Постные недели</a>
+                                        <a class="nav-link" href="#"><img src="img/postnie.png"> Постные недели</a>
                                     </li>
                                 </ul>
             
@@ -565,6 +565,11 @@
                         </div>
 
                         <h1 class="title mb-4">Чипсы, сухарики, попкорн <span> - 127 товаров в наличии</span></h1>
+
+                        <div class="d-flex justify-content-between align-items-center mb-4 top-message-category">
+                            <div>У вас в корзине уже есть товары поставщика Альянс Фуд</div>
+                            <a href="#"><span>Показать все товары</span></a>
+                        </div>    
 
                         <div class="row category-sorting-block mb-3 align-items-center">
                             <div class="col-12 col-sm-6">
@@ -1664,6 +1669,44 @@
     .responsive-column a:hover {
         color: #505050;
         text-decoration: underline;
+    }
+
+
+    .top-message-category {
+        background-color: #ffd800;
+        border-radius: .5rem;
+    }
+    .top-message-category div {
+        font-size: 1.5rem;
+        line-height: 1;
+        padding: 1rem;
+        color: #000;        
+    }
+    .top-message-category div+a {
+        font-size: 1.125rem;
+        line-height: 1;
+        padding: 1rem;
+        color: #000;
+        text-align: right;
+    }
+    .top-message-category div+a:hover {
+        color: #000;
+    }
+    .top-message-category div+a:after {
+        content: '>';
+        margin-left: .5rem;
+    }
+    @media (max-width: 575px) {
+        .top-message-category div {
+            font-size: 1rem;       
+        }        
+        .top-message-category div+a {
+            font-size: 2rem;
+        }
+        .top-message-category div+a span {
+            display: none;
+        }
+
     }
 </style>
         
