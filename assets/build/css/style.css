@@ -406,11 +406,12 @@ h1 {
   color: #adadad; }
 
 .phone-top {
-  display: block;
+  display: inline-block;
   color: #000;
   font-weight: bold;
   font-size: 0.875rem;
-  padding: .5rem 0;
+  line-height: 1;
+  padding: 0;
   white-space: nowrap;
   text-align: right; }
   .phone-top:hover {
@@ -461,6 +462,9 @@ h1 {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
   box-shadow: -1px 12px 45px -26px rgba(0, 0, 0, 0.75); }
+
+#mobile .btn {
+  padding: .5rem; }
 
 #mobile .btn-catalog {
   color: #fff; }

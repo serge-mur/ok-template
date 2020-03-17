@@ -461,11 +461,12 @@ h1 {
 }
 
 .phone-top {
-    display: block;
+    display: inline-block;
     color: #000;
     font-weight: bold;
     font-size: 0.875rem;
-    padding: .5rem 0;
+    line-height: 1;
+    padding: 0;
     white-space: nowrap;
     text-align: right;
     &:hover {
@@ -534,6 +535,9 @@ h1 {
 
 // mobile menu
 #mobile {
+    .btn {
+        padding: .5rem;
+    }
     .btn-catalog {
         color: #fff;
         &:hover,
