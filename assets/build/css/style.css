@@ -2045,6 +2045,175 @@ section h2 {
     padding: 0 2px;
     border-radius: 2px; }
 
+.wpage h2 {
+  color: #000;
+  font-size: 2.625rem;
+  font-weight: bold;
+  text-align: center; }
+
+.wpage h2 + p {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center; }
+
+.wbtn {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  background-color: #0dfa19;
+  color: #000;
+  border-radius: 1rem;
+  border: 2px solid #0dfa19; }
+  .wbtn:hover {
+    color: #0dfa19;
+    background-color: #000;
+    border: 2px solid #000; }
+
+.wbtn2 {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+  border: 2px solid #000; }
+  .wbtn2:hover {
+    color: #0dfa19;
+    background-color: #000;
+    border: 2px solid #000; }
+
+.wbtn3 {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 1rem;
+  border: 2px solid #fff; }
+  .wbtn3:hover {
+    color: #000;
+    background-color: #0dfa19;
+    border: 2px solid #0dfa19; }
+
+.wsection-1 .wheader {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/welcome/Inner-680x400-1.jpg);
+  background-size: cover; }
+  .wsection-1 .wheader h1 {
+    color: #000;
+    font-size: 5.125rem;
+    font-weight: bold; }
+  .wsection-1 .wheader h1 + p {
+    color: #000;
+    font-size: 1.625rem;
+    font-weight: bold; }
+  .wsection-1 .wheader img {
+    width: 70px;
+    height: 70px; }
+  .wsection-1 .wheader img + p {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: bold; }
+
+.wsection-2 .wplashka {
+  color: #000;
+  background-color: #0dfa19;
+  font-size: 1.375rem;
+  font-weight: bold;
+  padding: 1.5rem 1.5rem;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px; }
+  .wsection-2 .wplashka:hover {
+    color: #000;
+    background-color: #fff; }
+
+.wsection-4 .wimglink1,
+.wsection-4 .wimglink2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-size: cover;
+  min-height: 300px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  text-align: center; }
+
+.wsection-4 .wimglink1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(..//img/welcome/photo11.jpg); }
+
+.wsection-4 .wimglink2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(..//img/welcome/photo12.jpg); }
+
+.wsection-5 .witem {
+  display: -ms-flexbox;
+  display: flex; }
+  .wsection-5 .witem img {
+    width: 45px;
+    height: 45px;
+    margin-right: 1.5rem; }
+  .wsection-5 .witem img + div {
+    color: #000; }
+    .wsection-5 .witem img + div h5 {
+      font-size: 1.25rem;
+      font-weight: bold; }
+    .wsection-5 .witem img + div p {
+      font-size: 0.875rem; }
+
+.wsection-6 .wcard {
+  height: 100%;
+  background-color: transparent;
+  border: none; }
+  .wsection-6 .wcard .wcardimg1,
+  .wsection-6 .wcard .wcardimg2,
+  .wsection-6 .wcard .wcardimg3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    background-size: cover;
+    min-height: 300px;
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding: 1.5rem; }
+  .wsection-6 .wcard .wcardimg1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(..//img/welcome/photo1.jpg); }
+  .wsection-6 .wcard .wcardimg2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(..//img/welcome/photo2.jpg); }
+  .wsection-6 .wcard .wcardimg3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(..//img/welcome/photo3.jpg); }
+  .wsection-6 .wcard .card-footer {
+    background-color: transparent;
+    border: none; }
+    .wsection-6 .wcard .card-footer .price {
+      color: #0dfa19; }
+
+.wsection-7 .man img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem; }
+
+.wsection-7 .man .name {
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.wsection-7 .man .pos {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem; }
+
+.wsection-7 .man .txt {
+  font-size: 0.875rem; }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("../img/ajax-loader.gif") center center no-repeat; }
