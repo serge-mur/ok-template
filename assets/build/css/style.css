@@ -2214,6 +2214,14 @@ section h2 {
 .wsection-7 .man .txt {
   font-size: 0.875rem; }
 
+@media (max-width: 576px) {
+  .wpage h1 {
+    font-size: 2.5rem !important; }
+  .wpage h2 {
+    font-size: 1.5rem !important; }
+  .wpage .wsection-4 .wimglink1, .wpage .wsection-4 .wimglink2 {
+    font-size: 1.5rem !important; } }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("../img/ajax-loader.gif") center center no-repeat; }

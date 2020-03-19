@@ -2819,3 +2819,16 @@ section {
         }
     }
 }
+@media (max-width: 576px) {  
+    .wpage {
+        h1 {
+            font-size: 2.5rem!important;
+        }
+        h2 {
+            font-size: 1.5rem!important;
+        }
+        .wsection-4 .wimglink1, .wsection-4 .wimglink2 {
+            font-size: 1.5rem!important;
+        }
+    } 
+}   
