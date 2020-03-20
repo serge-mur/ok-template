@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>faq</title>
+    //= template/head.html
+</head>
+
+<body>
+
+    //= template/offcanvas-menu.html
+
+    <div id="panel">
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <h2 class="title my-4">Регистрация</h2>
+                        <div class="faq-accordion mb-4">
+                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse1">
+                                Как зарегистрироваться
+                            </a>
+                            <div id="collapse1" class="collapse">
+                                Оплата заказа происходит только после того как вы его проверите. В всегда сможете убедиться в качестве товара перед оплаты заказа.
+                            </div>
+                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse2">
+                                Не приходит код?
+                            </a>
+                            <div id="collapse2" class="collapse">
+                                <p>Если Вам не поступил код подтверждения, необходимо:</p> 
+                                <ul>
+                                    <li>Убедиться, что номер телефона введен корректно (номер вводится, начиная с кода оператора).</li>
+                                    <li>Посмотреть, не возникла ли ошибка «Указанный Вами телефон уже используется».</li>
+                                    <li>Проверить, не потерял ли Ваш телефон мобильную сеть.</li>
+                                    <li>Нажать кнопку «Выслать ещё раз» и подождать 5-10 минут.</li>
+                                    <li>Если код подтверждения не поступил, для разрешения возникшей ситуации свяжитесь с нами с указанного при регистрации номера телефона.</li>
+                                </ul>
+                            </div>
+                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse3">
+                                Что то еще
+                            </a>
+                            <div id="collapse3" class="collapse">
+                                Ответ на что то еще
+                            </div>
+
+                        </div>                      
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+    //= template/modal-region.html
+    //= template/modal-registration.html
+    //= template/modal-cart.html
+    //= template/modal-all.html
+    //= template/include-scripts.html
+
+<style>
+
+.faq-accordion a[data-toggle='collapse'] {
+    display: block;
+    color: #0074ff;
+    font-size: 1rem;
+    line-height: 1;
+    padding: .5rem 0;
+    border-bottom: 1px solid #f6f6f6;
+}
+.faq-accordion a[data-toggle='collapse']:hover {
+    text-decoration: none;
+}
+.faq-accordion a[data-toggle='collapse']:after {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    vertical-align: middle;
+    float: right;
+    content: "\f106";
+    color: #0074ff;
+}
+.faq-accordion a[data-toggle='collapse'].collapsed {
+    color: #505050;    
+}
+.faq-accordion a[data-toggle='collapse'].collapsed:after {
+    content: "\f107";
+    color: #505050;    
+}
+.faq-accordion a[data-toggle='collapse']+div {
+    color: #505050;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 1rem 0;
+}
+  
+</style>
+
+
+</body>
+
+</html>

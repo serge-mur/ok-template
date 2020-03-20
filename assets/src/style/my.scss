@@ -2732,10 +2732,10 @@ section {
         text-align: center;
     }
     .wimglink1 {
-        background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(..//img/welcome/photo11.jpg);
+        background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/welcome/photo11.jpg);
     }
     .wimglink2 {
-        background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(..//img/welcome/photo12.jpg);
+        background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/welcome/photo12.jpg);
         
     }
 
@@ -2780,13 +2780,13 @@ section {
             padding: 1.5rem;
         }
         .wcardimg1 {
-            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(..//img/welcome/photo1.jpg);
+            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/welcome/photo1.jpg);
         }
         .wcardimg2 {
-            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(..//img/welcome/photo2.jpg);
+            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/welcome/photo2.jpg);
         }
         .wcardimg3 {
-            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(..//img/welcome/photo3.jpg);
+            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/welcome/photo3.jpg);
         }
         .card-footer {
             background-color: transparent;
@@ -2831,4 +2831,14 @@ section {
             font-size: 1.5rem!important;
         }
     } 
-}   
+} 
+#wModal1 .modal-header {
+    background-image: url(../img/welcome/photo.jpg);
+    background-size: cover;
+    height: 300px;
+}  
+#wModal2 .modal-header {
+    background-image: url(../img/welcome/Hudson_Green_Goods_1.jpg);
+    background-size: cover;
+    height: 300px;
+}  
