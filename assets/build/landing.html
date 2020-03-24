@@ -138,7 +138,7 @@
                                     <img src="img/search.svg" width="30" height="30" alt="" alt="">
                                 </a>                        
                                 <div class="mob-logo">
-                                    <img class="img-fluid" src="img/logo_white.svg" alt="otkorobki.ru">
+                                    <img class="img-fluid" src="img/logo_white.png" alt="otkorobki.ru">
                                 </div> 
                                 <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user">
                                     <img src="img/account.svg" width="30" height="30" alt="">
@@ -1427,75 +1427,70 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
     
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="modal-header d-sm-none">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body p-5">
-                            <h1>Регистрация на сайте</h1>
-                            <p>Контактные данные помогут нам успешно обрабатывать ваши заказы и информировать о ходе исполнения
-                                заказа</p>
-                            <form>
-                                <input type="text" class="form-control" id="company-name" placeholder="Название компании">
-                                <input type="text" class="form-control" id="city" placeholder="Город">
-                                <input type="text" class="form-control" id="contact-person" placeholder="Контактное лицо">
-                                <input type="text" class="form-control" id="phone" placeholder="Телефон">
-                                <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                <div class="text-center mb-3">
-                                    <img src="img/captcha.jpg" alt="">
-                                </div>
-                                <input type="text" class="form-control" id="captcha" placeholder="Цифры с картинки">
-                                <div class="form-group d-flex justify-content-between">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Производитель</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Оптовый поставщик</label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Нажимая кнопку «Отправить заявку», я принимаю условия
-                                        <a href="#">Пользовательского соглашения</a> и даю своё согласие Откоробки.ру на обработку моей персональной
-                                        информации на условиях, определенных
-                                        <a href="#">Политикой конфиденциальности</a>.</label>
-                                </div>
-    
-                                <button type="submit" class="btn btn-form">Приступить к покупкам</button>
-    
-                                <a class="d-block my-4" href="#">Вы производитель или оптовый поставщик?</a>
-                            </form>
-    
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="right-modal h-100">
-                            <div class="modal-header d-none d-sm-block">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body p-3">
-                                <p>Вы можете войти в личный кабинет, используя свой логин в сети:</p>
-                                <a class="d-block my-4" href="#">
-                                    <img src="img/yand.png" alt="">
-                                </a>
-                                <a class="d-block mb-4" href="#">
-                                    <img src="img/mail.png" alt="">
-                                </a>
-                                <a class="d-block" href="#">
-                                    <img src="img/goog.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-    
-                    </div>
+                <div class="modal-header">
+                    
+                    <h5 class="modal-title d-none d-lg-block">Регистрация на сайте</h5>
+                    <h5 class="modal-title d-lg-none"><span class="mr-4">Регистрация</span><a href="#" class="form-link">Авторизация <i class="fas fa-arrow-right"></i></a></h5>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <p>Контактные данные помогут нам успешно обрабатывать ваши заказы и информировать о ходе исполнения заказа</p>
+                                <form>
+                                    <input type="text" class="form-control" id="company-name" placeholder="Название компании">
+                                    <input type="text" class="form-control" id="city" placeholder="Город">
+                                    <input type="text" class="form-control" id="contact-person" placeholder="Контактное лицо">
+                                    <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    
+                                    <p class="small">Проверочный код:</p>
+                                    <div class="row d-flex justify-content-center align-items-center mb-4">
+                                        <div class="col-6">
+                                            <img src="img/capcha.png" alt="">                                        
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control mb-0" id="captcha" placeholder="Введите код">                                        
+                                        </div>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Частный клиент</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Организация</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="custom-control custom-checkbox mb-4">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">
+                                            <span class="small">Нажимая кнопку «Отправить заявку», я принимаю условия
+                                                <a href="#">Пользовательского соглашения</a> и даю своё согласие Откоробки.ру на обработку моей персональной
+                                                информации на условиях, определенных
+                                                <a href="#">Политикой конфиденциальности</a>.</span>
+                                        </label>
+                                    </div>
+    
+                                    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+    
+                                </form>
+                            </div> 
+                            <div class="d-none d-lg-block col-lg-5 right-block">
+                                <a href="#" class="form-link">Авторизация <i class="fas fa-arrow-right"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                </div>
+    
     
             </div>
         </div>

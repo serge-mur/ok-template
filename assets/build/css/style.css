@@ -1812,28 +1812,20 @@ section h2 {
   line-height: 1; }
 
 /* modal registration */
-.right-modal {
-  background-color: #f6f6f6;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; }
+#modal-registration .right-block {
+  border-left: 1px solid #e8e8e8; }
 
 #modal-registration .form-control {
-  text-align: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-radius: 1.25rem; }
 
-.btn-form {
-  margin: 0 auto;
-  font-size: 1.25rem;
-  background-color: #90de23;
-  color: #fff;
-  border-radius: 50px;
-  width: 100%;
-  border: 2px solid #90de23; }
+#modal-registration .small {
+  font-size: 0.8125rem;
+  line-height: 1; }
 
-.btn-form:hover {
-  color: #90de23;
-  background-color: #f1fae8;
-  border: 2px solid #90de23; }
+#modal-registration .form-link {
+  color: #0074ff;
+  font-size: 1.25rem; }
 
 /* modal region */
 #modal-region .column {
