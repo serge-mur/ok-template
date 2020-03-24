@@ -1,43 +1,30 @@
 $(document).ready(function () {
 
+    // main dropdown menu script
     $('.subnav:first-child').addClass('active');
-
     var activeEl = null;
     var activeSubnavTop, subnavTop, megamenuHeight;
-
-    // $("#dropdownMenuLink").hover(function () {
-    //     if ($('.dropdown-menu').is(':visible')) {
-    //         activeSubnavTop = $(this).parent('.subnav').offset().top;
-    //         subnavTop = $('.subnav:first-child').offset().top;
-    //         megamenuHeight = $('.mega-menu').outerHeight();
-    
-    //         $('.menu-block, .card-block').css('height', megamenuHeight);
-    //     }
-    // });
-
+    $("#dropdownMenuLink").hover(function () {
+        if ($('.dropdown-menu').is(':visible')) {
+            megamenuHeight = $('.mega-menu').outerHeight();  
+            $('.menu-block, .card-block').css('height', megamenuHeight);
+        }
+    });
     $(".subnav-link").hover(function () {
-
         if ($('.subnav:first-child').hasClass('active')) {
             $('.subnav:first-child').removeClass('active');
         }
-
         if (activeEl != null) {
             $(activeEl).parent('.subnav').removeClass('active');
         }
-
-        $(this).parent('.subnav').addClass('active');
-        
+        $(this).parent('.subnav').addClass('active'); 
         activeSubnavTop = $(this).parent('.subnav').offset().top;
         subnavTop = $('.subnav:first-child').offset().top;
         megamenuHeight = $('.mega-menu').outerHeight();
-
         $('.menu-block, .card-block').css('height', megamenuHeight);
         $(this).parent('.subnav').children(".subnav-content").css('top', '-'+(activeSubnavTop-subnavTop)+'px');
-
     }, function () {
-
         activeEl = this;
-
     });
 
 
