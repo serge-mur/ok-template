@@ -33,10 +33,10 @@ h1 {
 .bg-green {
   background-color: #90de23; }
 
-.dropdown {
+#main-menu .dropdown {
   position: static; }
 
-.dropdown:hover > .dropdown-menu {
+#main-menu .dropdown:hover > .dropdown-menu {
   display: block;
   width: calc(100% - 30px);
   margin-top: -2px;
@@ -44,6 +44,10 @@ h1 {
   max-width: 1140px;
   padding: 0;
   border-radius: .5rem; }
+
+#main-menu .dropdown:hover .btn-catalog {
+  background-color: #0074ff;
+  color: #fff; }
 
 .mega-menu {
   width: 100%; }
@@ -97,7 +101,8 @@ h1 {
 
 .mega-menu .subnav .subnav-content .card-block {
   border-left: 1px solid #ccc;
-  width: 33.33%; }
+  width: 33.33%;
+  padding: 1rem; }
 
 .mega-menu .subnav .subnav-content .menu-block .left-block,
 .mega-menu .subnav .subnav-content .menu-block .right-block {
@@ -164,7 +169,7 @@ h1 {
 .product-day-card .card-badge {
   position: absolute;
   top: 1rem;
-  left: 0;
+  left: -1rem;
   background-color: #0074ff;
   display: -ms-flexbox;
   display: flex;
@@ -2218,6 +2223,44 @@ section h2 {
   background-image: url(../img/welcome/Hudson_Green_Goods_1.jpg);
   background-size: cover;
   height: 300px; }
+
+.main-utp-block {
+  background-color: #ebebeb;
+  height: 120px; }
+
+@media (max-width: 991px) {
+  .main-utp-block {
+    height: auto;
+    padding-bottom: 3rem; }
+  .utp-icon {
+    left: calc(50% - 60px) !important;
+    top: -50% !important; }
+  .utp-text {
+    font-size: 1.375rem !important;
+    text-align: center !important; }
+  .icon-block {
+    height: 120px; } }
+
+.utp-icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fff;
+  border: 5px solid #ebebeb;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: -15px;
+  width: 150px;
+  height: 150px; }
+
+.utp-text {
+  color: #005aff;
+  font-size: 2.25rem;
+  line-height: 1; }
 
 /* Slider */
 .slick-loading .slick-list {
