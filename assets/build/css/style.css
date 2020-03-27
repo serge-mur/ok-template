@@ -2262,6 +2262,90 @@ section h2 {
   font-size: 2.25rem;
   line-height: 1; }
 
+/* fix filter btn */
+.btn-sidebar-filter {
+  color: #505050;
+  text-transform: uppercase;
+  background-color: #90de23;
+  border-color: #90de23;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 1.25rem; }
+
+.btn-sidebar-filter:before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  vertical-align: middle;
+  margin-right: .5rem;
+  content: "\f1de"; }
+
+.btn-sidebar-filter:after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: .5rem; }
+
+.btn-sidebar-filter.collapsed:after {
+  content: "\f107"; }
+
+.btn-sidebar-filter:not(.collapsed):after {
+  content: "\f106"; }
+
+.category-block {
+  margin-bottom: 1.5rem; }
+
+.category-block ul {
+  list-style: none;
+  padding: 0; }
+
+.category-block .category-title {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem; }
+
+.category-block .category-title img {
+  width: 27px;
+  height: 27px;
+  margin-right: .5rem; }
+
+.category-block .category-title span {
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #0074ff;
+  font-weight: bold; }
+
+.category-block .category-items > li {
+  margin-bottom: .25rem; }
+
+.category-block .category-items > li > a {
+  font-size: 1rem;
+  line-height: 1;
+  color: #505050; }
+
+.category-block .category-items .category-sub-items {
+  padding: .5rem 0 .5rem 1rem; }
+
+.category-block .category-items .category-sub-items a {
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #797979; }
+
+.category-block .category-items .togl:hover {
+  cursor: pointer; }
+
+.category-block .category-items .togl:after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: .5rem; }
+
+.category-block .category-items .togl.collapsed:after {
+  content: "\f0fe"; }
+
+.category-block .category-items .togl:not(.collapsed):after {
+  content: "\f146"; }
+
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("../img/ajax-loader.gif") center center no-repeat; }

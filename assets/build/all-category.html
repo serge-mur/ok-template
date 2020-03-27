@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Категория категорий</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/tablesaw/stackonly/tablesaw.stackonly.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="menu" class="py-4">
+        <nav class="nav flex-column" id="offcanvas-menu">
+            <a class="nav-link" href="#">О компании</a>
+            <a class="nav-link" href="#">Доставка и оплата</a>
+            <a class="nav-link" href="#">Как сделать заказ</a>
+            <a class="nav-link" href="#">Поставщикам и производителям</a>
+            <a class="nav-link" href="#">Вход/Регистрация</a>
+            <div class="dropdown-divider"></div>
+            <a class="nav-link collapsed" href="#submenu-cat" data-toggle="collapse" data-target="#submenu-cat"><b>Каталог</b></a>
+            <div class="collapse" id="submenu-cat" aria-expanded="false">
+                <nav class="nav flex-column pl-2">
+                    <a class="nav-link" href="#">Кондитерские изделия</a>
+                    <a class="nav-link" href="#">Бакалея</a>
+                    <a class="nav-link" href="#">Чай, кофе, какао</a>
+                    <a class="nav-link" href="#">Вода, напитки, соки</a>
+                    <a class="nav-link" href="#">Консервация</a>
+                    <a class="nav-link" href="#">Товары для животных</a>
+                    <a class="nav-link" href="#">Молочные продукты, сыры, яйцо</a>
+                    <a class="nav-link" href="#">Мясо, птица, рыба, гастрономия</a>
+                    <a class="nav-link" href="#">Замороженные продукты</a>
+                    <a class="nav-link" href="#">Детское питание и товары для детей</a>
+                    <a class="nav-link" href="#">Овощи, фрукты, зелень</a>
+                    <a class="nav-link" href="#">Бытовая химия, товары для дома, красоты и здоровья</a>
+                </nav>
+            </div>
+        </nav>   
+    </div>
+
+    <div id="panel">
+
+        <header id="header">
+            <div class="top-menu-line py-2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-3 col-lg-1">
+                            <div class="region-change">
+                                <a class="text-nowrap" data-toggle="modal" data-target="#modal-region" href="#"><i class="fas fa-map-marker-alt"></i> Москва</a>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-8">
+                            <ul class="nav d-flex justify-content-center align-items-center" id="top-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Как сделать заказ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Поставщикам и производителям</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-registration">Вход | Регистрация</a>
+                                    <!-- <span class="nav-link">
+                                        <a href="#" data-toggle="modal" data-target="#modal-registration">Вход</a> |
+                                        <a href="#" data-toggle="modal" data-target="#modal-registration">Регистрация</a>
+                                    </span> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-9 col-lg-3 text-right">
+                            <a class="phone-top" href="tel:84952151036">8 (495) 215-10-36</a> <span>|</span>
+                            <a class="phone-top" href="tel:84952151036"><img src="img/whatsapp.png" alt=""> (915) 261-83-80</a>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="container d-none d-md-block">
+                <div class="row align-items-center my-4">
+                    <div class="col-12 col-md-6 col-lg-3 order-1 order-lg-1">
+                        <a href="/" class="d-block">
+                            <img class="img-fluid" src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="d-none d-md-block col-md-12 col-lg-6 order-3 order-lg-2">
+                        <form action="">
+                            <div class="input-group mt-4 mt-lg-0">
+                                <input type="text" class="form-control" id="search" placeholder="Поиск"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-search" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-none d-md-block col-sm-6 col-lg-3 order-2 order-lg-3 text-center text-sm-right">
+            <!--             
+                        <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user"><i class="fas fa-user"></i></a>
+                        <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart"><i class="fas fa-shopping-cart"></i> Корзина</button> -->
+            
+                        <a href="#" data-toggle="modal" data-target="#modal-registration" class="header-profile">
+                            <img src="img/profile.png" alt="Профиль">
+                            <div>Профиль</div>
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modal-cart" class="header-cart ml-3">
+                            <img src="img/shopping-cart.png" alt="Корзина">
+                            <div>Корзина</div>
+                        </a>
+                        <div class="header-goods ml-1">
+                            <span class="quantity">13</span> товаров<br>на <span>13 000 р.</span>
+                        </div>
+                    
+                    </div>
+                </div>   
+            </div>
+            <div class="main-menu-line py-2" data-toggle="sticky-onscroll">
+                <div class="container">
+                    <div class="row">
+            
+                        <div class="col-12">
+                            <div id="mobile" class="d-md-none d-flex justify-content-between align-items-center">
+                                
+                                <button class="btn btn-catalog toggle-button">
+                                    <img src="img/open-menu.svg" width="30" height="30" alt="">
+                                </button>
+                                <a data-toggle="collapse" href="#collapseSearch" class="btn btn-search-collapse">
+                                    <img src="img/search.svg" width="30" height="30" alt="" alt="">
+                                </a>                        
+                                <div class="mob-logo">
+                                    <img class="img-fluid" src="img/logo_white.png" alt="otkorobki.ru">
+                                </div> 
+                                <a href="#" data-toggle="modal" data-target="#modal-registration" class="btn btn-user">
+                                    <img src="img/account.svg" width="30" height="30" alt="">
+                                </a>
+                                <button class="btn btn-cart" data-toggle="modal" data-target="#modal-cart">
+                                    <img src="img/shopping-cart.svg" width="30" height="30" alt="">
+                                </button>
+                                                
+                            </div>
+                            <div id="desktop" class="d-none d-md-block">                    
+                                <ul class="nav" id="main-menu">
+                                    <li class="nav-item dropdown">
+                                        <a class="btn btn-catalog dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown"><i class="fas fa-bars"></i> Каталог <span class="d-none d-sm-inline">товаров</span></a>
+                                        <div class="dropdown-menu">
+                                            <div class="mega-menu">
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Бакалея</a>
+                                                    <div class="subnav-content">
+                                                        <div class="menu-block">
+                                                            <div class="left-block">
+                                                                <div class="category-list">
+                                                                    <a href="#">Азиатская кухня</a>
+                                                                    <a href="#">Кетчуп, майонез, соусы, сиропы</a>
+                                                                    <a href="#">Крупы, хлопья, мюсли, сухие завтраки</a>
+                                                                    <a href="#">Макаронные изделия</a>
+                                                                    <a href="#">Мука, кулинарные ингридиенты</a>
+                                                                    <a href="#">Орехи, сухофрукты, семечки</a>
+                                                                    <a href="#">Продукты быстрого приготовления</a>
+                                                                    <a href="#">Растительные масла</a>
+                                                                </div>
+                                                                <a class="more" href="#">Все подкатегории</a>
+                                                            </div>
+                                                            <div class="right-block">
+                                                                <div class="category-list">
+                                                                    <a href="#">Don Semi</a>
+                                                                    <a href="#">Елея</a>
+                                                                    <a href="#">Кубань Продукт</a>
+                                                                    <a href="#">Сэн Сой</a>
+                                                                    <a href="#">Зимушка Краса</a>
+                                                                    <a href="#">Обжорка</a>
+                                                                    <a href="#">Зимушка Краса</a>
+                                                                    <a href="#">Обжорка</a>
+                                                                </div>
+                                                                <a class="more" href="#">Все бренды</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-block">
+                                                            <div class="card product-day-card">
+                                                                <div class="card-badge">
+                                                                    <span>Товар дня</span>
+                                                                </div>
+                                            
+                                                                <a class="card-image-link" href="#">
+                                                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                                                </a>
+                                                            
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                                                    <div class="card-text">
+                                                                        Минимальная партия: 12 шт (0.96 кг)
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-footer">
+                                                                    <div class="card-price">
+                                                                        <!-- <div class="old-price mr-2">
+                                                                            <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                                                        </div> -->
+                                                                        <div class="new-price">
+                                                                            <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                                                        </div>
+                                                                    </div>        
+                                                                    <button class="btn btn-primary w-100 my-2 font-weight-bold">Подробнее</button>
+                                                                </div>
+                                                            </div>                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Вода, напитки, соки</a>
+                                                    <div class="subnav-content">
+                                                        <div class="menu-block">
+                                                            <div class="left-block">
+                                                                <div class="category-list">
+                                                                    <a href="#">Азиатская кухня 2</a>
+                                                                    <a href="#">Кетчуп, майонез, соусы, сиропы 2</a>
+                                                                    <a href="#">Крупы, хлопья, мюсли, сухие завтраки 2</a>
+                                                                    <a href="#">Макаронные изделия 2</a>
+                                                                    <a href="#">Мука, кулинарные ингридиенты 2</a>
+                                                                    <a href="#">Орехи, сухофрукты, семечки 2</a>
+                                                                    <a href="#">Продукты быстрого приготовления 2</a>
+                                                                    <a href="#">Растительные масла 2</a>
+                                                                </div>
+                                                                <a class="more" href="#">Все подкатегории 2</a>
+                                                            </div>
+                                                            <div class="right-block">
+                                                                <div class="category-list">
+                                                                    <a href="#">Don Semi 2</a>
+                                                                    <a href="#">Елея 2</a>
+                                                                    <a href="#">Кубань Продукт 2</a>
+                                                                    <a href="#">Сэн Сой 2</a>
+                                                                    <a href="#">Зимушка Краса 2</a>
+                                                                    <a href="#">Обжорка 2</a>
+                                                                    <a href="#">Зимушка Краса 2</a>
+                                                                    <a href="#">Обжорка 2</a>
+                                                                </div>
+                                                                <a class="more" href="#">Все бренды 2</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-block">
+                                                            <div class="card product-day-card">
+                                                                <div class="card-badge">
+                                                                    <span>Товар дня 2</span>
+                                                                </div>
+                                            
+                                                                <a class="card-image-link" href="#">
+                                                                    <img src="img/20393_big.jpg" class="card-img-top" alt="">
+                                                                </a>
+                                                            
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Икра "ЕКО" из кабачков, 12 шт по 0,48 кг</h5>
+                                                                    <div class="card-text">
+                                                                        Минимальная партия: 12 шт (0.96 кг)
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-footer">
+                                                                    <div class="card-price">
+                                                                        <!-- <div class="old-price mr-2">
+                                                                            <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                                                        </div> -->
+                                                                        <div class="new-price">
+                                                                            <span>32,30 &#8381;</span><span> / 1 шт.</span>
+                                                                        </div>
+                                                                    </div>        
+                                                                    <button class="btn btn-primary w-100 my-2 font-weight-bold">Подробнее</button>
+                                                                </div>
+                                                            </div>                               
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Детское питание и товары для детей</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Замороженные  продукты</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Кондитерские изделия</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Консервация</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Молочные продукты, сыры, яйцо</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Мясо, птица, рыба, гастрономия</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Овощи, фрукты, зелень</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Товары для дома</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Товары для животных</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                                <div class="subnav">
+                                                    <a href="#" class="subnav-link">Чай, кофе, какао</a>
+                                                    <div class="subnav-content">
+                                                        123
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="img/arrow.png"> Вкусные цены</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="img/percent.png"> Акции</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="img/italian.png"> Итальянские каникулы</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="img/postnie.png"> Постные недели</a>
+                                    </li>
+                                </ul>
+            
+                            </div>
+            
+                        </div>
+            
+                        <div class="col-12 collapse py-4" id="collapseSearch">
+                            <form class="" action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="search-mobile" placeholder="Поиск"
+                                        aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-search" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Каталог продукции</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row my-4">
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="category-block">
+                            <a href="#" class="category-title">
+                                <img src="img/category/gluten.png" alt="Бакалея"><span>Бакалея</span>
+                            </a>
+                            <ul class="category-items">
+                                <li> 
+                                    <a href="#">Азиатская кухня</a>
+                                    <span class="togl collapsed" data-toggle="collapse" data-target="#sub1"></span>
+                                    <ul class="category-sub-items collapse" id="sub1">
+                                        <li><a href="#">Аксессуары для суши</a></li>
+                                        <li><a href="#">Другие продукты азиатской кухни</a></li>
+                                        <li><a href="#">Имбирь, васаби</a></li>
+                                        <li><a href="#">Лапша, спаржа</a></li>
+                                        <li><a href="#">Листы для суши</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Кетчуп, майонез, соусы, сиропы</a></li>
+                                <li><a href="#">Крупы, хлопья, мюсли, сухие завтраки</a></li>
+                                <li><a href="#">Макаронные изделия</a></li>
+                                <li><a href="#">Мука, кулинарные ингридиенты</a></li>
+                                <li><a href="#">Орехи, сухофрукты, семечки</a></li>
+                                <li><a href="#">Продукты быстрого приготовления</a></li>
+                                <li><a href="#">Растительные масла</a></li>
+                                <li><a href="#">Сахар, соль</a></li>
+                                <li><a href="#">Специи, приправы</a></li>
+                                <li><a href="#">Чипсы, сухарики, попкорн</a></li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="category-block">
+                            <a href="#" class="category-title">
+                                <img src="img/category/baby-bottle.png" alt="Детское питание и товары для детей"><span>Детское питание и товары для детей</span>
+                            </a>
+                            <ul class="category-items">
+                                <li> 
+                                    <a href="#">Детская косметика и гигиена</a>
+                                    <span class="togl collapsed" data-toggle="collapse" data-target="#sub2"></span>
+                                    <ul class="category-sub-items collapse" id="sub2">
+                                        <li><a href="#">Аксессуары для суши</a></li>
+                                        <li><a href="#">Другие продукты азиатской кухни</a></li>
+                                        <li><a href="#">Имбирь, васаби</a></li>
+                                        <li><a href="#">Лапша, спаржа</a></li>
+                                        <li><a href="#">Листы для суши</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Кетчуп, майонез, соусы, сиропы</a></li>
+                                <li><a href="#">Крупы, хлопья, мюсли, сухие завтраки</a></li>
+                                <li><a href="#">Макаронные изделия</a></li>
+                                <li><a href="#">Мука, кулинарные ингридиенты</a></li>
+                                <li><a href="#">Орехи, сухофрукты, семечки</a></li>
+                                <li><a href="#">Продукты быстрого приготовления</a></li>
+                                <li><a href="#">Растительные масла</a></li>
+                                <li><a href="#">Сахар, соль</a></li>
+                                <li><a href="#">Специи, приправы</a></li>
+                                <li><a href="#">Чипсы, сухарики, попкорн</a></li>
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="category-block">
+                            <a href="#" class="category-title">
+                                <img src="img/category/baby-bottle.png" alt="Детское питание и товары для детей"><span>Детское питание и товары для детей</span>
+                            </a>
+                            <ul class="category-items">
+                                <li><a href="#">Кетчуп, майонез, соусы, сиропы</a></li>
+                                <li><a href="#">Крупы, хлопья, мюсли, сухие завтраки</a></li>
+                                <li><a href="#">Макаронные изделия</a></li>
+                                <li><a href="#">Мука, кулинарные ингридиенты</a></li>
+                                <li><a href="#">Орехи, сухофрукты, семечки</a></li>
+                                <li><a href="#">Продукты быстрого приготовления</a></li>
+                                <li><a href="#">Растительные масла</a></li>
+                                <li><a href="#">Сахар, соль</a></li>
+                                <li><a href="#">Специи, приправы</a></li>
+                                <li><a href="#">Чипсы, сухарики, попкорн</a></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="category-block">
+                            <a href="#" class="category-title">
+                                <img src="img/category/baby-bottle.png" alt="Детское питание и товары для детей"><span>Детское питание и товары для детей</span>
+                            </a>
+                            <ul class="category-items">
+
+                                <li><a href="#">Кетчуп, майонез, соусы, сиропы</a></li>
+                                <li><a href="#">Крупы, хлопья, мюсли, сухие завтраки</a></li>
+                                <li><a href="#">Макаронные изделия</a></li>
+                                <li><a href="#">Мука, кулинарные ингридиенты</a></li>
+                                <li><a href="#">Орехи, сухофрукты, семечки</a></li>
+                                <li><a href="#">Продукты быстрого приготовления</a></li>
+                                <li><a href="#">Растительные масла</a></li>
+                                <li><a href="#">Сахар, соль</a></li>
+                                <li><a href="#">Специи, приправы</a></li>
+                                <li><a href="#">Чипсы, сухарики, попкорн</a></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="category-block">
+                            <a href="#" class="category-title">
+                                <img src="img/category/baby-bottle.png" alt="Детское питание и товары для детей"><span>Детское питание и товары для детей</span>
+                            </a>
+                            <ul class="category-items">
+
+                                <li><a href="#">Кетчуп, майонез, соусы, сиропы</a></li>
+                                <li><a href="#">Крупы, хлопья, мюсли, сухие завтраки</a></li>
+                                <li><a href="#">Макаронные изделия</a></li>
+                                <li><a href="#">Мука, кулинарные ингридиенты</a></li>
+                                <li><a href="#">Орехи, сухофрукты, семечки</a></li>
+                                <li><a href="#">Продукты быстрого приготовления</a></li>
+                                <li><a href="#">Растительные масла</a></li>
+                                <li><a href="#">Сахар, соль</a></li>
+                                <li><a href="#">Специи, приправы</a></li>
+                                <li><a href="#">Чипсы, сухарики, попкорн</a></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            <footer id="footer">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-12 py-4">
+                            <a href="/" class="d-block">
+                                <img class="img-fluid" src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Поставщики</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Производители</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Как сделать заказ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Поставщикам и производителям</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-12 col-sm-6 col-md-4">
+            
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="tel:84952151036">8 (495) 215-10-36</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">С 9:00 до 18:00 по будням</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">Email:
+                                        <a href="mailto:ilove@otkorobki.ru">ilove@otkorobki.ru</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">
+                                        <a data-toggle="modal" data-target="#exampleModal" href="#">Обратная связь</a>
+                                    </span>
+                                </li>
+                            </ul>
+            
+                        </div>
+                    </div>
+                    <div class="row justify-content-between py-4 border-top">
+                        <div class="col-auto">
+                            <ul class="nav bottom-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Договор-Оферта</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Пользовательское соглашение</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Политика конфиденциальности</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-auto">
+                            <div class="social-block">
+                                <a href="https://web.facebook.com/otkorobki.ru/" target="_blank" class="fab fa-facebook"></a>
+                                <a href="https://vk.com/club55825384" target="_blank" class="fab fa-vk"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </footer>
+            
+            <div class="sticky-bottom d-md-none border-top">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center my-3">
+                        <div class="col-auto">
+                            <a href="#" class="cart-mini">
+                                <div class="num-goods">13</div>
+                                <img src="img/shoppingcart-mini.png" alt="Корзина">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="favorite-mini">
+                                <div class="num-goods">13</div>
+                                <img src="img/heart-mini.png" alt="Избранное">
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="catalog-mini toggle-button-bottom"><img src="img/menu-mini.png" alt="Каталог"></a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="profile-mini"><img src="img/profile-mini.png" alt="Профиль"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            добавить в scripy js
+            document.querySelector('.toggle-button-bottom').addEventListener('click', function() {
+                slideout.toggle();
+            }); -->
+        </footer>
+
+    </div>
+    <!-- end #panel -->
+    <div class="modal fade" id="modal-region" tabindex="-1" role="dialog" aria-labelledby="modal-region" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Укажите ваш город</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="column">
+                        <li>
+                            <a href="#">Москва</a>
+                        </li>
+                        <li>
+                            <a href="#">Екатеринбург</a>
+                        </li>
+                        <li>
+                            <a href="#">Казань</a>
+                        </li>
+                        <li>
+                            <a href="#">Владимир</a>
+                        </li>
+                        <li>
+                            <a href="#">Липецк</a>
+                        </li>
+                        <li>
+                            <a href="#">Тюмень</a>
+                        </li>
+                        <li>
+                            <a href="#">Архангельск</a>
+                        </li>
+                        <li>
+                            <a href="#">Тула</a>
+                        </li>
+                        <li>
+                            <a href="#">Нижний Новгород</a>
+                        </li>
+                        <li>
+                            <a href="#">Рязань</a>
+                        </li>
+                        <li>
+                            <a href="#">Иваново</a>
+                        </li>
+                        <li>
+                            <a href="#">Уфа</a>
+                        </li>
+                        <li>
+                            <a href="#">Ульяновск</a>
+                        </li>
+                        <li>
+                            <a href="#">Пермь</a>
+                        </li>
+                    </ul>
+    
+                    <a class="d-block text-right" data-toggle="collapse" href="#collapseRegion" aria-expanded="false" aria-controls="collapseRegion">
+                        Показать еще
+                    </a>
+    
+                    <div class="collapse" id="collapseRegion">
+    
+                        <form action="">
+                            <div class="input-group my-4">
+                                <input type="text" class="form-control" id="search" placeholder="Начните вбивать название города" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-search" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="column">
+                            <li>
+                                <a href="#">Анжеро-Судженск</a>
+                            </li>
+                            <li>
+                                <a href="#">Астрахань</a>
+                            </li>
+                            <li>
+                                <a href="#">Барнаул</a>
+                            </li>
+                            <li>
+                                <a href="#">Белгород</a>
+                            </li>
+                            <li>
+                                <a href="#">Благовещенск</a>
+                            </li>
+                            <li>
+                                <a href="#">Брянск</a>
+                            </li>
+                            <li>
+                                <a href="#">Волгоград</a>
+                            </li>
+                            <li>
+                                <a href="#">Волгореченск</a>
+                            </li>
+                            <li>
+                                <a href="#">Вологда</a>
+                            </li>
+                            <li>
+                                <a href="#">Воронеж</a>
+                            </li>
+                            <li>
+                                <a href="#">Горно-Алтайск</a>
+                            </li>
+                            <li>
+                                <a href="#">Десногорск</a>
+                            </li>
+                            <li>
+                                <a href="#">Зеленогорск</a>
+                            </li>
+                            <li>
+                                <a href="#">Ижевск</a>
+                            </li>
+                            <li>
+                                <a href="#">Иркутск-45</a>
+                            </li>
+                            <li>
+                                <a href="#">Йошкар-Ола</a>
+                            </li>
+                            <li>
+                                <a href="#">Калуга</a>
+                            </li>
+                            <li>
+                                <a href="#">Котовск</a>
+                            </li>
+                            <li>
+                                <a href="#">Краснодар</a>
+                            </li>
+                            <li>
+                                <a href="#">Курск</a>
+                            </li>
+                            <li>
+                                <a href="#">Новосибирск</a>
+                            </li>
+                            <li>
+                                <a href="#">Омск</a>
+                            </li>
+                            <li>
+                                <a href="#">Оренбург</a>
+                            </li>
+                            <li>
+                                <a href="#">Пенза</a>
+                            </li>
+                            <li>
+                                <a href="#">Псков</a>
+                            </li>
+                            <li>
+                                <a href="#">Ростов-на-Дону</a>
+                            </li>
+                            <li>
+                                <a href="#">Самара</a>
+                            </li>
+                            <li>
+                                <a href="#">Санкт-Петербург</a>
+                            </li>
+                            <li>
+                                <a href="#">Саранск</a>
+                            </li>
+                            <li>
+                                <a href="#">Саратов</a>
+                            </li>
+                            <li>
+                                <a href="#">Тверь</a>
+                            </li>
+                            <li>
+                                <a href="#">Томск</a>
+                            </li>
+                            <li>
+                                <a href="#">Улан-Удэ</a>
+                            </li>
+                            <li>
+                                <a href="#">Ханты-Мансийск</a>
+                            </li>
+                            <li>
+                                <a href="#">Челябинск</a>
+                            </li>
+                            <li>
+                                <a href="#">Ярославль</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-registration" tabindex="-1" role="dialog" aria-labelledby="modal-registration" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    
+                    <h5 class="modal-title d-none d-lg-block">Регистрация на сайте</h5>
+                    <h5 class="modal-title d-lg-none"><span class="mr-4">Регистрация</span><a href="#" class="form-link">Авторизация <i class="fas fa-arrow-right"></i></a></h5>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <p>Контактные данные помогут нам успешно обрабатывать ваши заказы и информировать о ходе исполнения заказа</p>
+                                <form>
+                                    <input type="text" class="form-control" id="company-name" placeholder="Название компании">
+                                    <input type="text" class="form-control" id="city" placeholder="Город">
+                                    <input type="text" class="form-control" id="contact-person" placeholder="Контактное лицо">
+                                    <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    
+                                    <p class="small">Проверочный код:</p>
+                                    <div class="row d-flex justify-content-center align-items-center mb-4">
+                                        <div class="col-6">
+                                            <img src="img/capcha.png" alt="">                                        
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control mb-0" id="captcha" placeholder="Введите код">                                        
+                                        </div>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Частный клиент</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Организация</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="custom-control custom-checkbox mb-4">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">
+                                            <span class="small">Нажимая кнопку «Отправить заявку», я принимаю условия
+                                                <a href="#">Пользовательского соглашения</a> и даю своё согласие Откоробки.ру на обработку моей персональной
+                                                информации на условиях, определенных
+                                                <a href="#">Политикой конфиденциальности</a>.</span>
+                                        </label>
+                                    </div>
+    
+                                    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+    
+                                </form>
+                            </div> 
+                            <div class="d-none d-lg-block col-lg-5 right-block">
+                                <a href="#" class="form-link">Авторизация <i class="fas fa-arrow-right"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="modal-cart" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h1 class="d-inline-block modal-title" id="exampleModalLabel">Корзина <span>2 заказа, 3 товара</span></h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="row align-items-center order-block">
+                        <div class="col-12 col-lg-6 my-4">
+                            <h1 class="d-inline-block cart-title">Заказ №1</h1>
+                            <span class="delivery-block mb-2">
+                                <span>
+                                    <i class="fas fa-truck"></i> Доставка</span>
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i> Самовывоз</span>
+                            </span>
+                            <div class="cart-provis">Поставщик "Мясоперерабатывающий холдинг Арго"</div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-sm-8 mb-4">
+                                    <span class="font-weight-bold">Итого: 2 товара на сумму:
+                                        <span class="cart-total-price">2800 <i class="fas fa-ruble-sign"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <button class="btn btn-buy">Оформить</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12">
+                            <!-- repeat block -->
+                            <div class="row align-items-center py-4 order-item">
+                                <div class="col-4 col-lg-2 mb-2">
+                                    <a href="#">
+                                        <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-8 col-lg-3 mb-2">
+                                    <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                    <div class="item-name">Производитель: Красный Октябрь</div>
+                                    <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                </div>
+                                <div class="col-12 col-lg-2 mb-2">
+                                    <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                        <div class="quantity-minus">
+                                            <img src="img/minus.png" alt="">
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="quantity-plus">
+                                            <img src="img/plus.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-lg-1 mb-2">
+                                    <button class="btn">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+    
+                            </div>
+                            <!-- end repeat block -->
+                            <!-- repeat block -->
+                            <div class="row align-items-center py-4 order-item">
+                                <div class="col-4 col-lg-2 mb-2">
+                                    <a href="#">
+                                        <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-8 col-lg-3 mb-2">
+                                    <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                    <div class="item-name">Производитель: Красный Октябрь</div>
+                                    <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                </div>
+                                <div class="col-12 col-lg-2 mb-2">
+                                    <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                        <div class="quantity-minus">
+                                            <img src="img/minus.png" alt="">
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="quantity-plus">
+                                            <img src="img/plus.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-lg-1 mb-2">
+                                    <button class="btn">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+    
+                            </div>
+                            <!-- end repeat block -->
+    
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="row align-items-center order-block">
+                        <div class="col-12 col-lg-6 my-4">
+                            <h1 class="d-inline-block cart-title">Заказ №2</h1>
+                            <span class="delivery-block mb-2">
+                                <span>
+                                    <i class="fas fa-truck"></i> Доставка</span>
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i> Самовывоз</span>
+                            </span>
+                            <div class="cart-provis">Поставщик "Мясоперерабатывающий холдинг Арго"</div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-sm-8 mb-4">
+                                    <span class="font-weight-bold">Итого: 2 товара на сумму:
+                                        <span class="cart-total-price">2800
+                                            <i class="fas fa-ruble-sign"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <button class="btn btn-buy">Оформить</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-12">
+                            <!-- repeat block -->
+                            <div class="row align-items-center py-4 order-item">
+                                <div class="col-4 col-lg-2 mb-2">
+                                    <a href="#">
+                                        <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-8 col-lg-3 mb-2">
+                                    <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                    <div class="item-name">Производитель: Красный Октябрь</div>
+                                    <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                </div>
+                                <div class="col-12 col-lg-2 mb-2">
+                                    <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                        <div class="quantity-minus">
+                                            <img src="img/minus.png" alt="">
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="quantity-plus">
+                                            <img src="img/plus.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-lg-1 mb-2">
+                                    <button class="btn">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+    
+                            </div>
+                            <!-- end repeat block -->
+                            <!-- repeat block -->
+                            <div class="row align-items-center py-4 order-item">
+                                <div class="col-4 col-lg-2 mb-2">
+                                    <a href="#">
+                                        <img src="img/13376_middle.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-8 col-lg-3 mb-2">
+                                    <h3>Шоколад Аленка 200 гр, 12 шт.</h3>
+                                    <div class="item-name">Производитель: Красный Октябрь</div>
+                                    <div class="item-pack">Упаковка: 100 гр. x 12 шт. (1,2 кг)</div>
+                                </div>
+                                <div class="col-12 col-lg-2 mb-2">
+                                    <div class="item-unit-price">200 <i class="fas fa-ruble-sign"></i> <span>/ 12 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="h-100 d-flex align-items-center justify-content-center quantity-block">
+                                        <div class="quantity-minus">
+                                            <img src="img/minus.png" alt="">
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="quantity-plus">
+                                            <img src="img/plus.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-2 mb-2">
+                                    <div class="item-total-price">1280,00 <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-lg-1 mb-2">
+                                    <button class="btn">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+    
+                            </div>
+                            <!-- end repeat block -->
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-all" tabindex="-1" role="dialog" aria-labelledby="modal-all" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Производители</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="input-group my-4">
+                            <input type="text" class="form-control" id="list-search" placeholder="Поиск..." aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-search" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="responsive-column" id="items-list">
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                        <a href="#">ООО "Белёвские Сладости"</a>
+                        <a href="#">Компания "Конти"</a>
+                        <a href="#">ООО "Дело вкуса"</a>
+                        <a href="#">ЗАО Егорьевский хлебокомбинат</a>
+                        <a href="#">Кондитерская фабрика "Акконд"</a>
+                        <a href="#">Кондитерская фабрика "Славянка"</a>
+                        <a href="#">Азовская кондитерская фабрика</a>
+                        <a href="#">ООО Лакомства для здоровья</a>
+                        <a href="#">Объединенные кондитеры - РотФронт</a>
+                        <a href="#">Раменский кондитерский комбинат</a>
+    
+                    </div>             
+    
+                </div>
+    <!--             
+                <div class="modal-footer">
+                    <nav class="d-flex justify-content-end" aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link clr-gray" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link clr-gray" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                 -->
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="lib/slideout/slideout.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/tablesaw/stackonly/tablesaw.stackonly.jquery.js"></script>
+    <script src="lib/tablesaw/tablesaw-init.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
